@@ -1,1 +1,0 @@
-//Exibe os comentários e permite que os usuários comentem
