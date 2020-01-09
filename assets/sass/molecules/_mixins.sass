@@ -1,0 +1,76 @@
+/*Cores*/
+$preto: black
+$branco: white
+$azul-escuro: #00629B
+$azul-claro: #00B5E2
+
+/*Tamanho de Fonte*/
+$light: 300
+$regular: 400
+$bold: 700
+
+/*Resolução máxima*/
+$celular: max-width 440px
+$tablet: max-width 991px
+
+.classe
+	height: 200px + 10px
+
+/*mixin do display flex*/
+=flexbox
+	display: -webkit-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flexbox
+	display: flex
+
+/*mixin do gradiente*/
+=gradient($angle,$gradient1, $gradient2)
+  background-color: $gradient2 
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:         linear-gradient($angle, $gradient1, $gradient2)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
+
+/*mixin de transição*/
+=transition($transition...)
+	-moz-transition: all $transition linear
+	-o-transition: all $transition linear
+	-webkit-transition: all $transition linear
+	transition: all $transition linear
+
+/*mixin do arredodamento da borda*/
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	border-radius: $radius
+
+/*função para converter px para rem no tamanho da fonte*/
+@function calculateRem($size)
+	$remSize: $size / 16px
+	@return $remSize * 1rem
+
+/*mixin do tamanho da fonte*/
+=font-size($size)
+	font-size: $size
+	font-size: calculateRem($size)
+
+/*mixin da opacidade*/
+=opacity($opacity)
+	opacity: $opacity
+	$opacity-ie: $opacity * 100
+	filter: alpha(opacity=$opacity-ie)
+
+/*mixin da opacidade do background*/
+=background-opacity($color: #000, $opacity: 0,85)
+	background: $color
+	background: rgba($color, $opacity)
+
+/*mixin das colunas*/
+=columns($count: 3, $gap: 10)
+	@include css3-prefix('column-count', $count)
+	@include css3-prefix('column-gap', $gap)
