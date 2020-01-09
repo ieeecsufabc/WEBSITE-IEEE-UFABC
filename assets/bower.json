@@ -16,7 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^4.4.1",
     "font-awesome": "^5.12.0",
     "bootstrap-sass": "^3.4.1",
     "breakpoint-sass": "^2.7.1"

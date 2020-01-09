@@ -4,7 +4,7 @@ $branco: white
 $azul-escuro: #00629B
 $azul-claro: #00B5E2
 
-/*Tamanho de Fonte*/
+/*Peso da fonte*/
 $light: 300
 $regular: 400
 $bold: 700
@@ -12,9 +12,6 @@ $bold: 700
 /*Resolução máxima*/
 $celular: max-width 440px
 $tablet: max-width 991px
-
-.classe
-	height: 200px + 10px
 
 /*mixin do display flex*/
 =flexbox
@@ -66,9 +63,9 @@ $tablet: max-width 991px
 	filter: alpha(opacity=$opacity-ie)
 
 /*mixin da opacidade do background*/
-=background-opacity($color: #000, $opacity: 0,85)
-	background: $color
-	background: rgba($color, $opacity)
+=background-opacity($color: #000, $opacity: 0.85) 
+  background: $color
+  background: rgba($color, $opacity)
 
 /*mixin das colunas*/
 =columns($count: 3, $gap: 10)
