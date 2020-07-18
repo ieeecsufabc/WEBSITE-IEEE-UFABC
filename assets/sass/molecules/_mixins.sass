@@ -4,6 +4,7 @@ $branco: white
 $azul-ieee: #0072A6
 $azul-escuro: #00629B
 $azul-claro: #00B5E2
+$amarelo: yellow
 
 /*Peso da fonte*/
 $light: 300
@@ -25,7 +26,7 @@ $tablet: max-width 991px
 
 /*mixin do gradiente*/
 =gradient($angle,$gradient1, $gradient2)
-  background-color: $gradient2 
+  background-color: $gradient2
   background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
   background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
   background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
@@ -65,7 +66,7 @@ $tablet: max-width 991px
 	filter: alpha(opacity=$opacity-ie)
 
 /*mixin da opacidade do background*/
-=background-opacity($color: #000, $opacity: 0.85) 
+=background-opacity($color: #000, $opacity: 0.85)
   background: $color
   background: rgba($color, $opacity)
 
