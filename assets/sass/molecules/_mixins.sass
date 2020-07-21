@@ -1,17 +1,61 @@
 /*Cores*/
 $preto: black
 $branco: white
-$azul-escuro: #00629B
+$amarelo: yellow
+
+$azul-ieee: #0072A6
+$azul-ieee-escuro: #00629B
+$azul-ieee-claro: #DDF3FE      
+$branco-ieee: #FDFDFD
 $azul-claro: #00B5E2
+$cinza-claro: #FDFDFD
+$cinza-escuro: #5F6B76
+
+$texto-preto: #1E1C1C 
+
+$hexagonos-um: #66DAF1
+$hexagonos-dois: #4C90B0
+$hexagonos-tres: #DDF3FE
+$hexagonos-quatro: #ECF0F8
+
+$aess: #93DF76
+$aess-escuro: #0072A6
+$aess-claro: #D4E2EE
+
+$cs: #F6CE93
+$cs-escuro: #EA9414
+$cs-claro: #F9E8D0
+
+$embs: #93A6F6
+$embs-escuro: #2D3142
+$embs-claro: #E5E9FD
+
+$eps: #93F0F6
+$eps-escuro: #009CA6
+$eps-claro: #CAE9ED
+
+$pes: #93F6C1
+$pes-escuro: #00843D
+$pes-claro: #CAE4D8
+
+$ras: #F693F5
+$ras-escuro: #981D97
+$ras-claro: #E8D0EA
+
+$pes: #93E2F6
+$pes-escuro: #00B5E2
+$pes-claro: #CAEEF9
+
 
 /*Peso da fonte*/
 $light: 300
 $regular: 400
+$semi-bold: 600
 $bold: 700
 
 /*Resolução máxima*/
-$celular: max-width 440px
-$tablet: max-width 991px
+$celular: 440px
+$tablet: 991px
 
 /*mixin do display flex*/
 =flexbox
@@ -23,7 +67,7 @@ $tablet: max-width 991px
 
 /*mixin do gradiente*/
 =gradient($angle,$gradient1, $gradient2)
-  background-color: $gradient2 
+  background-color: $gradient2
   background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
   background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
   background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
@@ -63,7 +107,7 @@ $tablet: max-width 991px
 	filter: alpha(opacity=$opacity-ie)
 
 /*mixin da opacidade do background*/
-=background-opacity($color: #000, $opacity: 0.85) 
+=background-opacity($color: #000, $opacity: 0.85)
   background: $color
   background: rgba($color, $opacity)
 
