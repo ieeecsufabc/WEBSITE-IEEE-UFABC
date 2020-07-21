@@ -16,11 +16,11 @@
     "tests"
   ],
   "dependencies": {
-    "font-awesome": "^5.12.0",
     "breakpoint-sass": "^2.7.1",
     "sass-flex-mixin": "^1.0.3",
     "bootstrap": "^4.5.0",
-    "popper.js": "^2.4.4"
+    "popper.js": "^2.4.4",
+    "components-font-awesome": "^5.14.0"
   },
   "devDependencies": {
     "imagehover.css": "*",
