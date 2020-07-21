@@ -20,7 +20,8 @@
     "sass-flex-mixin": "^1.0.3",
     "bootstrap": "^4.5.0",
     "popper.js": "^2.4.4",
-    "components-font-awesome": "^5.14.0"
+    "components-font-awesome": "^5.14.0",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
     "imagehover.css": "*",
