@@ -3,5 +3,5 @@ node_modules/*
 !node_modules/breakpoint-sass
 !node_modules/imagehover.css
 !node_modules/jquery
-!node_modules/popper
-!node_modules/wow
+!node_modules/popper.js
+!node_modules/wow.js
