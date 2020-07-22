@@ -71,7 +71,16 @@ table {
 body {
   background-color: #FCFDFF; }
 
-#apresentacao-inicial, #apresentacao-ieee, #apresentacao-ieee-ufabc, #o-que-fazemos, #capitulos {
+#banner {
+  position: relative;
+  background-position: top center;
+  min-height: 10vh;
+  background-size: cover;
+  padding: 150px 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+#apresentacao-ieee, #apresentacao-ieee-ufabc, #o-que-fazemos, #capitulos {
   margin-top: 100px; }
 
 .titulos {
@@ -88,7 +97,8 @@ body {
   line-height: 30px; }
 
 #logo-ieee-mundial {
-  margin-top: 50px; }
+  display: block;
+  margin: 6%; }
 
 .descricao-ieee {
   font-size: 18px;

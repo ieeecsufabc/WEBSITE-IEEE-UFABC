@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="assets/css/geral.css">
 	<link rel="stylesheet" href="assets/css/plugins.css">
 	<link rel="stylesheet" href="assets/css/home.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
@@ -53,9 +54,9 @@
 				</ul>
 
 				<!-- Barra de pesquisa -->
-				<form class="form-inline my-2 my-lg-0">
+				<form class="form-inline my-2 my-lg-0 justify-content-center">
 					<input class="form-control mr-sm-1" id="barra-pesquisar" type="search" placeholder="Pesquisar"
-						aria-label="Search">
+						aria-label="Search"/>
 					<button class="btn my-2 my-sm-0" id="lupa-pesquisar" type="submit">
 						<img src="assets/icons/icon-lupa.svg" alt="Icone de Pesquisar">
 					</button>
@@ -88,28 +89,19 @@
 
 	<!-- "Miolo" da Home -->
 	<div class="container-fluid">
-		
+
 		<!-- Primeira seção -->
-		<div class="row" id="apresentacao-inicial">
+		<div class="row" id="banner" style="background-image: url(assets/images/ilustracoes/ilustracao-header.png);">
 
 			<div class="col-lg-1"></div>
 
 			<div class="col-lg-4 align-self-center pr-5">
 				<h1 class="titulos">Desenvolva-se profissionalmente no IEEE UFABC!</h1>
-				<svg class="linha-azul" width="55" height="5" viewBox="0 0 55 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line y1="2.5" x2="55" y2="2.5" stroke="#0072A6" stroke-width="5"/>
-				</svg>
+				<img src="assets/images/ilustracoes/linha-azul.svg"/>
 				<p id="subtitulo">
 					Faça projetos técnicos e participe de eventos realizados na ramificação do maior Instituto de engenharia do mundo aqui na UFABC!
 				</p>
 			</div>
-
-			<div class="col-lg-6">
-				<img src="assets/images/ilustracoes/ilustracao-header.png" width="100%">
-			</div>
-
-			<div class="col-lg-1"></div>
-
 		</div>
 
 		<!-- Segunda seção -->
@@ -119,10 +111,8 @@
 
 			<div class="col-lg-4">
 				<h1 class="titulos">Mas o que é o IEEE?</h1>
-				<svg class="linha-azul" width="55" height="5" viewBox="0 0 55 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line y1="2.5" x2="55" y2="2.5" stroke="#0072A6" stroke-width="5"/>
-				</svg>
-				<img src="assets/images/ilustracoes/ieee-logo2.png" id="logo-ieee-mundial" width="100%">
+				<img src="assets/images/ilustracoes/linha-azul.svg"/>
+				<img src="assets/images/logos/IEEE_Mundial_Completo.svg" id="logo-ieee-mundial" width="350px">
 			</div>
 
 			<div class="col-lg-6 descricao-ieee align-self-end pl-5">
@@ -144,9 +134,7 @@
 			<div class="col-lg-1"></div>
 			<div class="col-lg-10">
 				<h1 class="titulos">... e o IEEE UFABC então?</h1>
-				<svg class="linha-azul" width="55" height="5" viewBox="0 0 55 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line y1="2.5" x2="55" y2="2.5" stroke="#0072A6" stroke-width="5"/>
-				</svg>
+				<img src="assets/images/ilustracoes/linha-azul.svg"/>
 			</div>
 			<div class="col-lg-1"></div>
 		</div>
@@ -167,7 +155,7 @@
 			</div>
 
 			<div class="col-lg-4 align-self-center">
-				<img src="assets/images/logos/logo-ieee.png" width="100%">
+				<img src="assets/images/logos/logo-ieee.png" width="450px">
 			</div>
 
 			<div class="col-lg-1"></div>
@@ -181,9 +169,7 @@
 
 			<div class="col-lg-4">
 				<h1 class="titulos">O que fazemos?</h1>
-				<svg class="linha-azul" width="55" height="5" viewBox="0 0 55 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line y1="2.5" x2="55" y2="2.5" stroke="#0072A6" stroke-width="5"/>
-				</svg>
+				<img src="assets/images/ilustracoes/linha-azul.svg"/>
 			</div>
 
 			<div class="col-lg-1"></div>
@@ -210,9 +196,7 @@
 
 			<div class="col-lg-5">
 				<h1 class="titulos">Sete capítulos onde participar</h1>
-				<svg class="linha-azul" width="55" height="5" viewBox="0 0 55 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<line y1="2.5" x2="55" y2="2.5" stroke="#0072A6" stroke-width="5"/>
-				</svg>
+				<img src="assets/images/ilustracoes/linha-azul.svg"/>
 				<h2 class="pl-5" id="titulo-capitulo">Nome do capítulo</h2>
 				<p class="descricao-ieee pl-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum blandit.</p>
 				<br>
@@ -222,7 +206,7 @@
 			<div class="col-lg-1"></div>
 
 			<div class="col-lg-4 align-self-start">
-				<img src="assets/images/logos/IEEE-CS-UFABC.png" width="100%">
+				<img src="assets/images/logos/IEEE-CS-UFABC.png" width="500px">
 			</div>
 
 			<div class="col-lg-1"></div>
@@ -231,7 +215,7 @@
 
 	</div>
 
-	
+
 	<footer class="container-fluid">
 		<div class="row align-items-center footer">
 
@@ -270,7 +254,7 @@
 			</div>
 
 			<div class="col-lg-3 rodItem segment-four">
-				<img class="logo-ieee-mundial" src="assets/images/logos/IEEEmundial.png" alt="Logo da IEEE">
+				<img class="logo-ieee-mundial" src="assets/images/logos/IEEE_Mundial.svg" alt="Logo da IEEE">
 				<a href="#">
 					<span class="textRegular">Ir para o site da IEEE global
 						<img src="assets/icons/icon-redirecionamento.svg">
@@ -283,13 +267,12 @@
 					<img src="assets/icons/botao-voltar-ao-topo.svg">
 				</a>
 			</div>
-	</footer> 
+	</footer>
 	<script src="assets/js/footer.js"></script>
 	<script src="assets/node_modules/popper.js/src/popper.min.js"></script>
 	<script src="assets/node_modules/jquery/dist/jquery.slim.min.js"></script>
 	<script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+	<noscript>Desculpe, seu navegador não suporta JavaScript!</noscript>
 </body>
 
 </html>

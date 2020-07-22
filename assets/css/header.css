@@ -12,9 +12,11 @@
 /*mixin da opacidade do background*/
 /*mixin das colunas*/
 #menu-navbar {
-  padding: 0px 30px;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-  background-color: #FDFDFD; }
+  background-color: #FDFDFD;
+  position: absolute;
+  z-index: 10;
+  width: 100%; }
 
 #logo-ieee {
   padding-right: 30px;
@@ -23,17 +25,21 @@
     width: 130px; }
 
 #links-navegacao {
-  margin-left: 15px; }
-  #links-navegacao li a {
-    padding: 20px 15px;
-    font-size: 15px;
-    color: #5F6B76;
-    border-bottom: 3px solid #FDFDFD; }
-    #links-navegacao li a:hover {
-      color: #0072A6;
-      border-bottom: 3px solid #0072A6; }
+  margin: 0px 15px;
+  text-align: center; }
+  #links-navegacao li {
+    margin: 10px 15px; }
+    #links-navegacao li a {
+      font-size: 18px;
+      color: #5F6B76;
+      border-bottom: 3px solid #FDFDFD; }
+      #links-navegacao li a:hover {
+        color: #0072A6;
+        text-decoration: underline;
+        border-bottom: 3px solid #0072A6; }
 
 #barra-pesquisar {
+  width: 75%;
   font-size: 13px;
   background-color: rgba(0, 114, 166, 0.1);
   border: none; }
@@ -49,7 +55,14 @@
     box-shadow: 0 0 0 0.2rem rgba(0, 114, 166, 0.5); }
 
 #escolha-idioma {
-  padding-left: 20px; }
+  border-radius: 5px; }
+  #escolha-idioma li {
+    margin: 10px 15px; }
+
+#navbarDropdown {
+  border-bottom: 3px solid #FDFDFD; }
+  #navbarDropdown:hover {
+    border-bottom: 3px solid #0072A6; }
 
 #escolha-idioma li a {
   font-size: 14px;
