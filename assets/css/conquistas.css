@@ -86,39 +86,37 @@ table {
   height: 500px; }
   @media (max-width: 991px) {
     .header {
-      background: none;
-      margin-top: -80px; } }
+      background: url("../images/ilustracoes/conquistas-mobile-bg.svg");
+      background-repeat: no-repeat; } }
 
 .headerLeft {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 100px; }
+  margin-top: 150px; }
   @media (max-width: 991px) {
     .headerLeft {
-      align-items: center; } }
+      align-items: center;
+      margin-top: 68px; } }
 
 .headerRight {
-  margin-top: 30px;
+  margin-top: 60px;
   display: flex;
   justify-content: flex-end; }
   @media (max-width: 991px) {
     .headerRight {
+      margin-top: 30px;
       justify-content: center;
       width: 250px;
       height: 250px; } }
 
 .premios {
   display: flex;
-  flex-direction: column;
-  height: 1500px;
-  background-image: url("../images/ilustracoes/conquistas-linha.svg");
-  background-repeat: no-repeat;
-  background-position: center; }
+  flex-direction: column; }
   @media (max-width: 991px) {
     .premios {
-      background: none; } }
+      margin-top: 20px; } }
 
 .naoVazio {
   display: flex;
@@ -172,13 +170,13 @@ table {
   position: absolute;
   left: 0; }
 
-.baixo {
+.descricaoDiv {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end; }
 
-.baixoEsquerda {
+.descricaoDivEsquerda {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -186,3 +184,6 @@ table {
 
 .individualPremio {
   margin-bottom: 65px; }
+  @media (max-width: 991px) {
+    .individualPremio {
+      margin-bottom: 150px; } }

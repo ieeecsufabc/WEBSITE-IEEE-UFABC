@@ -15,23 +15,25 @@
     background-repeat: no-repeat
     height: 500px
     @include breakpoint($tablet)
-        background: none
-        margin-top: -80px
+        background: url('../images/ilustracoes/conquistas-mobile-bg.svg')
+        background-repeat: no-repeat
 
 .headerLeft
     display: flex
     flex-direction: column
     justify-content: flex-start
     align-items: center
-    margin-top: 100px
+    margin-top: 150px
     @include breakpoint($tablet)
         align-items: center
+        margin-top: 68px
 
 .headerRight
-    margin-top: 30px
+    margin-top: 60px
     display: flex
     justify-content: flex-end
     @include breakpoint($tablet)
+        margin-top: 30px
         justify-content: center
         width: 250px
         height: 250px
@@ -39,12 +41,12 @@
 .premios
     display: flex
     flex-direction: column
-    height: 1500px
-    background-image: url('../images/ilustracoes/conquistas-linha.svg')
-    background-repeat: no-repeat
-    background-position: center
+    //background-image: url('../images/ilustracoes/conquistas-linha-completa.svg')
+    //background-repeat: no-repeat
+    //background-position: center
     @include breakpoint($tablet)
-        background: none
+        margin-top: 20px
+        //background-image: url('../images/ilustracoes/conquistas-linha.svg')
 
 
 .naoVazio
@@ -61,9 +63,9 @@
     align-items: flex-start
     align-content: center
 
-
 .vazio
     height: 225px
+
 .titulo-item
     font-size: 24px
     font-weight: $semi-bold
@@ -71,7 +73,7 @@
     align-self: flex-end
     margin-top: 25px
     margin-right: 10px
-
+    
 .descricao-item
     font-size: 18px
     font-weight: $regular
@@ -99,13 +101,13 @@
     position: absolute
     left: 0
     
-.baixo
+.descricaoDiv
     display: flex
     flex-direction: row
     align-items: center
     justify-content: flex-end
 
-.baixoEsquerda
+.descricaoDivEsquerda
     display: flex
     flex-direction: row
     align-items: center
@@ -113,5 +115,7 @@
 
 .individualPremio
     margin-bottom: 65px
+    @include breakpoint($tablet)
+        margin-bottom: 150px
 
 
