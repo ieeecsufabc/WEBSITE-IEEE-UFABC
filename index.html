@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="assets/css/geral.css">
 	<link rel="stylesheet" href="assets/css/plugins.css">
 	<link rel="stylesheet" href="assets/css/home.css">
-
+	<link rel="stylesheet" href="assets/node_modules/wow.js/css/libs/animate.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
@@ -95,7 +95,7 @@
 				<div class="col-lg-1"></div>
 				<div class="col-lg-4 align-self-center pr-5" id="banner-texto">
 					<h1 class="titulos">Desenvolva-se profissionalmente no IEEE UFABC!</h1>
-					<img src="assets/images/ilustracoes/linha-azul.svg"/>
+					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s"/>
 					<p id="subtitulo">
 						Faça projetos técnicos e participe de eventos realizados na ramificação do maior Instituto de engenharia do mundo aqui na UFABC!
 					</p>
@@ -106,9 +106,9 @@
 			<div class="row justify-content-center" id="apresentacao-ieee">
 				<div class="col-lg-4 mr-3 justify-content-center">
 					<h1 class="titulos">Mas o que é o IEEE?</h1>
-					<img src="assets/images/ilustracoes/linha-azul.svg"/>
+					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
 					<center>
-						<img src="assets/images/logos/IEEE_Mundial_Completo.svg" id="logos-ieee" width="350px">
+						<img src="assets/images/logos/IEEE_Mundial_Completo.svg" id="logos-ieee" width="350px" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s"/>
 					</center>
 				</div>
 
@@ -128,7 +128,7 @@
 
 				<div class="col-lg-10">
 					<h1 class="titulos">... e o IEEE UFABC então?</h1>
-					<img src="assets/images/ilustracoes/linha-azul.svg"/>
+					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s"/>
 				</div>
 
 				<div class="col-lg-6 descricao-ieee align-self-end text-justify mr-3" id="apresentacao-ieee-ufabc">
@@ -143,7 +143,7 @@
 
 				<div class="col-lg-4 align-self-center">
 					<center>
-						<img src="assets/images/logos/Logo IEEE UFABC.svg" width="410px" id="logos-ieee">
+						<img src="assets/images/logos/Logo IEEE UFABC.svg" width="410px" id="logos-ieee" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"/>
 					</center>
 				</div>
 
@@ -154,7 +154,7 @@
 
 				<div class="col-lg-4">
 					<h1 class="titulos">O que fazemos?</h1>
-					<img src="assets/images/ilustracoes/linha-azul.svg"/>
+					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
 				</div>
 
 				<div class="col-lg-5 descricao-ieee text-justify">
@@ -175,7 +175,7 @@
 
 				<div class="col-lg-5 text-justify">
 					<h1 class="titulos">Sete capítulos onde participar</h1>
-					<img src="assets/images/ilustracoes/linha-azul.svg"/>
+					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"/>
 					<div class="pl-5 pr-5">
 						<h2 id="titulo-capitulo" style="color: $laranja-ieee">Nome do capítulo</h2>
 						<p class="descricao-ieee">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum blandit.</p>
@@ -185,7 +185,7 @@
 				</div>
 
 				<div class="col-lg-4 align-self-center">
-						<img src="assets/images/logos/IEEE-CS-UFABC.png" width="500px">
+						<img src="assets/images/logos/IEEE-CS-UFABC.png" width="500px" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
 				</div>
 
 			</div>
@@ -248,6 +248,10 @@
 	<script src="assets/node_modules/popper.js/src/popper.min.js"></script>
 	<script src="assets/node_modules/jquery/dist/jquery.slim.min.js"></script>
 	<script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/node_modules/wow.js/dist/wow.min.js"></script>
+	<script>
+    new WOW().init();
+  </script>
 	<noscript>Desculpe, seu navegador não suporta JavaScript!</noscript>
 </body>
 
