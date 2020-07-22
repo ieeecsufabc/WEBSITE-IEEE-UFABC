@@ -77,11 +77,12 @@ body {
   width: 130px;
   margin-left: 80px; }
 
-.voltar-ao-topo {
-  position: absolute;
+#voltar-ao-topo {
+  position: fixed;
   left: 93%;
   right: 3.5%;
-  bottom: 82%; }
+  bottom: 1%;
+  display: none; }
 
 @media (max-width: 991px) {
   .segment-two {

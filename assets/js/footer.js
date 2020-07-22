@@ -1,19 +1,13 @@
-const voltarTopo = document.querySelector('[data-js="voltarTopo"]')
-
-    const subirFunction = () => {
-        document.body.scrollTop = 0
-        document.documentElement.scrollTop = 0
+$(document).ready(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 40){
+      $("#voltar-ao-topo").fadeIn();
     }
-
-    /*const showFunction = () => {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            voltarTopo.style.opacity = 100
-        } 
-        else {
-            voltarTopo.style.opacity = 0
-        }
-    }*/
-    if (document.readyState){
-        //window.onscroll = showFunction
-        voltarTopo.onclick = subirFunction
+    else{
+      $("#voltar-ao-topo").fadeOut();
     }
+  });
+  $("#voltar-ao-topo").click(function(){
+    $('html, body').animate({scrollTop: 0}, 800);
+  });
+});
