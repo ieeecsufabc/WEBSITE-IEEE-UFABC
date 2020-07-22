@@ -68,27 +68,49 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.titulo {
-  font-size: 38px;
-  font-weight: 700;
-  line-height: 48px; }
+body {
+  background-color: #FCFDFF; }
 
-.subtitulo {
+#apresentacao-inicial, #apresentacao-ieee, #apresentacao-ieee-ufabc, #o-que-fazemos, #capitulos {
+  margin-top: 100px; }
+
+.titulos {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #1E1C1C; }
+
+.linha-azul {
+  margin: 10px 0px; }
+
+#subtitulo {
   font-size: 20px;
   line-height: 30px; }
 
-.texto-regular {
+#logo-ieee-mundial {
+  margin-top: 50px; }
+
+.descricao-ieee {
   font-size: 18px;
   line-height: 27px; }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 100px; }
+#titulo-ieee-ufabc {
+  margin-top: 100px;
+  margin-bottom: 50px; }
 
-.header-texto {
-  margin-left: -30px; }
+.titulo2 {
+  font-size: 24px;
+  line-height: 48px; }
 
-.separador {
-  margin-bottom: 10px; }
+#titulo-capitulo {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #E87722; }
+
+#link-capitulos {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #E87722; }
