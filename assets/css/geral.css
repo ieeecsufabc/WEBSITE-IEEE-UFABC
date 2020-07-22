@@ -203,7 +203,8 @@ body {
   left: 93%;
   right: 3.5%;
   bottom: 1%;
-  display: none; }
+  display: none;
+  cursor: pointer; }
 
 @media (max-width: 991px) {
   .segment-two {
