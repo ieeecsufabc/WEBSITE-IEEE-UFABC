@@ -102,7 +102,7 @@ body {
   border-radius: 25px; }
 
 #apresentacao-ieee, #apresentacao-ieee-ufabc, #o-que-fazemos, #capitulos {
-  margin-top: 30px; }
+  margin-top: 70px; }
 
 .titulos {
   font-weight: 700;
@@ -121,10 +121,6 @@ body {
   font-size: 18px;
   line-height: 27px; }
 
-#titulo-ieee-ufabc {
-  margin-top: 100px;
-  margin-bottom: 50px; }
-
 .titulo2 {
   font-size: 24px;
   line-height: 48px; }
@@ -139,5 +135,4 @@ body {
 #link-capitulos {
   font-weight: 700;
   font-size: 18px;
-  line-height: 25px;
-  color: #E87722; }
+  line-height: 25px; }
