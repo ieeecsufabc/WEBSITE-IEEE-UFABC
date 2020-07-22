@@ -25,7 +25,7 @@ body {
 
 .footer {
   background-color: #D6E8F2;
-  position: absolute;
+  position: relative;
   bottom: 0;
   min-height: 190px; }
 
