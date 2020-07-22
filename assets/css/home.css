@@ -78,10 +78,31 @@ body {
   background-size: cover;
   padding: 150px 0px;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  word-wrap: break-word; }
+  #banner p {
+    margin-top: 20px;
+    font-size: 25px;
+    line-height: 30px; }
+
+@media (max-width: 991px) {
+  #banner {
+    background-size: cover;
+    padding: 100px 0px; }
+    #banner .titulos {
+      font-size: 30px;
+      line-height: 35px; }
+    #banner p {
+      font-size: 20px; } }
+
+#banner-texto {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 50px;
+  margin: 15px;
+  border-radius: 25px; }
 
 #apresentacao-ieee, #apresentacao-ieee-ufabc, #o-que-fazemos, #capitulos {
-  margin-top: 100px; }
+  margin-top: 30px; }
 
 .titulos {
   font-weight: 700;
@@ -92,11 +113,7 @@ body {
 .linha-azul {
   margin: 10px 0px; }
 
-#subtitulo {
-  font-size: 20px;
-  line-height: 30px; }
-
-#logo-ieee-mundial {
+#logos-ieee {
   display: block;
   margin: 6%; }
 
