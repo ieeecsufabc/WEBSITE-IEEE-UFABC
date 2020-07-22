@@ -68,137 +68,121 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-#menu-navbar {
-  padding: 0px 30px;
-  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
-  background-color: #FDFDFD; }
-
-#logo-ieee {
-  padding-right: 30px;
-  border-right: 1px solid rgba(0, 0, 0, 0.1); }
-  #logo-ieee a img {
-    width: 130px; }
-
-#links-navegacao {
-  margin-left: 15px; }
-  #links-navegacao li a {
-    padding: 20px 15px;
-    font-size: 15px;
-    color: #5F6B76;
-    border-bottom: 3px solid #FDFDFD; }
-    #links-navegacao li a:hover {
-      color: #0072A6;
-      border-bottom: 3px solid #0072A6; }
-
-#barra-pesquisar {
-  font-size: 13px;
-  background-color: rgba(0, 114, 166, 0.1);
-  border: none; }
-  #barra-pesquisar:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 114, 166, 0.5); }
-  #barra-pesquisar::placeholder {
-    color: rgba(0, 114, 166, 0.9); }
-
-#lupa-pesquisar {
-  font-size: 13px;
-  background-color: #FDFDFD; }
-  #lupa-pesquisar:focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 114, 166, 0.5); }
-
-#escolha-idioma {
-  padding-left: 20px; }
-
-#escolha-idioma li a {
-  font-size: 14px;
-  color: #0072A6; }
-
-.icones {
-  color: #0072A6;
-  margin-bottom: 1px; }
-
-#idioma-pt {
-  min-width: 0; }
-
-body {
-  overflow-x: hidden; }
-
-.textBold {
+#titulo-header {
+  font-size: 38px;
   font-weight: 700;
   color: #0072A6; }
 
-.logo-ieee {
-  width: 220px;
-  height: 60px;
-  margin: 10px 0 10px 0; }
-
-.footer {
-  background-color: #D6E8F2;
-  position: relative;
-  bottom: 0;
-  min-height: 190px; }
-
-.textRegular {
+#subtitulo-header {
+  font-size: 24px;
   font-weight: 400;
-  color: #0072A6; }
+  color: #1E1C1C;
+  opacity: 80%;
+  margin-top: 15px; }
 
-#ouvidoriaButton {
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 40px;
-  border: none;
-  background: #FFFFFF;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+.header {
+  background-image: url("../images/ilustracoes/conquistas-header.svg");
+  background-repeat: no-repeat;
+  height: 500px; }
+  @media (max-width: 991px) {
+    .header {
+      background: none;
+      margin-top: -80px; } }
+
+.headerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px; }
+  @media (max-width: 991px) {
+    .headerLeft {
+      align-items: center; } }
+
+.headerRight {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end; }
+  @media (max-width: 991px) {
+    .headerRight {
+      justify-content: center;
+      width: 250px;
+      height: 250px; } }
+
+.premios {
+  display: flex;
+  flex-direction: column;
+  height: 1500px;
+  background-image: url("../images/ilustracoes/conquistas-linha.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+  @media (max-width: 991px) {
+    .premios {
+      background: none; } }
+
+.naoVazio {
+  display: flex;
+  flex-direction: column;
+  height: 225px;
+  align-items: flex-end;
+  align-content: center; }
+
+.naoVazioEsquerda {
+  display: flex;
+  flex-direction: column;
+  height: 225px;
+  align-items: flex-start;
+  align-content: center; }
+
+.vazio {
+  height: 225px; }
+
+.titulo-item {
+  font-size: 24px;
+  font-weight: 600;
   color: #0072A6;
+  align-self: flex-end;
+  margin-top: 25px;
+  margin-right: 10px; }
+
+.descricao-item {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1E1C1C;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 40%;
+  line-height: 27px; }
+
+.descricao-item-esquerda {
+  font-size: 18px;
+  font-weight: 400;
+  color: #1E1C1C;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 40%;
+  line-height: 27px;
+  text-align: right; }
+
+.bg {
+  position: absolute;
+  right: 0; }
+
+.bgEsquerda {
+  position: absolute;
+  left: 0; }
+
+.baixo {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-weight: 700; }
+  justify-content: flex-end; }
 
-.rodItem {
-  margin: auto;
-  align-self: center; }
-
-.segment-one {
+.baixoEsquerda {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; }
 
-.segment-two {
-  font-size: 13px; }
-
-.segment-three {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.segment-four {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.contato {
-  margin-top: 25px; }
-
-.logo-ieee-mundial {
-  width: 120px;
-  margin-left: 80px; }
-
-.voltar-ao-topo {
-  position: absolute;
-  left: 93%;
-  right: 3.5%;
-  bottom: 82%; }
-
-@media (max-width: 991px) {
-  .segment-two {
-    text-align: center;
-    margin: auto; }
-  .rodItem {
-    margin: 10px; }
-  .logo-ieee-mundial {
-    margin-left: 0; }
-  .voltar-ao-topo {
-    top: 85%;
-    left: 85%; } }
+.individualPremio {
+  margin-bottom: 65px; }

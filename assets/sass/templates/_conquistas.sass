@@ -1,0 +1,117 @@
+#titulo-header
+    font-size: 38px
+    font-weight: $bold
+    color: $azul-ieee
+
+#subtitulo-header
+    font-size: 24px
+    font-weight: $regular
+    color: $texto-preto
+    opacity: 80%
+    margin-top: 15px
+
+.header
+    background-image: url('../images/ilustracoes/conquistas-header.svg')
+    background-repeat: no-repeat
+    height: 500px
+    @include breakpoint($tablet)
+        background: none
+        margin-top: -80px
+
+.headerLeft
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: center
+    margin-top: 100px
+    @include breakpoint($tablet)
+        align-items: center
+
+.headerRight
+    margin-top: 30px
+    display: flex
+    justify-content: flex-end
+    @include breakpoint($tablet)
+        justify-content: center
+        width: 250px
+        height: 250px
+
+.premios
+    display: flex
+    flex-direction: column
+    height: 1500px
+    background-image: url('../images/ilustracoes/conquistas-linha.svg')
+    background-repeat: no-repeat
+    background-position: center
+    @include breakpoint($tablet)
+        background: none
+
+
+.naoVazio
+    display: flex
+    flex-direction: column
+    height: 225px
+    align-items: flex-end
+    align-content: center
+
+.naoVazioEsquerda
+    display: flex
+    flex-direction: column
+    height: 225px
+    align-items: flex-start
+    align-content: center
+
+
+.vazio
+    height: 225px
+.titulo-item
+    font-size: 24px
+    font-weight: $semi-bold
+    color: $azul-ieee
+    align-self: flex-end
+    margin-top: 25px
+    margin-right: 10px
+
+.descricao-item
+    font-size: 18px
+    font-weight: $regular
+    color: $texto-preto
+    margin-left: 15px
+    margin-bottom: 15px
+    width: 40%
+    line-height: 27px
+
+.descricao-item-esquerda
+    font-size: 18px
+    font-weight: $regular
+    color: $texto-preto
+    margin-right: 15px
+    margin-bottom: 15px
+    width: 40%
+    line-height: 27px
+    text-align: right 
+    
+.bg
+    position: absolute
+    right: 0
+
+.bgEsquerda
+    position: absolute
+    left: 0
+    
+.baixo
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-end
+
+.baixoEsquerda
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+
+.individualPremio
+    margin-bottom: 65px
+
+
