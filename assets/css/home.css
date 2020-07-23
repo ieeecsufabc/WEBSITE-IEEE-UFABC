@@ -73,7 +73,7 @@ body {
 
 #banner {
   background-position: top center;
-  min-height: 83vh;
+  min-height: 700px;
   background-size: cover;
   padding: 150px 0px;
   background-repeat: no-repeat;
@@ -127,10 +127,34 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  color: #E87722; }
+  color: #0072A6; }
 
 #link-capitulos {
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  color: #E87722; }
+  margin-bottom: 50px;
+  color: #0072A6; }
+
+.descriacao-capitulos .descricao-ieee {
+  display: none; }
+
+#descricao-AESS {
+  display: block; }
+
+.capitulos-logos {
+  background-image: url(../images/ilustracoes/hexagonos-background.png);
+  background-repeat: repeat-x; }
+
+.logos {
+  margin: 80px 0px; }
+
+.capitulos-logos img {
+  margin: 5px; }
+
+@media (max-width: 1250px) {
+  .capitulos-logos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../images/ilustracoes/hexagonos-background-mobile.png);
+    background-repeat: repeat; }
+  .logos {
+    margin: 20px; } }
