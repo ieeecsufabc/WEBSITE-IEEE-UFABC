@@ -101,7 +101,7 @@ body {
   margin: 15px;
   border-radius: 25px; }
 
-#apresentacao-ieee, #apresentacao-ieee-ufabc, #o-que-fazemos, #capitulos {
+.secoes {
   margin-top: 70px; }
 
 .titulos {

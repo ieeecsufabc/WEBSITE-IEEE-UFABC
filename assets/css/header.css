@@ -68,9 +68,9 @@
   font-size: 14px;
   color: #0072A6; }
 
-.icones {
-  color: #0072A6;
-  margin-bottom: 1px; }
-
 #idioma-pt {
   min-width: 0; }
+
+/* Menu dropdown aparece quando passa o mouse, porém a área do link está bugando */
+/*.dropdown:hover>.dropdown-menu
+	display: block */
