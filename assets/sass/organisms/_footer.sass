@@ -82,3 +82,83 @@ body
     #voltar-ao-topo
         top: 87%
         left: 85%
+
+
+.modal-content
+    height: 1015px
+    background-image: url('../images/ilustracoes/modal-bg.png')
+    background-repeat: no-repeat
+    @include breakpoint($celular)
+        background-image: none
+        max-width: 90vw
+
+
+.modalHeader
+    display: flex
+    flex-direction: row
+    align-items: center
+        
+
+.modalDivHeader
+    margin-left: 80px
+    margin-top: 73px
+    margin-right: 86px
+    @include breakpoint($celular)
+        margin-left: 30px
+        margin-top: 30px
+
+.modalDiv
+    margin-left: 80px
+    margin-top: 30px
+    margin-right: 86px
+    @include breakpoint($celular)
+        margin-left: 30px
+        margin-right: 30px
+
+.headerItem
+    margin-right: 43px
+
+.tituloOuvidoria
+    font-size: 38px
+    font-weight: bold
+    font-size: 38px
+    line-height: 48px
+    color: $texto-preto
+    @include breakpoint($celular)
+        font-size: 34px
+
+.modalDescricao
+    font-weight: $regular
+    font-size: 18px
+    line-height: 27px
+    
+.modalInput
+    border: none
+    border-radius: 0px 0px 5px 5px
+    background-color: white
+    height: 130px
+    width: 100%
+    padding-left: 15px
+    @include breakpoint($celular)
+        background-color: #EEFCFF
+
+.modalInputText
+    font-size: 16px
+    line-height: 27px
+    font-weight: $semi-bold
+    background-color: white
+    padding-left: 15px
+    padding-top: 10px
+    border-radius: 5px 5px 0px 0px
+    @include breakpoint($celular)
+        background-color: #EEFCFF
+
+.modalSubmit
+    width: 130px
+    height: 40px
+    border: none
+    background-color: $azul-ieee-escuro
+    border-radius: 10px
+    color: white
+    font-size: 20px
+    

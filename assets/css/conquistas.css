@@ -84,7 +84,7 @@ table {
   background-image: url("../images/ilustracoes/conquistas-header.svg");
   background-repeat: no-repeat;
   height: 500px; }
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     .header {
       background: url("../images/ilustracoes/conquistas-mobile-bg.svg");
       background-repeat: no-repeat; } }
@@ -95,7 +95,7 @@ table {
   justify-content: flex-start;
   align-items: center;
   margin-top: 150px; }
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     .headerLeft {
       align-items: center;
       margin-top: 68px; } }
@@ -104,7 +104,7 @@ table {
   margin-top: 60px;
   display: flex;
   justify-content: flex-end; }
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     .headerRight {
       margin-top: 30px;
       justify-content: center;
@@ -114,7 +114,7 @@ table {
 .premios {
   display: flex;
   flex-direction: column; }
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     .premios {
       margin-top: 20px; } }
 
@@ -184,6 +184,6 @@ table {
 
 .individualPremio {
   margin-bottom: 65px; }
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
     .individualPremio {
       margin-bottom: 150px; } }

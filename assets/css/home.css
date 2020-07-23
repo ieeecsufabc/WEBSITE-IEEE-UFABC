@@ -84,7 +84,7 @@ body {
     font-size: 25px;
     line-height: 30px; }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   #banner {
     background-size: cover;
     padding: 100px 0px; }
@@ -105,7 +105,8 @@ body {
   font-weight: 700;
   font-size: 38px;
   line-height: 48px;
-  color: #1E1C1C; }
+  color: #1E1C1C;
+  margin-bottom: 20px; }
 
 .linha-azul {
   margin: 10px 0px; }
@@ -158,3 +159,48 @@ body {
     background-repeat: repeat; }
   .logos {
     margin: 20px; } }
+
+.diretoriaDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px; }
+
+.diretoriaTitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px; }
+
+.diretoresDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  @media (max-width: 992px) {
+    .diretoresDiv {
+      flex-direction: column; } }
+
+.hexagonoIndividual {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .hexagonoIndividual:hover .subTextoHexagono {
+    opacity: 100%; }
+
+.textoHexagono {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 20px; }
+  @media (max-width: 992px) {
+    .textoHexagono {
+      margin-bottom: 20px; } }
+
+.subTextoHexagono {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0; }
+  @media (max-width: 992px) {
+    .subTextoHexagono {
+      margin-bottom: 20px; } }

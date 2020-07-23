@@ -37,6 +37,7 @@ body
     size: 38px
   line-height: 48px
   color: $texto-preto
+  margin-bottom: 20px
 
 .linha-azul
 	margin: 10px 0px
@@ -92,3 +93,47 @@ body
     background-repeat: repeat
   .logos
     margin: 20px
+
+.diretoriaDiv
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 70px
+
+.diretoriaTitulo
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 55px
+
+.diretoresDiv
+  display: flex
+  flex-direction: row
+  justify-content: center
+  @include breakpoint($tablet)
+    flex-direction: column
+
+.hexagonoIndividual
+  display: flex
+  flex-direction: column
+  align-items: center
+  &:hover
+    .subTextoHexagono
+      opacity: 100%
+
+.textoHexagono
+  font-weight: $semi-bold
+  font-size: 20px
+  line-height: 20px
+  margin-top: 20px
+  @include breakpoint($tablet)
+    margin-bottom: 20px
+
+.subTextoHexagono
+  font-weight: $semi-bold
+  font-size: 18px
+  margin-top: 10px
+  opacity: 0
+  @include breakpoint($tablet)
+    margin-bottom: 20px
+
