@@ -49,6 +49,7 @@
     color: rgba(0, 114, 166, 0.9); }
 
 #lupa-pesquisar {
+  margin-left: 2px;
   font-size: 13px;
   background-color: #FDFDFD; }
   #lupa-pesquisar:focus {
