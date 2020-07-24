@@ -182,6 +182,9 @@ body {
   font-weight: 400;
   color: #0072A6; }
 
+#logo-ieee-ouvidoria-branco {
+  display: none; }
+
 #ouvidoriaButton {
   border-radius: 10px;
   padding-left: 10px;
@@ -196,6 +199,13 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: 700; }
+  #ouvidoriaButton:hover {
+    background-color: #0072A6;
+    color: white; }
+    #ouvidoriaButton:hover #logo-ieee-ouvidoria-branco {
+      display: block; }
+    #ouvidoriaButton:hover #logo-ieee-ouvidoria {
+      display: none; }
 
 .rodItem {
   margin: auto;

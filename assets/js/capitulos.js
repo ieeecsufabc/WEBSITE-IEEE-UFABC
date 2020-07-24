@@ -26,6 +26,7 @@ function TrocadeLogo(event){
   const id = elemento.getAttribute('id');
   //troca o endereço das imagens
   logo.src = endereco_img+id+'.png';
+  logo.style.opacity = 1;
   document.getElementById(id).src = endereco_img+id+'-selecionado.png';
   //pega a cor do capítulo e faz a troca do título e do link
   cor = cores[capitulos.indexOf(id)];
@@ -48,4 +49,5 @@ function Deseleciona(){
   const id = elemento.getAttribute('id');
   //troca a imagem hexagono do capítulo
   document.getElementById(id).src = 'assets/images/logos/Logo-'+id+'-home.png';
+  logo.style.opacity = 0;
 }

@@ -19,6 +19,9 @@ body
     font-weight: $regular
     color: $azul-ieee
 
+#logo-ieee-ouvidoria-branco
+  display: none
+
 #ouvidoriaButton
     border-radius: 10px
     padding-left: 10px
@@ -33,6 +36,13 @@ body
     align-items: center
     justify-content: center
     font-weight: $bold
+    &:hover
+      background-color: $azul-ieee
+      color: white
+      #logo-ieee-ouvidoria-branco
+        display: block
+      #logo-ieee-ouvidoria
+        display: none
 
 .rodItem
     margin: auto
@@ -103,7 +113,7 @@ body
     display: flex
     flex-direction: row
     align-items: center
-        
+
 
 .modalDivHeader
     margin-left: 80px
@@ -137,7 +147,7 @@ body
     font-weight: $regular
     font-size: 18px
     line-height: 27px
-    
+
 .modalInput
     border: none
     border-radius: 0px 0px 5px 5px
@@ -167,4 +177,3 @@ body
     border-radius: 10px
     color: white
     font-size: 20px
-    
