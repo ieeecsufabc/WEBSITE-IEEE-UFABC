@@ -84,6 +84,11 @@ body
         left: 85%
 
 
+.modalIeee
+    @include breakpoint($celular)
+        border: 15px solid
+        border-image: url('../images/ilustracoes/teste.svg') 30
+
 .modal-content
     height: 1015px
     background-image: url('../images/ilustracoes/modal-bg.png')
@@ -91,7 +96,8 @@ body
     @include breakpoint($celular)
         background-image: none
         max-width: 90vw
-
+        border: none !important
+        border-radius: 0 !important
 
 .modalHeader
     display: flex

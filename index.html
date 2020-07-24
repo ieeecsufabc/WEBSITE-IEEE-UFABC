@@ -222,6 +222,8 @@
 				</div>
 			</div>
 
+
+			<!-- Sétima seção -->
 			<div class="row justify-content-center diretoriaDiv">
 				<div class="diretoriaTitulo">
 					<h1 class="titulos" style="text-align: center;">Conheça a nossa <br> Diretoria</h1>
@@ -279,7 +281,7 @@
 			</div>
 
 			<div class="col-lg-2 rodItem segment-three">
-				<button class="btn text-nowrap" id="ouvidoriaButton">
+				<button class="btn text-nowrap" id="ouvidoriaButton" data-toggle="modal" data-target="#ouvidoriaModal">
 					<img style="margin-right: 10px" src="assets/icons/ieee-ufabc-icon.svg">
 					<a class="textRegular">Nossa Ouvidoria</a>
 				</button>
@@ -296,6 +298,43 @@
 					<a href="#">
 						<img src="assets/icons/facebook-circular.svg" alt="Icone do Facebook">
 					</a>
+				</div>
+			</div>
+
+			<div class="modal fade" id="ouvidoriaModal" tabindex="-1" role="dialog" aria-labelledby="ouvidoriaModalTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered modalIeee" style="width:100%; max-width:595px" role="document">
+					<div class="modal-content">
+						<div class="modalHeader modalDivHeader">
+							<img class="headerItem" src="assets/images/ilustracoes/modal-logo-ieee.svg">
+							<img class="headerItem" src="assets/images/ilustracoes/modal-separador.svg">
+							<h1 class="tituloOuvidoria">Ouvidoria IEEE UFABC</h1>
+						</div>
+						<div class="modalDiv modalDescricao">
+							<p>
+								O objetivo deste formulário é coletar opiniões e informações sobre membros, voluntários,
+								diretoria do Ramo ou capítulos. Pedimos que usem com critério. A ideia é criar mais um
+								canal de comunicação entre IEEE UFABC e os colaboradores.
+							</p>
+							<br>
+							<p>Agradecemos a colaboração de todos.</p>
+						</div>
+
+						<form>
+							<div class="modalDiv">
+								<p class="modalInputText">O que você gostaria de dizer ao IEEE UFABC? *</p>
+								<input class="modalInput" type="text" placeholder="Sua resposta">
+							</div>
+
+							<div class="modalDiv">
+								<p class="modalInputText">Como pensa que podemos melhorar esta questão? *</p>
+								<input class="modalInput" type="text" placeholder="Eu penso que">
+							</div>
+
+							<div class="modalDiv">
+								<input class="modalSubmit" type="submit" value="Enviar">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 

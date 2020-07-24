@@ -246,6 +246,11 @@ body {
     top: 87%;
     left: 85%; } }
 
+@media (max-width: 576px) {
+  .modalIeee {
+    border: 15px solid;
+    border-image: url("../images/ilustracoes/teste.svg") 30; } }
+
 .modal-content {
   height: 1015px;
   background-image: url("../images/ilustracoes/modal-bg.png");
@@ -253,7 +258,9 @@ body {
   @media (max-width: 576px) {
     .modal-content {
       background-image: none;
-      max-width: 90vw; } }
+      max-width: 90vw;
+      border: none !important;
+      border-radius: 0 !important; } }
 
 .modalHeader {
   display: flex;
