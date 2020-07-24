@@ -1,6 +1,6 @@
 var myIndex = 0;
 carousel();
-
+//função do carrossel da home
 function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
@@ -10,5 +10,5 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}
   x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 2650); // Change image every 2 seconds
+  setTimeout(carousel, 2650); // muda a imagem a cada 2s
 }

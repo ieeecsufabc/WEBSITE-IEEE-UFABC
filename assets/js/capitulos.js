@@ -1,50 +1,51 @@
-const capitulos = document.querySelectorAll('.logos img');
+//variáveis com o nome dos capítulos, suas cores e endereço das imagens/páginas
+var capitulos = ['AESS', 'CS', 'EMBS', 'EPS', 'PES', 'RAS', 'TEMS'];
+var cores = ['#0072A6','#EA9414','#2D3142','#009CA6','#00843D','#981D97','#00B5E2'];
+const endereco_img = 'assets/images/logos/logo-';
+const endereco_pag = 'includes/pages/';
 
-capitulos.forEach(item => {
+//variáveis com os ids das tags que irão mudar
+const logo = document.getElementById('logo-muda');
+const titulo = document.getElementById('titulo-capitulo');
+const link = document.getElementById('link-capitulos');
+
+//variável que seleciona todos os hexágonos com logos
+const hexagonos = document.querySelectorAll('.logos img');
+
+//eventos nos hexágonos que ativam funções
+hexagonos.forEach(item => {
   item.addEventListener('mouseover', TrocadeLogo);
   item.addEventListener('click', TrocadeLogo);
+  item.addEventListener('mouseout', Deseleciona);
 })
 
+//função que efetua a troca do logo, da cor e da descrição de acordo com o capítulos selecionado
 function TrocadeLogo(event){
+  //pega o id do elemento que acionou o evento
   const elemento = event.target;
-  const nome = elemento.getAttribute('name');
-  document.getElementById('logo-muda').src = 'assets/images/logos/logo-'+nome+'.png';
-  var cor = ' '
-  switch (nome) {
-    case 'AESS':
-      cor = '#0072A6';
-      break;
-    case 'CS':
-      cor = '#EA9414';
-      break;
-    case 'EMBS':
-      cor = '#2D3142';
-      break;
-    case 'EPS':
-      cor = '#009CA6';
-      break;
-    case 'PES':
-      cor = '#00843D';
-      break;
-    case 'RAS':
-      cor = '#981D97';
-      break;
-    case 'TEMS':
-      cor = '#00B5E2';
-      break;
-    default:
-      cor = 'black';
-  }
-  const titulo = document.getElementById('titulo-capitulo');
-  const link = document.getElementById('link-capitulos');
-  const descricoes = document.getElementsByName('descricoes');
-  const descricao = document.getElementById('descricao-'+nome);
+  const id = elemento.getAttribute('id');
+  //troca o endereço das imagens
+  logo.src = endereco_img+id+'.png';
+  document.getElementById(id).src = endereco_img+id+'-selecionado.png';
+  //pega a cor do capítulo e faz a troca do título e do link
+  cor = cores[capitulos.indexOf(id)];
   titulo.style.color = cor;
   link.style.color = cor;
-  titulo.innerText = nome;
-  link.href = 'includes/pages/'+nome+'.html';
+  titulo.innerText = id;
+  link.href = endereco_pag+id+'.html';
+  //esconde todas as descrições e mostra só a do capítulo escolhido
+  const descricoes = document.getElementsByName('descricoes');
   descricoes.forEach(item => {
       item.style.display = 'none';
-    })
+  })
+  const descricao = document.getElementById('descricao-'+id);
   descricao.style.display = 'block';
+}
+
+function Deseleciona(){
+  //pega o id do elemento que acionou o evento
+  const elemento = event.target;
+  const id = elemento.getAttribute('id');
+  //troca a imagem hexagono do capítulo
+  document.getElementById(id).src = 'assets/images/logos/Logo-'+id+'-home.png';
 }
