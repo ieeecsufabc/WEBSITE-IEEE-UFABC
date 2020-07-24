@@ -160,6 +160,75 @@ body {
   .logos {
     margin: 20px; } }
 
+/* Estilização dos cards */
+.card-eventos {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+
+.contagem-regressiva {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #FDFDFD;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25); }
+  .contagem-regressiva img {
+    margin-right: 5px; }
+  .contagem-regressiva p {
+    font-size: 14px; }
+
+.nome-evento {
+  font-size: 20px;
+  line-height: 34px; }
+
+.descricao-evento {
+  font-size: 18px;
+  line-height: 24px; }
+
+.data-hora {
+  font-size: 14px;
+  line-height: 18px; }
+
+.saiba-mais {
+  color: #0072A6; }
+
+#botoes-eventos {
+  text-align: center; }
+
+.btn-todos-eventos {
+  width: 160px;
+  margin-right: 1rem;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #0072A6;
+  background-color: rgba(0, 114, 166, 0.91);
+  color: #FDFDFD; }
+  .btn-todos-eventos:hover {
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: #FDFDFD;
+    color: #0072A6; }
+
+.btn-eventos-anteriores {
+  width: 200px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #0072A6;
+  background-color: rgba(255, 255, 255, 0.91);
+  color: #0072A6; }
+  .btn-eventos-anteriores:hover {
+    transition-property: all;
+    transition-duration: 0.5s;
+    background-color: #0072A6;
+    color: #FDFDFD; }
+
+@media (max-width: 375px) {
+  .btn-todos-eventos {
+    margin-right: 0;
+    margin-bottom: 10px; } }
+
 .diretoriaDiv {
   display: flex;
   flex-direction: column;

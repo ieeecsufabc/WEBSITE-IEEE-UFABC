@@ -94,6 +94,77 @@ body
   .logos
     margin: 20px
 
+/* Estilização dos cards */
+.card-eventos
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+
+.contagem-regressiva
+  position: absolute
+  display: flex
+  align-items: center
+  height: 25px
+  margin: 10px
+  padding: 10px
+  border-radius: 40px
+  background-color: $branco-ieee
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25)
+  img
+    margin-right: 5px
+  p
+    font-size: 14px
+
+.nome-evento
+  font-size: 20px
+  line-height: 34px
+
+.descricao-evento
+  font-size: 18px
+  line-height: 24px
+
+.data-hora
+  font-size: 14px
+  line-height: 18px
+
+.saiba-mais
+  color: $azul-ieee
+
+#botoes-eventos
+  text-align: center
+
+.btn-todos-eventos
+  width: 160px
+  margin-right: 1rem
+  font-size: 18px
+  border-radius: 10px
+  border: 2px solid $azul-ieee
+  background-color: rgba(0, 114, 166, 0.91)
+  color: $branco-ieee
+  &:hover
+    transition:
+      property: all
+      duration: 0.5s
+    background-color: $branco-ieee
+    color: $azul-ieee
+
+.btn-eventos-anteriores
+  width: 200px
+  font-size: 18px
+  border-radius: 10px
+  border: 2px solid $azul-ieee
+  background-color: rgba(255, 255, 255, 0.91)
+  color: $azul-ieee
+  &:hover
+    transition:
+      property: all
+      duration: 0.5s
+    background-color: $azul-ieee
+    color: $branco-ieee
+
++breakpoint(max-width 375px)
+  .btn-todos-eventos
+    margin-right: 0
+    margin-bottom: 10px
+
 .diretoriaDiv
   display: flex
   flex-direction: column
@@ -136,4 +207,3 @@ body
   opacity: 0
   @include breakpoint($tablet)
     margin-bottom: 20px
-
