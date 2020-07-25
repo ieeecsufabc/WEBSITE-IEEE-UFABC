@@ -64,8 +64,8 @@
 				</ul>
 
 				<!-- Barra de pesquisa -->
-				<form class="form-inline my-2 my-lg-0 justify-content-center">
-					<input class="form-control mr-sm-1" id="barra-pesquisar" type="search" placeholder="Pesquisar"
+				<form class="form-inline my-2 my-lg-0 justify-content-center" id="barra-pesquisar">
+					<input class="form-control mr-sm-1" type="search" placeholder="Pesquisar"
 						aria-label="Search"/>
 					<button class="btn my-2 my-sm-0" id="lupa-pesquisar" type="submit">
 						<img src="assets/icons/icon-lupa.svg" alt="Icone de Pesquisar">
@@ -105,11 +105,11 @@
 
 			<!-- Segunda seção -->
 			<div class="row justify-content-center secoes">
-				<div class="col-lg-4 mr-5" >
+				<div class="col-lg-4 mr-5">
 					<h1 class="titulos">O que é o IEEE?</h1>
 					<img src="assets/images/ilustracoes/linha-azul.svg" class="mb-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
 					<center>
-						<img src="assets/images/logos/IEEE_Mundial_Completo.svg" id="logos-ieee" width="350px" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s"/>
+						<img src="assets/images/logos/IEEE_Mundial_Completo.svg" id="logo-ieee-mundial" width="350px" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s"/>
 					</center>
 				</div>
 
@@ -131,15 +131,15 @@
 
 			<!-- Terceira seção -->
 			<div class="row flex-row-reverse justify-content-center secoes">
-				<div class="col-lg-4 secoes">
-						<h1 class="titulos" style="text-align: right;">... e o IEEE UFABC então?</h1>
-						<img src="assets/images/ilustracoes/linha-azul.svg" style="float: right;" class="wow slideInRight" data-wow-duration="1s"/>
+				<div class="col-lg-4 ml-5">
+					<h1 class="titulos" style="text-align: right;">... e o IEEE UFABC então?</h1>
+					<img src="assets/images/ilustracoes/linha-azul.svg" style="float: right;" class="wow slideInRight" data-wow-duration="1s"/>
 					<center>
-						<img src="assets/images/logos/Logo IEEE UFABC.svg" width="410px" id="logos-ieee" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"/>
+						<img src="assets/images/logos/Logo IEEE UFABC.svg" width="350px" id="logo-ieee-ufabc" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"/>
 					</center>
 				</div>
 
-				<div class="col-lg-6 descricao-ieee align-self-end text-justify mr-3 secoes">
+				<div class="col-lg-6 descricao-ieee align-self-end text-justify mr-3">
 					<p>
 						(TEM QUE FALAR SOBRE O IEEE E AS SOCIEDADES TAMBÉM)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum blandit nisl et molestie. Donec neque lorem, pellentesque quis ullamcorper quis, pharetra at eros.
 					</p>
@@ -154,29 +154,29 @@
 			<!-- Quarta seção -->
 			<div class="row justify-content-center secoes">
 
-				<div class="col-lg-4">
+				<div class="col-lg-4 mr-5">
 					<h1 class="titulos">O que fazemos?</h1>
 					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
 
 					<!-- Revisar -->
-					<div class="w3-content w3-section" style="max-width:500px">
+					<center>
+					<div class="w3-content w3-section wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="max-width:500px">
 						<img class="mySlides" src="assets/images/ilustracoes/img1-o-que-fazemos.png" style="width:100%">
 						<img class="mySlides" src="assets/images/ilustracoes/img2-o-que-fazemos.png" style="width:100%">
 						<img class="mySlides" src="assets/images/ilustracoes/img3-o-que-fazemos.png" style="width:100%">
 					</div>
-
-					<script src="assets/js/home-o-que-fazemos.js"></script>
+					</center>
 
 				</div>
 
 				<div class="col-lg-6 descricao-ieee text-justify align-self-center">
-					<h2 class="titulo2">Projetos técnicos</h2>
+					<h2 class="titulo2" style="color: #0072A6;">Projetos técnicos</h2>
 					<p>Suspendisse lobortis sapien et urna consequat, sed commodo eros bibendum. Quisque sed neque eget odio semper dignissim. Suspendisse lobortis sapien et.</p>
 					<br>
-					<h2 class="titulo2">Projetos sociais</h2>
+					<h2 class="titulo2" style="color: grey;">Projetos sociais</h2>
 					<p>Suspendisse lobortis sapien et urna consequat, sed commodo eros bibendum. Quisque sed neque eget odio semper dignissim. Suspendisse lobortis sapien et.</p>
 					<br>
-					<h2 class="titulo2">Visitas técnicas</h2>
+					<h2 class="titulo2" style="color: grey;">Visitas técnicas</h2>
 					<p>Suspendisse lobortis sapien et urna consequat, sed commodo eros bibendum. Quisque sed neque eget odio semper dignissim. Suspendisse lobortis sapien et.</p>
 				</div>
 
@@ -185,10 +185,11 @@
 			<!-- Quinta seção -->
 			<div class="row justify-content-center secoes">
 
-				<div class="col-lg-6 text-justify">
+				<div class="col-lg-6 mr-5">
 					<h1 class="titulos">Sete capítulos onde participar</h1>
 					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"/>
-					<p class="descricao-ieee mt-4"><b>O que são capítulos?</b></p><p>Capítulos reunem membros com interesses em comum blablabla.<b> Escolha abaixo um capitulo!</b></p>
+					<p class="descricao-ieee mt-4"><b>O que são capítulos?</b></p>
+					<p class="descricao-ieee">Capítulos reunem membros com interesses em comum blablabla.<b> Escolha abaixo um capitulo!</b></p>
 					<div class="pl-5 pr-5 descricao-capitulos">
 						<h2 id="titulo-capitulo">AESS</h2>
 								<p class="descricao-ieee" name="descricoes" id="descricao-AESS">Descrição da AESS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum blandit.</p>
@@ -304,36 +305,36 @@
 					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"/>
 				</div>
 
-				<div class="diretoresDiv">
-					<div class="col-lg-2 hexagonoIndividual">
-						<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
-						<p class="textoHexagono">Tesoureiro</p>
-						<p class="subTextoHexagono">Nome da Pessoa</p>
-					</div>
-					<div class="col-lg-2 hexagonoIndividual">
-						<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
-						<p class="textoHexagono">Secretário</p>
-						<p class="subTextoHexagono">Nome da Pessoa</p>
-					</div>
-					<div class="col-lg-2 hexagonoIndividual">
-						<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
-						<p class="textoHexagono">Presidente</p>
-						<p class="subTextoHexagono">Nome da Pessoa</p>
-					</div>
-					<div class="col-lg-2 hexagonoIndividual">
-						<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
-						<p class="textoHexagono">Vice-presidente</p>
-						<p class="subTextoHexagono">Nome da Pessoa</p>
-					</div>
-					<div class="col-lg-2 hexagonoIndividual">
-						<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
-						<p class="textoHexagono">Conselheiro</p>
-						<p class="subTextoHexagono">Nome da Pessoa</p>
-					</div>
+				<div class="row-lg d-flex align-content-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+					<div class="col-lg d-flex justify-content-around flex-wrap">
+						<div class="hexagonoIndividual">
+							<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
+							<p class="textoHexagono">Tesoureiro</p>
+							<p class="subTextoHexagono">Nome da Pessoa</p>
+						</div>
+						<div class="hexagonoIndividual">
+							<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
+							<p class="textoHexagono">Secretário</p>
+							<p class="subTextoHexagono">Nome da Pessoa</p>
+						</div>
+						<div class="hexagonoIndividual">
+							<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
+							<p class="textoHexagono">Presidente</p>
+							<p class="subTextoHexagono">Nome da Pessoa</p>
+						</div>
+						<div class="hexagonoIndividual">
+							<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
+							<p class="textoHexagono">Vice-presidente</p>
+							<p class="subTextoHexagono">Nome da Pessoa</p>
+						</div>
+						<div class="hexagonoIndividual">
+							<img class="img-fluid" src="assets/images/ilustracoes/diretoria-hexagono.svg">
+							<p class="textoHexagono">Conselheiro</p>
+							<p class="subTextoHexagono">Nome da Pessoa</p>
+						</div>
 				</div>
-
 			</div>
-		</div>
+			</div>
 
 
 	</section>
@@ -356,7 +357,8 @@
 
 			<div class="col-lg-2 rodItem segment-three">
 				<button class="btn text-nowrap" id="ouvidoriaButton" data-toggle="modal" data-target="#ouvidoriaModal">
-					<img style="margin-right: 10px" src="assets/icons/ieee-ufabc-icon.svg">
+					<img style="margin-right: 10px" src="assets/icons/ieee-ufabc-icon.svg" id="logo-ieee-ouvidoria">
+					<img style="margin-right: 10px" src="assets/icons/ieee-ufabc-icon-branco.svg" id="logo-ieee-ouvidoria-branco">
 					<a class="textRegular">Nossa Ouvidoria</a>
 				</button>
 				<div class="contato">
@@ -376,6 +378,7 @@
 			</div>
 
 			<div class="modal fade" id="ouvidoriaModal" tabindex="-1" role="dialog" aria-labelledby="ouvidoriaModalTitle" aria-hidden="true">
+				<img class="my-1 close" src="assets/icons/X-square.svg" data-dismiss="modal" aria-label="Close"/>
 				<div class="modal-dialog modal-dialog-centered modalIeee" style="width:100%; max-width:595px" role="document">
 					<div class="modal-content">
 						<div class="modalHeader modalDivHeader">
