@@ -281,6 +281,10 @@ body {
   margin: 10px; }
   .hexagonoIndividual:hover .subTextoHexagono {
     opacity: 100%; }
+  .hexagonoIndividual .ilustracao {
+    margin-top: -70px;
+    width: 205px;
+    display: block; }
 
 .textoHexagono {
   font-weight: 600;
@@ -300,7 +304,28 @@ body {
     .subTextoHexagono {
       margin-bottom: 20px; } }
 
-.close {
-  float: right;
-  width: 30px;
-  cursor: pointer; }
+.redes-sociais {
+  position: absolute; }
+
+.icones {
+  display: none; }
+
+#whatsapp {
+  margin-left: -90px;
+  margin-top: -87px; }
+
+#linkedin {
+  margin-left: -55px;
+  margin-top: -64px; }
+
+#email {
+  margin-top: -43px;
+  margin-left: -17px; }
+
+#facebook {
+  margin-left: 30px;
+  margin-top: -64px; }
+
+#github {
+  margin-left: 63px;
+  margin-top: -87px; }

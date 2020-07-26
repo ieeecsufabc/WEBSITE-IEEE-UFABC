@@ -58,6 +58,11 @@ body {
     #ouvidoriaButton:hover #logo-ieee-ouvidoria {
       display: none; }
 
+.close {
+  float: right;
+  width: 30px;
+  cursor: pointer; }
+
 .rodItem {
   margin: auto;
   align-self: center; }
