@@ -15,7 +15,6 @@ const hexagonos = document.querySelectorAll('.logos img');
 //eventos nos hexágonos que ativam funções
 hexagonos.forEach(item => {
   item.addEventListener('mouseover', TrocadeLogo);
-  item.addEventListener('click', TrocadeLogo);
   item.addEventListener('mouseout', Deseleciona);
 })
 
