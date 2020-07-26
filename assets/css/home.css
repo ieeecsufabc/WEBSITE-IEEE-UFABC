@@ -176,11 +176,17 @@ body {
   margin: 90px 0px; }
 
 #logo-muda {
-  opacity: 0;
-  transition: opacity .5s; }
+  opacity: 1; }
 
 .capitulos-logos img {
-  width: 160px; }
+  width: 160px;
+  cursor: pointer; }
+
+@keyframes opacidade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @media (max-width: 1200px) {
   .capitulos-logos {
