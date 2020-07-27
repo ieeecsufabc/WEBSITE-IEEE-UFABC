@@ -228,7 +228,8 @@ body {
   line-height: 18px; }
 
 .saiba-mais {
-  color: #0072A6; }
+  color: #0072A6;
+  fill: currentColor; }
 
 #botoes-eventos {
   text-align: center; }

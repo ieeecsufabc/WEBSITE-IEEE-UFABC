@@ -113,6 +113,10 @@ body {
     left: 85%; } }
 
 @media (max-width: 576px) {
+  #voltar-ao-topo {
+    left: 80%; } }
+
+@media (max-width: 576px) {
   .modalIeee {
     border: 15px solid;
     border-image: url("../images/ilustracoes/teste.svg") 30; } }

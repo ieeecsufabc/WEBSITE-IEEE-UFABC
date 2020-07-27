@@ -84,6 +84,9 @@ table {
 #menu-hamburguer:focus {
   outline-style: none; }
 
+#menu-hamburguer span {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 114, 166, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
 #links-navegacao {
   margin: 0px 15px;
   text-align: center; }
@@ -278,6 +281,10 @@ body {
   #voltar-ao-topo {
     top: 87%;
     left: 85%; } }
+
+@media (max-width: 576px) {
+  #voltar-ao-topo {
+    left: 80%; } }
 
 @media (max-width: 576px) {
   .modalIeee {
