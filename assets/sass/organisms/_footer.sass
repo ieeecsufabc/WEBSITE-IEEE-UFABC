@@ -110,7 +110,7 @@ body
     background-repeat: no-repeat
     @include breakpoint($celular)
         background-image: none
-        max-width: 90vw
+        height: 100%
         border: none !important
         border-radius: 0 !important
 
@@ -118,6 +118,10 @@ body
     display: flex
     flex-direction: row
     align-items: center
+    @include breakpoint($celular)
+        flex-direction: column
+        justify-content: center
+        justify-items: center
 
 
 .modalDivHeader
@@ -127,6 +131,10 @@ body
     @include breakpoint($celular)
         margin-left: 30px
         margin-top: 30px
+        margin-right: 30px
+        .separador
+            opacity: 0
+            position: absolute
 
 .modalDiv
     margin-left: 80px
@@ -138,6 +146,9 @@ body
 
 .headerItem
     margin-right: 43px
+    @include breakpoint($celular)
+       margin-right: 0
+       margin-top: 10px
 
 .tituloOuvidoria
     font-size: 38px
@@ -146,7 +157,7 @@ body
     line-height: 48px
     color: $texto-preto
     @include breakpoint($celular)
-        font-size: 34px
+        font-size: 24px
 
 .modalDescricao
     font-weight: $regular
@@ -182,3 +193,4 @@ body
     border-radius: 10px
     color: white
     font-size: 20px
+    margin-bottom: 30px
