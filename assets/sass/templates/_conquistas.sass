@@ -38,43 +38,59 @@
         width: 250px
         height: 250px
 
+// corpo \/
 .premios
     display: flex
     flex-direction: column
-    //background-image: url('../images/ilustracoes/conquistas-linha-completa.svg')
-    //background-repeat: no-repeat
-    //background-position: center
+    background-image: url('../images/ilustracoes/conquistas-linha-completa.svg')
+    background-repeat: no-repeat
+    background-position: center
+    height: 1300px
     @include breakpoint($tablet)
         margin-top: 20px
+        background-image: none
         //background-image: url('../images/ilustracoes/conquistas-linha.svg')
 
+.individualPremio
+    @include breakpoint($tablet)
+        margin-bottom: 150px
 
-.naoVazio
+.premioEsquerda
     display: flex
     flex-direction: column
     height: 225px
     align-items: flex-end
     align-content: center
 
-.naoVazioEsquerda
+.premioDireita
     display: flex
     flex-direction: column
     height: 225px
     align-items: flex-start
     align-content: center
 
+.esquerda-um
+    margin-top: 18px
+
+.direita
+    margin-top: 68px
+
+.esquerda
+    margin-top: 75px
+
+
+
 .vazio
     height: 225px
 
-.titulo-item
+.tituloItem
     font-size: 24px
     font-weight: $semi-bold
     color: $azul-ieee
     align-self: flex-end
-    margin-top: 25px
     margin-right: 10px
     
-.descricao-item
+.descricaoItemEsquerda
     font-size: 18px
     font-weight: $regular
     color: $texto-preto
@@ -83,7 +99,7 @@
     width: 40%
     line-height: 27px
 
-.descricao-item-esquerda
+.descricaoItemDireita
     font-size: 18px
     font-weight: $regular
     color: $texto-preto
@@ -101,21 +117,14 @@
     position: absolute
     left: 0
     
-.descricaoDiv
+.descricaoDivEsquerda
     display: flex
     flex-direction: row
     align-items: center
     justify-content: flex-end
 
-.descricaoDivEsquerda
+.descricaoDivDireita
     display: flex
     flex-direction: row
     align-items: center
     justify-content: flex-start
-
-.individualPremio
-    margin-bottom: 65px
-    @include breakpoint($tablet)
-        margin-bottom: 150px
-
-
