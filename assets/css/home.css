@@ -72,27 +72,18 @@ body {
   background-color: #FCFDFF; }
 
 #banner {
-  background-position: top center;
-  min-height: 700px;
-  background-size: cover;
-  padding: 150px 0px;
-  background-repeat: no-repeat;
-  word-wrap: break-word;
-  background-image: url(../images/ilustracoes/banner.jpg); }
+  padding-top: 50px; }
   #banner p {
     margin-top: 20px;
     font-size: 25px;
     line-height: 30px; }
 
 @media (max-width: 992px) {
-  #banner {
-    background-size: cover;
-    padding: 100px 0px; }
-    #banner .titulos {
-      font-size: 30px;
-      line-height: 35px; }
-    #banner p {
-      font-size: 20px; } }
+  #banner .titulos {
+    font-size: 30px;
+    line-height: 35px; }
+  #banner p {
+    font-size: 20px; } }
 
 .secoes {
   margin-top: 70px; }
@@ -115,21 +106,31 @@ body {
   display: block;
   margin: 20% 0; }
 
+@media (max-width: 1200px) {
+  #logo-ieee-mundial, #logo-ieee-ufabc {
+    width: 300px; }
+  #logo-muda {
+    width: 350px; } }
+
 @media (max-width: 992px) {
   #logo-ieee-mundial {
     width: 350px;
     margin: 3%; }
   #logo-ieee-ufabc {
     width: 350px;
-    margin: 10%; } }
-
-@media (max-width: 1200px) {
-  #logo-ieee-mundial {
-    width: 300px; }
-  #logo-ieee-ufabc {
-    width: 300px; }
+    margin: 10%; }
   #logo-muda {
-    width: 350px; } }
+    width: 400px; } }
+
+@media (max-width: 576px) {
+  #logo-ieee-mundial {
+    width: 250px;
+    margin: 5%; }
+  #logo-ieee-ufabc {
+    width: 250px;
+    margin: 15% 0; }
+  #logo-muda {
+    width: 300px; } }
 
 #logos-ieee {
   display: block;
@@ -243,7 +244,7 @@ body {
   .btn-todos-eventos:hover {
     transition-property: all;
     transition-duration: 0.5s;
-    background-color: #FDFDFD;
+    background-color: rgba(255, 255, 255, 0.91);
     color: #0072A6; }
 
 .btn-eventos-anteriores {
@@ -256,7 +257,7 @@ body {
   .btn-eventos-anteriores:hover {
     transition-property: all;
     transition-duration: 0.5s;
-    background-color: #0072A6;
+    background-color: rgba(0, 114, 166, 0.91);
     color: #FDFDFD; }
 
 @media (max-width: 375px) {

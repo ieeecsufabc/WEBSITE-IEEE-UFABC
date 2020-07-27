@@ -2,13 +2,7 @@ body
   background-color: $cinza-claro
 
 #banner
-  background-position: top center
-  min-height: 700px
-  background-size: cover
-  padding: 150px 0px
-  background-repeat: no-repeat
-  word-wrap: break-word
-  background-image: url(../images/ilustracoes/banner.jpg)
+  padding-top: 50px
   p
     margin-top: 20px
     font-size: 25px
@@ -16,8 +10,6 @@ body
 
 +breakpoint($tablet)
     #banner
-        background-size: cover
-        padding: 100px 0px
         .titulos
           font-size: 30px
           line-height: 35px
@@ -46,6 +38,12 @@ body
   display: block
   margin: 20% 0
 
++breakpoint($computador)
+  #logo-ieee-mundial, #logo-ieee-ufabc
+    width: 300px
+  #logo-muda
+    width: 350px
+
 +breakpoint($tablet)
   #logo-ieee-mundial
     width: 350px
@@ -53,14 +51,18 @@ body
   #logo-ieee-ufabc
     width: 350px
     margin: 10%
-
-+breakpoint($computador)
-  #logo-ieee-mundial
-    width: 300px
-  #logo-ieee-ufabc
-    width: 300px
   #logo-muda
-    width: 350px
+    width: 400px
+
++breakpoint($celular)
+  #logo-ieee-mundial
+    width: 250px
+    margin: 5%
+  #logo-ieee-ufabc
+    width: 250px
+    margin: 15% 0
+  #logo-muda
+    width: 300px
 
 #logos-ieee
   display: block
@@ -178,7 +180,7 @@ body
     transition:
       property: all
       duration: 0.5s
-    background-color: $branco-ieee
+    background-color: rgba(255, 255, 255, 0.91)
     color: $azul-ieee
 
 .btn-eventos-anteriores
@@ -192,7 +194,7 @@ body
     transition:
       property: all
       duration: 0.5s
-    background-color: $azul-ieee
+    background-color: rgba(0, 114, 166, 0.91)
     color: $branco-ieee
 
 +breakpoint(max-width 375px)
