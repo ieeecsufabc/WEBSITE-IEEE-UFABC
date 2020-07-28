@@ -169,7 +169,7 @@ body {
   display: block; }
 
 .capitulos-logos {
-  background-image: url(../images/ilustracoes/hexagonos-background.png);
+  background-image: url(../images/ilustracoes/hexagonos-background.svg);
   background-repeat: repeat-x;
   margin: -15px; }
 
