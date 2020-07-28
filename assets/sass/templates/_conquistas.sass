@@ -2,6 +2,8 @@
     font-size: 38px
     font-weight: $bold
     color: $azul-ieee
+    @include breakpoint($celular)
+        font-size: 30px
 
 #subtitulo-header
     font-size: 24px
@@ -9,15 +11,22 @@
     color: $texto-preto
     opacity: 80%
     margin-top: 15px
+    @include breakpoint($celular)
+        font-size: 20px
 
 .header
+    display: flex
+    flex-direction: row
+    justify-content: center
     background-image: url('../images/ilustracoes/conquistas-header.svg')
     background-repeat: no-repeat
     height: 500px
+    width: 100vw
     @include breakpoint($tablet)
+        text-align: center
         background: url('../images/ilustracoes/conquistas-mobile-bg.svg')
         background-repeat: no-repeat
-
+ 
 .headerLeft
     display: flex
     flex-direction: column
@@ -25,9 +34,10 @@
     align-items: center
     margin-top: 150px
     @include breakpoint($tablet)
+        padding: 0 !important
         align-items: center
         margin-top: 68px
-
+    
 .headerRight
     margin-top: 60px
     display: flex
@@ -49,12 +59,8 @@
     @include breakpoint($tablet)
         margin-top: 20px
         background-image: none
-        //background-image: url('../images/ilustracoes/conquistas-linha.svg')
-
-.individualPremio
-    @include breakpoint($tablet)
-        margin-bottom: 150px
-
+        align-items: center
+       
 .premioEsquerda
     display: flex
     flex-direction: column
@@ -71,17 +77,32 @@
 
 .esquerda-um
     margin-top: 18px
+    @include breakpoint($tablet)
+        display: flex
+        flex-direction: column
+        align-items: center
 
 .direita
     margin-top: 68px
+    @include breakpoint($tablet)
+        margin-top: 40px
+        display: flex
+        flex-direction: column-reverse
+        align-items: center
 
 .esquerda
     margin-top: 75px
-
-
+    @include breakpoint($tablet)
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-top: 40px
 
 .vazio
     height: 225px
+    @include breakpoint($tablet)
+        opacity: 0
+        position: relative
 
 .tituloItem
     font-size: 24px
@@ -89,7 +110,12 @@
     color: $azul-ieee
     align-self: flex-end
     margin-right: 10px
-    
+    @include breakpoint($celular)
+        align-self: center
+        margin-right: 0px
+        text-align: center
+        margin-bottom: 10px
+
 .descricaoItemEsquerda
     font-size: 18px
     font-weight: $regular
@@ -98,6 +124,9 @@
     margin-bottom: 15px
     width: 40%
     line-height: 27px
+    @include breakpoint($celular)
+        width: 80%
+        text-align: center
 
 .descricaoItemDireita
     font-size: 18px
@@ -107,7 +136,10 @@
     margin-bottom: 15px
     width: 40%
     line-height: 27px
-    text-align: right 
+    text-align: right
+    @include breakpoint($celular)
+        width: 80%
+        text-align: center
     
 .bg
     position: absolute
@@ -122,9 +154,13 @@
     flex-direction: row
     align-items: center
     justify-content: flex-end
+    @include breakpoint($celular)
+        flex-direction: column
 
 .descricaoDivDireita
     display: flex
     flex-direction: row
     align-items: center
     justify-content: flex-start
+    @include breakpoint($celular)
+        flex-direction: column-reverse

@@ -72,6 +72,9 @@ table {
   font-size: 38px;
   font-weight: 700;
   color: #0072A6; }
+  @media (max-width: 576px) {
+    #titulo-header {
+      font-size: 30px; } }
 
 #subtitulo-header {
   font-size: 24px;
@@ -79,13 +82,21 @@ table {
   color: #1E1C1C;
   opacity: 80%;
   margin-top: 15px; }
+  @media (max-width: 576px) {
+    #subtitulo-header {
+      font-size: 20px; } }
 
 .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-image: url("../images/ilustracoes/conquistas-header.svg");
   background-repeat: no-repeat;
-  height: 500px; }
+  height: 500px;
+  width: 100vw; }
   @media (max-width: 992px) {
     .header {
+      text-align: center;
       background: url("../images/ilustracoes/conquistas-mobile-bg.svg");
       background-repeat: no-repeat; } }
 
@@ -97,6 +108,7 @@ table {
   margin-top: 150px; }
   @media (max-width: 992px) {
     .headerLeft {
+      padding: 0 !important;
       align-items: center;
       margin-top: 68px; } }
 
@@ -121,11 +133,8 @@ table {
   @media (max-width: 992px) {
     .premios {
       margin-top: 20px;
-      background-image: none; } }
-
-@media (max-width: 992px) {
-  .individualPremio {
-    margin-bottom: 150px; } }
+      background-image: none;
+      align-items: center; } }
 
 .premioEsquerda {
   display: flex;
@@ -143,15 +152,36 @@ table {
 
 .esquerda-um {
   margin-top: 18px; }
+  @media (max-width: 992px) {
+    .esquerda-um {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .direita {
   margin-top: 68px; }
+  @media (max-width: 992px) {
+    .direita {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center; } }
 
 .esquerda {
   margin-top: 75px; }
+  @media (max-width: 992px) {
+    .esquerda {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px; } }
 
 .vazio {
   height: 225px; }
+  @media (max-width: 992px) {
+    .vazio {
+      opacity: 0;
+      position: relative; } }
 
 .tituloItem {
   font-size: 24px;
@@ -159,6 +189,12 @@ table {
   color: #0072A6;
   align-self: flex-end;
   margin-right: 10px; }
+  @media (max-width: 576px) {
+    .tituloItem {
+      align-self: center;
+      margin-right: 0px;
+      text-align: center;
+      margin-bottom: 10px; } }
 
 .descricaoItemEsquerda {
   font-size: 18px;
@@ -168,6 +204,10 @@ table {
   margin-bottom: 15px;
   width: 40%;
   line-height: 27px; }
+  @media (max-width: 576px) {
+    .descricaoItemEsquerda {
+      width: 80%;
+      text-align: center; } }
 
 .descricaoItemDireita {
   font-size: 18px;
@@ -178,6 +218,10 @@ table {
   width: 40%;
   line-height: 27px;
   text-align: right; }
+  @media (max-width: 576px) {
+    .descricaoItemDireita {
+      width: 80%;
+      text-align: center; } }
 
 .bg {
   position: absolute;
@@ -192,9 +236,15 @@ table {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end; }
+  @media (max-width: 576px) {
+    .descricaoDivEsquerda {
+      flex-direction: column; } }
 
 .descricaoDivDireita {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start; }
+  @media (max-width: 576px) {
+    .descricaoDivDireita {
+      flex-direction: column-reverse; } }
