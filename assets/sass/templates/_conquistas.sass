@@ -33,7 +33,9 @@
     justify-content: flex-start
     align-items: center
     margin-top: 150px
+    margin-left: 150px
     @include breakpoint($tablet)
+        margin-left: 0
         padding: 0 !important
         align-items: center
         margin-top: 68px
@@ -60,13 +62,15 @@
         margin-top: 20px
         background-image: none
         align-items: center
-       
+
 .premioEsquerda
     display: flex
     flex-direction: column
     height: 225px
     align-items: flex-end
     align-content: center
+    @include breakpoint($celular)
+        align-items: center
 
 .premioDireita
     display: flex
@@ -74,6 +78,8 @@
     height: 225px
     align-items: flex-start
     align-content: center
+    @include breakpoint($celular)
+        align-items: center
 
 .esquerda-um
     margin-top: 18px
@@ -110,11 +116,12 @@
     color: $azul-ieee
     align-self: flex-end
     margin-right: 10px
+    @include breakpoint($tablet)
+        margin-bottom: 10px
     @include breakpoint($celular)
         align-self: center
         margin-right: 0px
         text-align: center
-        margin-bottom: 10px
 
 .descricaoItemEsquerda
     font-size: 18px
@@ -125,6 +132,7 @@
     width: 40%
     line-height: 27px
     @include breakpoint($celular)
+        margin-left: 0
         width: 80%
         text-align: center
 
@@ -138,6 +146,7 @@
     line-height: 27px
     text-align: right
     @include breakpoint($celular)
+        margin-right: 0
         width: 80%
         text-align: center
     
@@ -156,6 +165,7 @@
     justify-content: flex-end
     @include breakpoint($celular)
         flex-direction: column
+        align-items: center
 
 .descricaoDivDireita
     display: flex
@@ -164,3 +174,4 @@
     justify-content: flex-start
     @include breakpoint($celular)
         flex-direction: column-reverse
+        align-items: center
