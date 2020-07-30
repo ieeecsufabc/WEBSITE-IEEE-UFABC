@@ -5,6 +5,11 @@
     background-position: right
     display: flex
     align-items: center
+    @include breakpoint($tablet)
+        background-image: url('../images/ilustracoes/junte-se-header-bg-dois.svg')
+    @include breakpoint($celular)
+        background-image: url('../images/ilustracoes/junte-se-header-bg-tres.svg')
+        background-position: center
 
 #headerTitulo
     margin-left: 150px
@@ -13,6 +18,14 @@
     font-size: 38px
     line-height: 48px
     color: $texto-preto
+    @include breakpoint($tablet)
+        margin-left: 50px
+        width: 50%
+    @include breakpoint($celular)
+        margin: auto
+        text-align: center
+        font-size: 48px
+        color: white
 
 #sectionTitulo
     margin-top: 65px
@@ -23,8 +36,12 @@
     color: $texto-preto
     opacity: 0.85
     @include breakpoint($tablet)
-        font-size: 30px
-        margin-bottom: 20px
+        margin-left: 0px
+        font-size: 32px
+        margin-bottom: 60px
+        text-align: center
+    @include breakpoint($celular)
+        margin-bottom: 80px
 
 #contatoTitulo
     font-size: 38px
@@ -38,9 +55,6 @@
     color: #FCFDFF
     padding-top: 30px
 
-.firstSection
-    height: 900px
-
 .secondSection
     display: flex
     flex-direction: row
@@ -51,12 +65,17 @@
     background-repeat: no-repeat
 
 .cardsDiv
-    height: 620px
+    padding-top: 150px
+    padding-bottom: 150px
+    width: 100vw
     background-color: transparentize($azul-ieee, 0.2)
     display: flex
     flex-direction: row
     align-items: center
     justify-content: center
+    @include breakpoint($tablet)
+        padding-top: 80px
+        padding-bottom: 80px
 
 .cardJunte
     max-width: 270px !important
@@ -65,12 +84,42 @@
     background-repeat: no-repeat
     background-position: center
     margin: 0px 40px
+    padding: 40px !important
+    display: flex 
+    flex-direction: column
+    align-items: center
+    @include breakpoint($tablet)
+        margin-top: 80px
+    h2  
+        margin-top: 35px
+        font-size: 24px
+        font-weight: $semi-bold
+        line-height: 24px
+        color: $texto-preto
+        text-align: center
+    #separadorCard
+        margin: 10px
+    #textoCard
+        font-size: 18px
+        line-height: 26px
+        color: $texto-preto
+        opacity: 0.45   
+        text-align: center
+    #hexagonCard
+        position: absolute
+        top: -22%
+    
 
 .contatoLeft
     margin-left: 150px
+    @include breakpoint($tablet)
+        margin-left: 20px
 
 .contatoRight
     margin-top: 120px
+    @include breakpoint($tablet)
+        margin-top: 0px
+        margin-right: 20px
 
 .imagemContato
     margin-top: 50px
@@ -107,12 +156,22 @@ form
     background-image: url('../images/ilustracoes/junte-se-body-bg-cima.svg')
     background-repeat: no-repeat
     background-position: left
+    @include breakpoint($tablet)
+        background-image: none
+        height: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-bottom: 20px
 
 .backgroundRight
     height: 195px
     background-image: url('../images/ilustracoes/junte-se-body-bg-baixo.svg')
     background-repeat: no-repeat
     background-position: right
+    @include breakpoint($tablet)
+        background-image: none
+        height: 50px
 
 .membresiaMain
     height: 700px
