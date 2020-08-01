@@ -75,6 +75,13 @@ table {
   background-position: right;
   display: flex;
   align-items: center; }
+  @media (max-width: 992px) {
+    .header {
+      background-image: url("../images/ilustracoes/junte-se-header-bg-dois.svg"); } }
+  @media (max-width: 576px) {
+    .header {
+      background-image: url("../images/ilustracoes/junte-se-header-bg-tres.svg");
+      background-position: center; } }
 
 #headerTitulo {
   margin-left: 150px;
@@ -83,6 +90,16 @@ table {
   font-size: 38px;
   line-height: 48px;
   color: #1E1C1C; }
+  @media (max-width: 992px) {
+    #headerTitulo {
+      margin-left: 50px;
+      width: 50%; } }
+  @media (max-width: 576px) {
+    #headerTitulo {
+      margin: auto;
+      text-align: center;
+      font-size: 48px;
+      color: white; } }
 
 #sectionTitulo {
   margin-top: 65px;
@@ -94,8 +111,13 @@ table {
   opacity: 0.85; }
   @media (max-width: 992px) {
     #sectionTitulo {
-      font-size: 30px;
-      margin-bottom: 20px; } }
+      margin-left: 0px;
+      font-size: 32px;
+      margin-bottom: 60px;
+      text-align: center; } }
+  @media (max-width: 576px) {
+    #sectionTitulo {
+      margin-bottom: 80px; } }
 
 #contatoTitulo {
   font-size: 38px;
@@ -109,9 +131,6 @@ table {
   color: #FCFDFF;
   padding-top: 30px; }
 
-.firstSection {
-  height: 900px; }
-
 .secondSection {
   display: flex;
   flex-direction: row; }
@@ -122,12 +141,18 @@ table {
   background-repeat: no-repeat; }
 
 .cardsDiv {
-  height: 620px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 100vw;
   background-color: rgba(0, 114, 166, 0.8);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 992px) {
+    .cardsDiv {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
 
 .cardJunte {
   max-width: 270px !important;
@@ -135,13 +160,45 @@ table {
   background-image: url("../images/ilustracoes/junte-se-card-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0px 40px; }
+  margin: 0px 40px;
+  padding: 40px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (max-width: 992px) {
+    .cardJunte {
+      margin-top: 80px; } }
+  .cardJunte h2 {
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #1E1C1C;
+    text-align: center; }
+  .cardJunte #separadorCard {
+    margin: 10px; }
+  .cardJunte #textoCard {
+    font-size: 18px;
+    line-height: 26px;
+    color: #1E1C1C;
+    opacity: 0.45;
+    text-align: center; }
+  .cardJunte #hexagonCard {
+    position: absolute;
+    top: -22%; }
 
 .contatoLeft {
   margin-left: 150px; }
+  @media (max-width: 992px) {
+    .contatoLeft {
+      margin-left: 20px; } }
 
 .contatoRight {
   margin-top: 120px; }
+  @media (max-width: 992px) {
+    .contatoRight {
+      margin-top: 0px;
+      margin-right: 20px; } }
 
 .imagemContato {
   margin-top: 50px; }
@@ -178,12 +235,24 @@ form {
   background-image: url("../images/ilustracoes/junte-se-body-bg-cima.svg");
   background-repeat: no-repeat;
   background-position: left; }
+  @media (max-width: 992px) {
+    .backgroundLeft {
+      background-image: none;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; } }
 
 .backgroundRight {
   height: 195px;
   background-image: url("../images/ilustracoes/junte-se-body-bg-baixo.svg");
   background-repeat: no-repeat;
   background-position: right; }
+  @media (max-width: 992px) {
+    .backgroundRight {
+      background-image: none;
+      height: 50px; } }
 
 .membresiaMain {
   background-color: rgba(0, 114, 166, 0.8); }
