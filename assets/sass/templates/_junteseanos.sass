@@ -115,5 +115,44 @@ form
     background-position: right
 
 .membresiaMain
-    height: 700px
     background-color: transparentize($azul-ieee, 0.2)
+
+.beneficios-membresia
+  padding: 0
+  @include breakpoint($computador)
+    width: 350px
+  @include breakpoint(max-width 992px)
+    margin: 50px 0px
+
+.hexagono-ampliado
+  margin-top: -40px
+  @include breakpoint($computador)
+    width: 300px
+  @include breakpoint(max-width 992px)
+    margin-top: 0px
+    margin: 50px 0px
+    justify-content: center
+
+#descricao-beneficio
+  h1
+    font-weight: $bold
+    font-size: 36px
+    line-height: 40px
+    text-align: center
+    color: #FCFDFF
+    padding-top: 70px
+    @include breakpoint($computador)
+      padding-top: 30px
+    @include breakpoint(max-width 992px)
+      padding-top: 0px
+  p
+    font-size: 22px
+    line-height: 26px
+    color: rgba(252, 253, 255, 0.85)
+    text-align: justify
+
+/*.linha-branca
+  position: absolute
+  margin-top: 122px
+  margin-left: -370px
+  z-index: 100000*/

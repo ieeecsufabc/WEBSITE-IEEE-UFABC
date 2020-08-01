@@ -186,5 +186,50 @@ form {
   background-position: right; }
 
 .membresiaMain {
-  height: 700px;
   background-color: rgba(0, 114, 166, 0.8); }
+
+.beneficios-membresia {
+  padding: 0; }
+  @media (max-width: 1200px) {
+    .beneficios-membresia {
+      width: 350px; } }
+  @media (max-width: 992px) {
+    .beneficios-membresia {
+      margin: 50px 0px; } }
+
+.hexagono-ampliado {
+  margin-top: -40px; }
+  @media (max-width: 1200px) {
+    .hexagono-ampliado {
+      width: 300px; } }
+  @media (max-width: 992px) {
+    .hexagono-ampliado {
+      margin-top: 0px;
+      margin: 50px 0px;
+      justify-content: center; } }
+
+#descricao-beneficio h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: #FCFDFF;
+  padding-top: 70px; }
+  @media (max-width: 1200px) {
+    #descricao-beneficio h1 {
+      padding-top: 30px; } }
+  @media (max-width: 992px) {
+    #descricao-beneficio h1 {
+      padding-top: 0px; } }
+
+#descricao-beneficio p {
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(252, 253, 255, 0.85);
+  text-align: justify; }
+
+/*.linha-branca
+  position: absolute
+  margin-top: 122px
+  margin-left: -370px
+  z-index: 100000*/
