@@ -54,6 +54,8 @@
     margin-left: 150px
     color: #FCFDFF
     padding-top: 30px
+    @include breakpoint($tablet)
+      margin-left: 20px
 
 .secondSection
     display: flex
@@ -85,12 +87,12 @@
     background-position: center
     margin: 0px 40px
     padding: 40px !important
-    display: flex 
+    display: flex
     flex-direction: column
     align-items: center
     @include breakpoint($tablet)
         margin-top: 80px
-    h2  
+    h2
         margin-top: 35px
         font-size: 24px
         font-weight: $semi-bold
@@ -103,12 +105,12 @@
         font-size: 18px
         line-height: 26px
         color: $texto-preto
-        opacity: 0.45   
+        opacity: 0.45
         text-align: center
     #hexagonCard
         position: absolute
         top: -22%
-    
+
 
 .contatoLeft
     margin-left: 150px
@@ -180,35 +182,44 @@ form
   padding: 0
   @include breakpoint($computador)
     width: 350px
-  @include breakpoint(max-width 992px)
+  @include breakpoint($tablet)
     margin: 50px 0px
+    width: 400px
+  @include breakpoint($celular)
+    width: 300px
 
 .hexagono-ampliado
   margin-top: -40px
   @include breakpoint($computador)
     width: 300px
-  @include breakpoint(max-width 992px)
+  @include breakpoint($tablet)
+    width: 350px
     margin-top: 0px
-    margin: 50px 0px
-    justify-content: center
+    margin: 50px 0px 0px 0px
+  @include breakpoint($celular)
+    width: 300px
 
 #descricao-beneficio
   h1
     font-weight: $bold
     font-size: 36px
     line-height: 40px
-    text-align: center
     color: #FCFDFF
     padding-top: 70px
     @include breakpoint($computador)
       padding-top: 30px
-    @include breakpoint(max-width 992px)
+    @include breakpoint($tablet)
       padding-top: 0px
   p
     font-size: 22px
     line-height: 26px
     color: rgba(252, 253, 255, 0.85)
-    text-align: justify
+
+.btn-membresia
+  background-color: #182A54 !important
+  color: $branco  !important
+  font-weight: $bold !important
+  padding: 15px 10px !important
 
 /*.linha-branca
   position: absolute

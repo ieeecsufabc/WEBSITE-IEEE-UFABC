@@ -130,6 +130,9 @@ table {
   margin-left: 150px;
   color: #FCFDFF;
   padding-top: 30px; }
+  @media (max-width: 992px) {
+    #membresiaTitulo {
+      margin-left: 20px; } }
 
 .secondSection {
   display: flex;
@@ -264,7 +267,11 @@ form {
       width: 350px; } }
   @media (max-width: 992px) {
     .beneficios-membresia {
-      margin: 50px 0px; } }
+      margin: 50px 0px;
+      width: 400px; } }
+  @media (max-width: 576px) {
+    .beneficios-membresia {
+      width: 300px; } }
 
 .hexagono-ampliado {
   margin-top: -40px; }
@@ -273,15 +280,17 @@ form {
       width: 300px; } }
   @media (max-width: 992px) {
     .hexagono-ampliado {
+      width: 350px;
       margin-top: 0px;
-      margin: 50px 0px;
-      justify-content: center; } }
+      margin: 50px 0px 0px 0px; } }
+  @media (max-width: 576px) {
+    .hexagono-ampliado {
+      width: 300px; } }
 
 #descricao-beneficio h1 {
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   color: #FCFDFF;
   padding-top: 70px; }
   @media (max-width: 1200px) {
@@ -294,8 +303,13 @@ form {
 #descricao-beneficio p {
   font-size: 22px;
   line-height: 26px;
-  color: rgba(252, 253, 255, 0.85);
-  text-align: justify; }
+  color: rgba(252, 253, 255, 0.85); }
+
+.btn-membresia {
+  background-color: #182A54 !important;
+  color: white !important;
+  font-weight: 700 !important;
+  padding: 15px 10px !important; }
 
 /*.linha-branca
   position: absolute

@@ -6,6 +6,9 @@
 	div{
 		width: 500px;
 	}
+	.hex{
+		z-index: 10000;
+	}
 	#Layer_1-2{
 		transform-origin: 47.8% 47.8%; /*tem que mudar a origem pra ele rodar somente ao redor dessa origem*/
 	}
@@ -13,39 +16,41 @@
 </head>
 <body>
 <div>
-	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1029.24 916.63">
-		<defs>
-			<style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{clip-path:url(#clip-path-2);}.cls-4{clip-path:url(#clip-path-3);}.cls-5{clip-path:url(#clip-path-4);}.cls-6{clip-path:url(#clip-path-5);}.cls-7{clip-path:url(#clip-path-6);}.cls-8{clip-path:url(#clip-path-7);}</style><clipPath id="clip-path"><polygon class="cls-1" points="569.65 7 411.46 7 332.36 144 411.46 281 569.65 281 648.75 144 569.65 7"/></clipPath><clipPath id="clip-path-2"><polygon class="cls-1" points="315.29 153 157.1 153 78 290 157.1 427 315.29 427 394.39 290 315.29 153"/></clipPath><clipPath id="clip-path-3"><polygon class="cls-1" points="825.39 153 667.19 153 588.1 290 667.19 427 825.39 427 904.48 290 825.39 153"/></clipPath><clipPath id="clip-path-4"><polygon class="cls-1" points="315.29 448 157.1 448 78 585 157.1 722 315.29 722 394.39 585 315.29 448"/></clipPath><clipPath id="clip-path-5"><polygon class="cls-1" points="825.39 448 667.19 448 588.1 585 667.19 722 825.39 722 904.48 585 825.39 448"/></clipPath><clipPath id="clip-path-6"><polygon class="cls-1" points="569.65 595 411.46 595 332.36 732 411.46 869 569.65 869 648.75 732 569.65 595"/></clipPath><clipPath id="clip-path-7"><polygon id="centro" class="cls-1" points="569.29 301.4 411.34 301.4 332.36 438.19 411.34 574.98 569.29 574.98 648.27 438.19 569.29 301.4"/></clipPath>
-		</defs>
-		<title>Asset 5</title>
-		<g id="Layer_2" data-name="Layer 2">
-			<g id="Layer_1-2" data-name="Layer 1">
-				<g class="cls-2">
-					<image width="718" height="482" transform="translate(286) scale(0.59)" xlink:href="cachorro.jpg"/>
-				</g>
-				<g class="cls-3">
-					<image width="768" height="512" transform="translate(0 402.76) rotate(-60.99) scale(0.58)" xlink:href="cachorro3.jpg"/>
-				</g>
-				<g class="cls-4">
-					<image width="768" height="587" transform="translate(777.32 60) rotate(60.37) scale(0.48)" xlink:href="cachorro2.jpg"/>
-				</g>
-				<g class="cls-5">
-					<image width="1280" height="853" transform="matrix(-0.18, -0.31, 0.31, -0.18, 261.62, 916.63)" xlink:href="cachorro6.jpg"/>
-				</g>
-				<g class="cls-6">
-					<image width="736" height="396" transform="translate(1029.24 384.86) rotate(120.33) scale(0.72)" xlink:href="cachorro4.jpg"/>
-				</g>
-				<g class="cls-7">
-					<image width="396" height="450" transform="translate(651.2 875) rotate(180) scale(0.81)" xlink:href="cachorro5.jpg"/>
-				</g>
-			</g>
-			<g id="Layer_2-2" data-name="Layer 2">
-				<g class="cls-8">
-					<image width="660" height="660" transform="translate(332 287) scale(0.49)" xlink:href="cachorro7.jpg"/>
-				</g>
-			</g>
-		</g>
+
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1029.24 916.63" class="hex">
+	  <defs>
+	    <style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{clip-path:url(#clip-path-2);}.cls-4{clip-path:url(#clip-path-3);}.cls-5{clip-path:url(#clip-path-4);}.cls-6{clip-path:url(#clip-path-5);}.cls-7{clip-path:url(#clip-path-6);}.cls-8{clip-path:url(#clip-path-7);}</style><clipPath id="clip-path"><polygon class="cls-1" points="569.65 7 411.46 7 332.36 144 411.46 281 569.65 281 648.75 144 569.65 7"/></clipPath><clipPath id="clip-path-2"><polygon class="cls-1" points="315.29 153 157.1 153 78 290 157.1 427 315.29 427 394.39 290 315.29 153"/></clipPath><clipPath id="clip-path-3"><polygon class="cls-1" points="825.39 153 667.19 153 588.1 290 667.19 427 825.39 427 904.48 290 825.39 153"/></clipPath><clipPath id="clip-path-4"><polygon class="cls-1" points="315.29 448 157.1 448 78 585 157.1 722 315.29 722 394.39 585 315.29 448"/></clipPath><clipPath id="clip-path-5"><polygon class="cls-1" points="825.39 448 667.19 448 588.1 585 667.19 722 825.39 722 904.48 585 825.39 448"/></clipPath><clipPath id="clip-path-6"><polygon class="cls-1" points="569.65 595 411.46 595 332.36 732 411.46 869 569.65 869 648.75 732 569.65 595"/></clipPath><clipPath id="clip-path-7"><polygon id="centro" class="cls-1" points="569.29 301.4 411.34 301.4 332.36 438.19 411.34 574.98 569.29 574.98 648.27 438.19 569.29 301.4"/></clipPath>
+	  </defs>
+	  <title>Asset 5</title>
+	  <g id="Layer_2" data-name="Layer 2">
+	    <g id="Layer_1-2" data-name="Layer 1">
+	      <g class="cls-2">
+	        <image width="718" height="482" transform="translate(286) scale(0.59)" xlink:href="assets/images/cachorro.jpg"/>
+	      </g>
+	      <g class="cls-3">
+	        <image width="768" height="512" transform="translate(0 402.76) rotate(-60.99) scale(0.58)" xlink:href="assets/images/cachorro3.jpg"/>
+	      </g>
+	      <g class="cls-4">
+	        <image width="768" height="587" transform="translate(777.32 60) rotate(60.37) scale(0.48)" xlink:href="assets/images/cachorro2.jpg"/>
+	      </g>
+	      <g class="cls-5">
+	        <image width="1280" height="853" transform="matrix(-0.18, -0.31, 0.31, -0.18, 261.62, 916.63)" xlink:href="assets/images/cachorro6.jpg"/>
+	      </g>
+	      <g class="cls-6">
+	        <image width="736" height="396" transform="translate(1029.24 384.86) rotate(120.33) scale(0.72)" xlink:href="assets/images/cachorro4.jpg"/>
+	      </g>
+	      <g class="cls-7">
+	        <image width="396" height="450" transform="translate(651.2 875) rotate(180) scale(0.81)" xlink:href="assets/images/cachorro5.jpg"/>
+	      </g>
+	    </g>
+	    <g id="Layer_2-2" data-name="Layer 2">
+	      <g class="cls-8">
+	        <image width="660" height="660" transform="translate(332 287) scale(0.49)" xlink:href="assets/images/cachorro7.jpg"/>
+	      </g>
+	    </g>
+	  </g>
 	</svg>
+
 
 	<!==o importante aqui são as funções onclick, pode ser svg, botão, qualquer coisa.==>
 	<button id="gira" style="background-color: green;" onclick="gira()"></button> <!==botão que roda automático==>
