@@ -137,6 +137,9 @@ table {
 .secondSection {
   display: flex;
   flex-direction: row; }
+  @media (max-width: 576px) {
+    .secondSection {
+      flex-direction: column; } }
 
 .fourthSection {
   height: 480px;
@@ -195,6 +198,9 @@ table {
   @media (max-width: 992px) {
     .contatoLeft {
       margin-left: 20px; } }
+  @media (max-width: 576px) {
+    .contatoLeft {
+      margin-left: 10px; } }
 
 .contatoRight {
   margin-top: 120px; }
@@ -222,7 +228,7 @@ table {
 form {
   display: flex;
   flex-direction: column; }
-  form input {
+  form .comumInput {
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -232,6 +238,12 @@ form {
     padding: 12px; }
   form #inputMsg {
     height: 100px; }
+  form #submitInput {
+    margin-top: -35px;
+    margin-right: 10px;
+    align-self: flex-end;
+    border: none;
+    background-color: white; }
 
 .backgroundLeft {
   height: 183px;
