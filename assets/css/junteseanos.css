@@ -297,20 +297,20 @@ form {
     .hexagono-ampliado {
       width: 300px; } }
 
-#descricao-beneficio h1 {
+#titulo-beneficio {
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
   color: #FCFDFF;
   padding-top: 70px; }
   @media (max-width: 1200px) {
-    #descricao-beneficio h1 {
+    #titulo-beneficio {
       padding-top: 30px; } }
   @media (max-width: 992px) {
-    #descricao-beneficio h1 {
+    #titulo-beneficio {
       padding-top: 0px; } }
 
-#descricao-beneficio p {
+.descricao-beneficio {
   font-size: 22px;
   line-height: 26px;
   color: rgba(252, 253, 255, 0.85); }
