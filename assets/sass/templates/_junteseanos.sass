@@ -180,16 +180,27 @@ form
 
 .beneficios-membresia
   padding: 0
+    cursor: pointer
   @include breakpoint($computador)
-    width: 350px
+    width: 410px
   @include breakpoint($tablet)
     margin: 50px 0px
-    width: 400px
+    width: 460px
   @include breakpoint($celular)
-    width: 300px
+    width: 360px
+
+.img-membresia
+  cursor: pointer
+
+.btn-hexagonos
+  &:focus
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.91) !important
+
+#Layer_1-2
+  transform-origin: 47.8% 47.8%
 
 .hexagono-ampliado
-  margin-top: -40px
+  margin-top: -37px
   @include breakpoint($computador)
     width: 300px
   @include breakpoint($tablet)
@@ -221,8 +232,7 @@ form
   font-weight: $bold !important
   padding: 15px 10px !important
 
-/*.linha-branca
+.linha-branca
   position: absolute
-  margin-top: 122px
-  margin-left: -370px
-  z-index: 100000*/
+  top: 121px
+  left: -400px
