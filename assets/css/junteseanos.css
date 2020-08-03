@@ -287,7 +287,8 @@ form {
   margin-top: -37px; }
   @media (max-width: 1200px) {
     .hexagono-ampliado {
-      width: 300px; } }
+      width: 300px;
+      margin-top: -10px; } }
   @media (max-width: 992px) {
     .hexagono-ampliado {
       width: 350px;
@@ -305,7 +306,8 @@ form {
   padding-top: 70px; }
   @media (max-width: 1200px) {
     #titulo-beneficio {
-      padding-top: 30px; } }
+      padding-top: 50px;
+      font-size: 32px; } }
   @media (max-width: 992px) {
     #titulo-beneficio {
       padding-top: 0px; } }
@@ -323,5 +325,11 @@ form {
 
 .linha-branca {
   position: absolute;
-  top: 121px;
-  left: -400px; }
+  margin-top: 122px;
+  margin-left: 70px;
+  width: 90%;
+  height: 0;
+  border: 3px solid white; }
+  @media (max-width: 1200px) {
+    .linha-branca {
+      margin-top: 110px; } }

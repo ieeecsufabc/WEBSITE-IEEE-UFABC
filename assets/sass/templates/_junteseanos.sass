@@ -203,6 +203,7 @@ form
   margin-top: -37px
   @include breakpoint($computador)
     width: 300px
+    margin-top: -10px
   @include breakpoint($tablet)
     width: 350px
     margin-top: 0px
@@ -217,7 +218,8 @@ form
   color: #FCFDFF
   padding-top: 70px
   @include breakpoint($computador)
-    padding-top: 30px
+    padding-top: 50px
+    font-size: 32px
   @include breakpoint($tablet)
     padding-top: 0px
 
@@ -234,5 +236,10 @@ form
 
 .linha-branca
   position: absolute
-  top: 121px
-  left: -400px
+  margin-top: 122px
+  margin-left: 70px
+  width: 90%
+  height: 0
+  border: 3px solid $branco
+  @include breakpoint($computador)
+    margin-top: 110px
