@@ -60,6 +60,8 @@
 .secondSection
     display: flex
     flex-direction: row
+    @include breakpoint($celular)
+        flex-direction: column
 
 .fourthSection
     height: 480px
@@ -116,12 +118,18 @@
     margin-left: 150px
     @include breakpoint($tablet)
         margin-left: 20px
+    @include breakpoint($celular)
+        margin-left: 10px
 
 .contatoRight
     margin-top: 120px
     @include breakpoint($tablet)
         margin-top: 0px
         margin-right: 20px
+    @include breakpoint($celular)
+    
+
+    
 
 .imagemContato
     margin-top: 50px
@@ -142,7 +150,7 @@
 form
     display: flex
     flex-direction: column
-    input
+    .comumInput
         background: #FFFFFF
         border: 1px solid #000000
         box-sizing: border-box
@@ -152,6 +160,12 @@ form
         padding: 12px
     #inputMsg
         height: 100px
+    #submitInput
+        margin-top: -35px
+        margin-right: 10px
+        align-self: flex-end
+        border: none
+        background-color: white
 
 .backgroundLeft
     height: 183px
