@@ -53,28 +53,38 @@
         <section class="secondSection">
             <div class="col-lg-5 contatoLeft">
                 <h1 id="contatoTitulo">Torne-se um voluntário agora. É simples!</h1>
-                <img src="assets/images/ilustracoes/linha-azul.svg"/>
+                <img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
                 <div class="imagemContato">
                     <img class="img-fluid" src="assets/images/ilustracoes/junte-se-contato-img.svg">
                 </div>
             </div>
 
-        <div class="col-lg-4 contatoRight">
-            <p class="formTitulo">Requisitos</p>
-            <p class="formTexto">Ser aluno da UFABC</p>
-            <p class="formTexto">Ter vontade de aprender</p>
-            <form>
-                <label class="formTitulo">Qual capítulo deseja se juntar?</label>
-                <input class="comumInput" type="text" placeholder="Dropdown">
+		        <div class="col-lg-4 contatoRight">
+		            <p class="formTitulo">Requisitos</p>
+		            <p class="formTexto">Ser aluno da UFABC</p>
+		            <p class="formTexto">Ter vontade de aprender</p> <br>
+		            <form>
+										<label class="formTitulo" for="capitulos-ieee">Qual capítulo deseja se juntar?</label>
+										<select class="form-control form-capitulo" id="capitulos-ieee">
+											<option>AESS</option>
+											<option>CS</option>
+											<option>EMBS</option>
+											<option>EPS</option>
+											<option>PES</option>
+											<option>RAS</option>
+											<option>TEMS</option>
+										</select>
 
-                <label class="formTitulo">Deixe seu contato!</label>
-                <input class="comumInput" type="text" placeholder="Nome">
-                <input class="comumInput" type="text" placeholder="Whatsapp">
-				<input class="comumInput" id="inputMsg" type="text" placeholder="Mensagem">
-				<input id="submitInput" type="submit" value="Venha fazer parte >">
+										<br>
 
-            </form>
-        </div>
+		                <label class="formTitulo">Deixe seu contato!</label>
+		                <input class="comumInput" type="text" placeholder="Nome">
+		                <input class="comumInput" type="text" placeholder="Whatsapp">
+										<input class="comumInput" id="inputMsg" type="text" placeholder="Mensagem">
+										<input id="submitInput" type="submit" value="Venha fazer parte >">
+
+		            </form>
+		        </div>
 
         </section>
 
@@ -83,8 +93,6 @@
             <div class="backgroundLeft"></div>
 
             <div class="membresiaMain pb-5">
-
-
 
 							<div class="row mr-0">
 								<div class="col-lg-6">
@@ -182,7 +190,11 @@
 
     </div>
 
+		<script src="assets/node_modules/wow.js/dist/wow.min.js"></script>
 		<script src="assets/js/membresia.js"></script>
+		<script>
+	    new WOW().init();
+	  </script>
 		<noscript>Desculpe, seu navegador não suporta JavaScript!</noscript>
 
 </body>

@@ -121,7 +121,8 @@ table {
 
 #contatoTitulo {
   font-size: 38px;
-  font-weight: 700; }
+  font-weight: 700;
+  margin-bottom: 10px; }
 
 #membresiaTitulo {
   font-weight: 700;
@@ -135,8 +136,12 @@ table {
       margin-left: 20px; } }
 
 .secondSection {
+  margin-top: -50px;
   display: flex;
   flex-direction: row; }
+  @media (max-width: 992px) {
+    .secondSection {
+      margin-top: 0; } }
   @media (max-width: 576px) {
     .secondSection {
       flex-direction: column; } }
@@ -200,7 +205,7 @@ table {
       margin-left: 20px; } }
   @media (max-width: 576px) {
     .contatoLeft {
-      margin-left: 10px; } }
+      margin-left: 0; } }
 
 .contatoRight {
   margin-top: 120px; }
@@ -208,6 +213,9 @@ table {
     .contatoRight {
       margin-top: 0px;
       margin-right: 20px; } }
+  @media (max-width: 576px) {
+    .contatoRight {
+      margin: 0; } }
 
 .imagemContato {
   margin-top: 50px; }
@@ -228,6 +236,16 @@ table {
 form {
   display: flex;
   flex-direction: column; }
+  form .form-capitulo {
+    background: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 175px; }
+    form .form-capitulo:focus {
+      box-shadow: none;
+      border-color: black;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
   form .comumInput {
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -236,6 +254,9 @@ form {
     margin-bottom: 8px;
     height: 40px;
     padding: 12px; }
+    form .comumInput:focus {
+      outline-style: none;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
   form #inputMsg {
     height: 100px; }
   form #submitInput {
@@ -244,6 +265,8 @@ form {
     align-self: flex-end;
     border: none;
     background-color: white; }
+    form #submitInput:focus {
+      outline-style: none; }
 
 .backgroundLeft {
   height: 183px;
@@ -338,8 +361,8 @@ form {
 .linha-branca {
   position: absolute;
   margin-top: 122px;
-  margin-left: 70px;
-  width: 90%;
+  margin-left: 80px;
+  width: 95%;
   height: 0;
   border: 3px solid white; }
   @media (max-width: 1200px) {

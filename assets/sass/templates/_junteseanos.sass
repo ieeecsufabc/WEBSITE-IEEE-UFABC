@@ -46,6 +46,7 @@
 #contatoTitulo
     font-size: 38px
     font-weight: $bold
+    margin-bottom: 10px
 
 #membresiaTitulo
     font-weight: $bold
@@ -58,10 +59,13 @@
       margin-left: 20px
 
 .secondSection
-    display: flex
-    flex-direction: row
-    @include breakpoint($celular)
-        flex-direction: column
+  margin-top: -50px
+  display: flex
+  flex-direction: row
+  @include breakpoint($tablet)
+    margin-top: 0
+  @include breakpoint($celular)
+      flex-direction: column
 
 .fourthSection
     height: 480px
@@ -119,7 +123,7 @@
     @include breakpoint($tablet)
         margin-left: 20px
     @include breakpoint($celular)
-        margin-left: 10px
+        margin-left: 0
 
 .contatoRight
     margin-top: 120px
@@ -127,9 +131,9 @@
         margin-top: 0px
         margin-right: 20px
     @include breakpoint($celular)
-    
+        margin: 0
 
-    
+
 
 .imagemContato
     margin-top: 50px
@@ -150,6 +154,16 @@
 form
     display: flex
     flex-direction: column
+    .form-capitulo
+      background: $branco
+      border: 1px solid $preto
+      box-sizing: border-box
+      border-radius: 10px
+      width: 175px
+      &:focus
+        box-shadow: none
+        border-color: $preto
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     .comumInput
         background: #FFFFFF
         border: 1px solid #000000
@@ -158,6 +172,9 @@ form
         margin-bottom: 8px
         height: 40px
         padding: 12px
+        &:focus
+          outline-style: none
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     #inputMsg
         height: 100px
     #submitInput
@@ -166,6 +183,8 @@ form
         align-self: flex-end
         border: none
         background-color: white
+        &:focus
+          outline-style: none
 
 .backgroundLeft
     height: 183px
@@ -251,8 +270,8 @@ form
 .linha-branca
   position: absolute
   margin-top: 122px
-  margin-left: 70px
-  width: 90%
+  margin-left: 80px
+  width: 95%
   height: 0
   border: 3px solid $branco
   @include breakpoint($computador)
