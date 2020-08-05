@@ -242,10 +242,54 @@ form {
     box-sizing: border-box;
     border-radius: 10px;
     width: 175px; }
-    form .form-capitulo:focus {
-      box-shadow: none;
-      border-color: black;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+
+  form .form-capitulo:focus {
+    box-shadow: none;
+    border-color: #0072A6;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25)); }
+
+  .comumInput ~ .focus-border:before,
+  .comumInput ~ .focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 0;
+    height: 2px;
+    background-color: #0072A6;
+    transition: 0.4s; }
+
+  .comumInput ~ .focus-border:after {
+    top: auto;
+    bottom: 0; }
+
+  .comumInput ~ .focus-border ::before,
+  .comumInput ~ .focus-border ::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background-color: #0072A6;
+    transition: 0.6s; }
+
+  .comumInput ~ .focus-border ::after {
+    left: auto;
+    right: 0; }
+
+  .comumInput:focus ~ .focus-border:before,
+  .comumInput:focus ~ .focus-border:after {
+    left: 0;
+    width: 100%;
+    transition: 0.4s; }
+
+  .comumInput:focus ~ .focus-border ::before,
+  .comumInput:focus ~ .focus-border ::after {
+    top: 0;
+    height: 100%;
+    transition: 0.6s; }
+
   form .comumInput {
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -254,11 +298,16 @@ form {
     margin-bottom: 8px;
     height: 40px;
     padding: 12px; }
+
     form .comumInput:focus {
       outline-style: none;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+      border-color: #0072A6;
+      border-width: 1px;
+      transition: 0.6s;}
+
   form #inputMsg {
     height: 100px; }
+
   form #submitInput {
     margin-top: -35px;
     margin-right: 10px;
