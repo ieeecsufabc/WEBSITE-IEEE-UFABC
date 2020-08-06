@@ -77,6 +77,11 @@ table {
   background-image: url("../images/ilustracoes/listas-header-bg-left.svg"), url("../images/ilustracoes/listas-header-bg-right.svg");
   background-position: left, right;
   background-repeat: no-repeat; }
+  @media (max-width: 992px) {
+    .header {
+      flex-direction: column;
+      text-align: center;
+      background-image: none; } }
   .header h1 {
     font-weight: 700;
     font-size: 38px;
@@ -88,43 +93,125 @@ table {
     line-height: 30px;
     color: #1E1C1C;
     width: 80%; }
+    @media (max-width: 992px) {
+      .header p {
+        width: 100%; } }
 
 .filter {
-  height: 65px;
+  padding: 10px 35px 10px 35px;
   margin: 30px;
-  padding-left: 35px;
-  background: rgba(0, 166, 242, 0.8);
-  mix-blend-mode: normal;
+  background: rgba(0, 166, 242, 0.9);
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.35);
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-  align-items: center; }
+  justify-content: center; }
   .filter form {
     display: flex;
     flex-direction: row;
     align-items: center; }
+    @media (max-width: 576px) {
+      .filter form {
+        flex-direction: column; } }
   .filter span {
     font-size: 20px;
     line-height: 27px;
     color: #FDFDFD; }
+    @media (max-width: 576px) {
+      .filter span {
+        margin-bottom: 15px; } }
   .filter .eventosCheck {
     padding-left: 30px; }
     .filter .eventosCheck span {
       font-size: 16px;
       line-height: 22px; }
   .filter .dropdown {
-    margin-left: 25px; }
+    margin-left: 25px;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+    @media (max-width: 992px) {
+      .filter .dropdown {
+        margin-left: 10px;
+        margin-right: 10px; } }
+    @media (max-width: 576px) {
+      .filter .dropdown {
+        margin-left: 5px;
+        margin-right: 0px;
+        margin-top: 5px;
+        margin-bottom: 0px; } }
   .filter .dropdownIntern {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border: none;
     padding-left: 5px;
-    height: 30px;
+    align-items: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 30px !important;
     width: 115px;
     border-radius: 5px; }
   .filter .dropTitulo {
     font-size: 16px;
     line-height: 22px; }
+  .filter .formCentro {
+    display: flex;
+    flex-direction: row; }
+    @media (max-width: 992px) {
+      .filter .formCentro {
+        flex-wrap: wrap; } }
+    @media (max-width: 576px) {
+      .filter .formCentro {
+        justify-content: center; } }
+  .filter .formLeft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    @media (max-width: 576px) {
+      .filter .formLeft {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px; } }
+  .filter .formRight {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    @media (max-width: 576px) {
+      .filter .formRight {
+        margin-top: 15px;
+        margin-bottom: 15px; } }
+    @media (max-width: 992px) {
+      .filter .formRight {
+        margin-left: 0px; } }
+    .filter .formRight #divisorFiltro {
+      margin: 0px 50px 0px 50px; }
+      @media (max-width: 992px) {
+        .filter .formRight #divisorFiltro {
+          position: absolute;
+          opacity: 0; } }
+    .filter .formRight input {
+      max-width: 220px;
+      height: 30px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      border: none;
+      padding-left: 10px;
+      border-radius: 5px 0px 0px 5px; }
+      @media (max-width: 992px) {
+        .filter .formRight input {
+          max-width: 150px; } }
+      @media (max-width: 576px) {
+        .filter .formRight input {
+          margin-top: 5px; } }
+    .filter .formRight button {
+      height: 30px;
+      border-radius: 0px 5px 5px 0px;
+      border: none;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      background-color: #FDFDFD;
+      width: 30px; }
+      @media (max-width: 576px) {
+        .filter .formRight button {
+          margin-top: 5px; } }
+      .filter .formRight button #pesquisarButton {
+        margin: 0; }
 
 .cardsDiv {
   display: flex;
@@ -138,6 +225,9 @@ table {
     margin: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px; }
+    @media (max-width: 576px) {
+      .cardsDiv .cardIndividual {
+        margin: 25px; } }
   .cardsDiv .cardHeaderImg {
     width: 100%;
     border-radius: 2px 2px 0px 0px; }

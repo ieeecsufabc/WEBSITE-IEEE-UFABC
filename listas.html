@@ -23,56 +23,65 @@
         </div>
 
         <div class="filter">
-            <span>Filtros</span>
-
             <form>
-                <label class="eventosCheck">
-                    <input type="checkbox">
-                    <span class="checkmark">Eventos futuros</span>
+                <span>Filtros</span>
+                <div class="formLeft">  
+                    <label class="eventosCheck">
+                        <input type="checkbox">
+                        <span class="checkmark">Eventos futuros</span>
+                        
+                    </label>
                     
-                </label>
-                
-                <label class="eventosCheck">
-                    <input class="checkButton" type="checkbox">
-                    <span class="checkmark">Eventos passados</span>
-                </label>
+                    <label class="eventosCheck">
+                        <input class="checkButton" type="checkbox">
+                        <span class="checkmark">Eventos passados</span>
+                    </label>
+                </div>
+                <div class="formCentro">
+                    <div class="dropdownCap dropdown">
+                        <select class="form-control dropdownIntern" id="capitulos-ieee" aria-placeholder="Capítulo">
+                            <option class="dropTitulo" selected hidden>Capítulo</option>
+                            <option>AESS</option>
+                            <option>CS</option>
+                            <option>EMBS</option>
+                            <option>EPS</option>
+                            <option>PES</option>
+                            <option>RAS</option>
+                            <option>TEMS</option>
+                        </select>
+                    </div>
+                    <div class="dropdownCap dropdown">
+                        <select class="form-control dropdownIntern" id="capitulos-ieee" aria-placeholder="Capítulo">
+                            <option class="dropTitulo" selected hidden>Tipo</option>
+                            <option>AESS</option>
+                            <option>CS</option>
+                            <option>EMBS</option>
+                            <option>EPS</option>
+                            <option>PES</option>
+                            <option>RAS</option>
+                            <option>TEMS</option>
+                        </select>
+                    </div>
+                    <div class="dropdownCap dropdown">
+                        <select class="form-control dropdownIntern" id="capitulos-ieee" aria-placeholder="Capítulo">
+                            <option class="dropTitulo" selected hidden>Data</option>
+                            <option>AESS</option>
+                            <option>CS</option>
+                            <option>EMBS</option>
+                            <option>EPS</option>
+                            <option>PES</option>
+                            <option>RAS</option>
+                            <option>TEMS</option>
+                        </select>
+                    </div>
+                </div>
 
-                <div class="dropdownCap dropdown">
-                    <select class="form-control dropdownIntern" id="capitulos-ieee" aria-placeholder="Capítulo">
-                        <option class="dropTitulo" selected hidden>Capítulo</option>
-                        <option>AESS</option>
-                        <option>CS</option>
-                        <option>EMBS</option>
-                        <option>EPS</option>
-                        <option>PES</option>
-                        <option>RAS</option>
-                        <option>TEMS</option>
-                    </select>
+                <div class="formRight">
+                    <img id="divisorFiltro" src="assets/images/ilustracoes/listas-filtro-linha.svg">
+                    <input type="text" placeholder="Pesquisar Tags">
+                    <button id="pesquisarButton" type="submit"><img src="assets/icons/icon-lupa.svg" alt="Icone de Pesquisar"></button>
                 </div>
-                <div class="dropdownCap dropdown">
-                    <select class="form-control dropdownIntern" id="capitulos-ieee" aria-placeholder="Capítulo">
-                        <option class="dropTitulo" selected hidden>Tipo</option>
-                        <option>AESS</option>
-                        <option>CS</option>
-                        <option>EMBS</option>
-                        <option>EPS</option>
-                        <option>PES</option>
-                        <option>RAS</option>
-                        <option>TEMS</option>
-                    </select>
-                </div>
-                <div class="dropdownCap dropdown">
-                    <select class="form-control dropdownIntern" id="capitulos-ieee" aria-placeholder="Capítulo">
-                        <option class="dropTitulo" selected hidden>Data</option>
-                        <option>AESS</option>
-                        <option>CS</option>
-                        <option>EMBS</option>
-                        <option>EPS</option>
-                        <option>PES</option>
-                        <option>RAS</option>
-                        <option>TEMS</option>
-                    </select>
-                </div>
+            
             </form>
         </div>
 
