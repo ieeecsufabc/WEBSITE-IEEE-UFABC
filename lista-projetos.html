@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-    <title>IEEE - Listas</title>
+    <title>IEEE - Listas de Projetos</title>
 		<link rel="icon" href="assets/images/logos/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/listas.css">
@@ -14,28 +14,18 @@
     <div class="container-fluid">
         <div class="row header">
             <div class="tituloHeader col-3-lg">
-                <h1>Eventos</h1>
-                <p>Confira abaixo os eventos realizados pela IEEE UFABC</p>
+                <h1>Projetos</h1>
+                <p>Confira abaixo os projetos em execução pelo IEEE UFABC</p>
             </div>
             <div class="imgHeader col-3-lg">
-                <img src="./assets/images/ilustracoes/listas-eventos-header.svg">
+                <img src="./assets/images/ilustracoes/listas-projetos-header.svg">
             </div>
         </div>
 
         <div class="filter">
             <form>
-                <span>Filtros</span>
-                <div class="formLeft">  
-                    <label class="eventosCheck">
-                        <input type="checkbox">
-                        <span class="checkmark">Eventos futuros</span>
-                        
-                    </label>
-                    
-                    <label class="eventosCheck">
-                        <input class="checkButton" type="checkbox">
-                        <span class="checkmark">Eventos passados</span>
-                    </label>
+                <div class="formLeft">
+                    <span>Filtros</span>
                 </div>
                 <div class="formCentro">
                     <div class="dropdownCap dropdown">
@@ -62,24 +52,12 @@
                             <option>TEMS</option>
                         </select>
                     </div>
-                    <div class="dropdownCap dropdown">
-                        <select class="form-control dropdownIntern" id="capitulos-ieee" aria-placeholder="Capítulo">
-                            <option class="dropTitulo" selected hidden>Data</option>
-                            <option>AESS</option>
-                            <option>CS</option>
-                            <option>EMBS</option>
-                            <option>EPS</option>
-                            <option>PES</option>
-                            <option>RAS</option>
-                            <option>TEMS</option>
-                        </select>
-                    </div>
                 </div>
 
                 <div class="formRight">
                     <img id="divisorFiltro" src="assets/images/ilustracoes/listas-filtro-linha.svg">
                     <input type="text" placeholder="Pesquisar Tags">
-                    <button id="pesquisarButton" type="submit"><img src="assets/icons/icon-lupa.svg" alt="Icone de Pesquisar"></button>
+                    <button id="pesquisarButton" type="submit"><img src="assets/images/ilustracoes/listas-filtro-lupa.svg" alt="Icone de Pesquisar"></button>
                 </div>
             
             </form>
@@ -89,19 +67,14 @@
         <div class="cardsDiv">
             <div class="col-lg-3 cardIndividual p-0">
                 <div class="cardHeader">
-                    <div class="cardDisplay">
-                        <img src="assets/icons/clock-fill.svg">
-                        <p>Hoje!</p>
-                    </div>
                     <a href="#">
                         <img class="cardHeaderImg" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
                     </a>
                 </div>
 
                 <div class="cardBody">
-                    <h1>Nome do Evento</h1>
-                    <h2>Lorem Ipsum</h2>
-                    <h3>00/00 às 00h</h3>
+                    <h1>Projeto</h1>
+                    <h2 class="projetoDescricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vehicula augue...</h2>
                     <a>Saiba Mais 
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -112,19 +85,14 @@
             </div>
             <div class="col-lg-3 cardIndividual p-0">
                 <div class="cardHeader">
-                    <div class="cardDisplay">
-                        <img src="assets/icons/clock-fill.svg">
-                        <p>Hoje!</p>
-                    </div>
                     <a href="#">
                         <img class="cardHeaderImg" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
                     </a>
                 </div>
 
                 <div class="cardBody">
-                    <h1>Nome do Evento</h1>
-                    <h2>Lorem Ipsum</h2>
-                    <h3>00/00 às 00h</h3>
+                    <h1>Projeto</h1>
+                    <h2 class="projetoDescricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vehicula augue...</h2>
                     <a>Saiba Mais 
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -135,19 +103,14 @@
             </div>
             <div class="col-lg-3 cardIndividual p-0">
                 <div class="cardHeader">
-                    <div class="cardDisplay">
-                        <img src="assets/icons/clock-fill.svg">
-                        <p>Hoje!</p>
-                    </div>
                     <a href="#">
                         <img class="cardHeaderImg" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
                     </a>
                 </div>
 
                 <div class="cardBody">
-                    <h1>Nome do Evento</h1>
-                    <h2>Lorem Ipsum</h2>
-                    <h3>00/00 às 00h</h3>
+                    <h1>Projeto</h1>
+                    <h2 class="projetoDescricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vehicula augue...</h2>
                     <a>Saiba Mais 
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -158,19 +121,14 @@
             </div>
             <div class="col-lg-3 cardIndividual p-0">
                 <div class="cardHeader">
-                    <div class="cardDisplay">
-                        <img src="assets/icons/clock-fill.svg">
-                        <p>Hoje!</p>
-                    </div>
                     <a href="#">
                         <img class="cardHeaderImg" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
                     </a>
                 </div>
 
                 <div class="cardBody">
-                    <h1>Nome do Evento</h1>
-                    <h2>Lorem Ipsum</h2>
-                    <h3>00/00 às 00h</h3>
+                    <h1>Projeto</h1>
+                    <h2 class="projetoDescricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vehicula augue...</h2>
                     <a>Saiba Mais 
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -181,19 +139,14 @@
             </div>
             <div class="col-lg-3 cardIndividual p-0">
                 <div class="cardHeader">
-                    <div class="cardDisplay">
-                        <img src="assets/icons/clock-fill.svg">
-                        <p>Hoje!</p>
-                    </div>
                     <a href="#">
                         <img class="cardHeaderImg" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
                     </a>
                 </div>
 
                 <div class="cardBody">
-                    <h1>Nome do Evento</h1>
-                    <h2>Lorem Ipsum</h2>
-                    <h3>00/00 às 00h</h3>
+                    <h1>Projeto</h1>
+                    <h2 class="projetoDescricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vehicula augue...</h2>
                     <a>Saiba Mais 
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -204,19 +157,14 @@
             </div>
             <div class="col-lg-3 cardIndividual p-0">
                 <div class="cardHeader">
-                    <div class="cardDisplay">
-                        <img src="assets/icons/clock-fill.svg">
-                        <p>Hoje!</p>
-                    </div>
                     <a href="#">
                         <img class="cardHeaderImg" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
                     </a>
                 </div>
 
                 <div class="cardBody">
-                    <h1>Nome do Evento</h1>
-                    <h2>Lorem Ipsum</h2>
-                    <h3>00/00 às 00h</h3>
+                    <h1>Projeto</h1>
+                    <h2 class="projetoDescricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vehicula augue...</h2>
                     <a>Saiba Mais 
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -227,19 +175,14 @@
             </div>
             <div class="col-lg-3 cardIndividual p-0">
                 <div class="cardHeader">
-                    <div class="cardDisplay">
-                        <img src="assets/icons/clock-fill.svg">
-                        <p>Hoje!</p>
-                    </div>
                     <a href="#">
                         <img class="cardHeaderImg" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
                     </a>
                 </div>
 
                 <div class="cardBody">
-                    <h1>Nome do Evento</h1>
-                    <h2>Lorem Ipsum</h2>
-                    <h3>00/00 às 00h</h3>
+                    <h1>Projeto</h1>
+                    <h2 class="projetoDescricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vehicula augue...</h2>
                     <a>Saiba Mais 
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -250,19 +193,14 @@
             </div>
             <div class="col-lg-3 cardIndividual p-0">
                 <div class="cardHeader">
-                    <div class="cardDisplay">
-                        <img src="assets/icons/clock-fill.svg">
-                        <p>Hoje!</p>
-                    </div>
                     <a href="#">
                         <img class="cardHeaderImg" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
                     </a>
                 </div>
 
                 <div class="cardBody">
-                    <h1>Nome do Evento</h1>
-                    <h2>Lorem Ipsum</h2>
-                    <h3>00/00 às 00h</h3>
+                    <h1>Projeto</h1>
+                    <h2 class="projetoDescricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id vehicula augue...</h2>
                     <a>Saiba Mais 
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -271,6 +209,7 @@
                 </div>
 
             </div>
+            
         </div>
 
 
