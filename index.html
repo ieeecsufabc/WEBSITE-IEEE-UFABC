@@ -3,7 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>IEEE - Index</title>
+	<title>IEEE - Home</title>
+	<link rel="icon" href="assets/images/logos/favicon.ico">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/geral.css">
 	<link rel="stylesheet" href="assets/css/plugins.css">
@@ -25,7 +26,7 @@
 			</div>
 
 			<!-- Botão (Menu hambúrguer) -->
-			<button class="navbar-toggler navbar-light" type="button" data-toggle="collapse"
+			<button class="navbar-toggler navbar-light" id="menu-hamburguer" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -77,11 +78,12 @@
 					<center>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<img src="assets/icons/icon-globo.svg" alt="Icone de Linguagem">
+								<img src="assets/icons/icon-globo.svg" alt="Icone de Linguagem" class="mr-1">
 								EN
 							</a>
 
 							<div class="dropdown-menu" id="idioma-pt" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">EN</a>
 								<a class="dropdown-item" href="#">PT</a>
 							</div>
 
@@ -101,15 +103,17 @@
 		<div class="container-fluid">
 
 			<!-- Primeira seção -->
-			<div class="row" id="banner"></div>
+			<div class="row" id="banner">
+					<img src="assets/images/ilustracoes/banner.jpg" alt="Banner" class="img-fluid">
+			</div>
 
 			<!-- Segunda seção -->
 			<div class="row justify-content-center secoes">
-				<div class="col-lg-4 mr-5">
+				<div class="col-lg-4 mr-lg-5">
 					<h1 class="titulos">O que é o IEEE?</h1>
 					<img src="assets/images/ilustracoes/linha-azul.svg" class="mb-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
 					<center>
-						<img src="assets/images/logos/IEEE_Mundial_Completo.svg" id="logo-ieee-mundial" width="350px" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1.5s"/>
+						<img src="assets/images/logos/IEEE_Mundial_Completo.svg" id="logo-ieee-mundial" width="350px" class="wow fadeIn" alt="Logo IEE mundial" data-wow-duration="1s" data-wow-delay="1.5s"/>
 					</center>
 				</div>
 
@@ -131,15 +135,15 @@
 
 			<!-- Terceira seção -->
 			<div class="row flex-row-reverse justify-content-center secoes">
-				<div class="col-lg-4 ml-5">
+				<div class="col-lg-4">
 					<h1 class="titulos" style="text-align: right;">... e o IEEE UFABC então?</h1>
-					<img src="assets/images/ilustracoes/linha-azul.svg" style="float: right;" class="wow slideInRight" data-wow-duration="1s"/>
+					<img src="assets/images/ilustracoes/linha-azul.svg" style="float: right;" class="mb-3 wow slideInRight" data-wow-duration="1s"/>
 					<center>
-						<img src="assets/images/logos/Logo IEEE UFABC.svg" width="350px" id="logo-ieee-ufabc" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"/>
+						<img src="assets/images/logos/Logo IEEE UFABC.svg" width="350px" id="logo-ieee-ufabc" class="wow fadeIn" alt="Logo IEEE UFABC" data-wow-duration="1s" data-wow-delay="1s"/>
 					</center>
 				</div>
 
-				<div class="col-lg-6 descricao-ieee align-self-end text-justify mr-3">
+				<div class="col-lg-6 descricao-ieee align-self-end text-justify mr-lg-5">
 					<p>
 						(TEM QUE FALAR SOBRE O IEEE E AS SOCIEDADES TAMBÉM)Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum blandit nisl et molestie. Donec neque lorem, pellentesque quis ullamcorper quis, pharetra at eros.
 					</p>
@@ -154,16 +158,16 @@
 			<!-- Quarta seção -->
 			<div class="row justify-content-center secoes">
 
-				<div class="col-lg-4 mr-5">
+				<div class="col-lg-4 mr-lg-5">
 					<h1 class="titulos">O que fazemos?</h1>
-					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
+					<img src="assets/images/ilustracoes/linha-azul.svg" class="mb-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
 
 					<!-- Revisar -->
 					<center>
-					<div class="w3-content w3-section wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s" style="max-width:500px">
-						<img class="mySlides" src="assets/images/ilustracoes/img1-o-que-fazemos.png" style="width:100%">
-						<img class="mySlides" src="assets/images/ilustracoes/img2-o-que-fazemos.png" style="width:100%">
-						<img class="mySlides" src="assets/images/ilustracoes/img3-o-que-fazemos.png" style="width:100%">
+					<div class="w3-content w3-section wow fadeIn" id="imagens-o-que-fazemos" data-wow-duration="1s" data-wow-delay="0.5s" style="max-width:500px">
+						<img class="mySlides" src="assets/images/ilustracoes/img1-o-que-fazemos.png" style="width:100%" alt="Imagem sobre o que fazemos">
+						<img class="mySlides" src="assets/images/ilustracoes/img2-o-que-fazemos.png" style="width:100%" alt="Imagem sobre o que fazemos">
+						<img class="mySlides" src="assets/images/ilustracoes/img3-o-que-fazemos.png" style="width:100%" alt="Imagem sobre o que fazemos">
 					</div>
 					</center>
 
@@ -173,10 +177,10 @@
 					<h2 class="titulo2" style="color: #0072A6;">Projetos técnicos</h2>
 					<p>Suspendisse lobortis sapien et urna consequat, sed commodo eros bibendum. Quisque sed neque eget odio semper dignissim. Suspendisse lobortis sapien et.</p>
 					<br>
-					<h2 class="titulo2" style="color: grey;">Projetos sociais</h2>
+					<h2 class="titulo2" style="color: #0072A6;">Projetos sociais</h2>
 					<p>Suspendisse lobortis sapien et urna consequat, sed commodo eros bibendum. Quisque sed neque eget odio semper dignissim. Suspendisse lobortis sapien et.</p>
 					<br>
-					<h2 class="titulo2" style="color: grey;">Visitas técnicas</h2>
+					<h2 class="titulo2" style="color: #0072A6;">Visitas técnicas</h2>
 					<p>Suspendisse lobortis sapien et urna consequat, sed commodo eros bibendum. Quisque sed neque eget odio semper dignissim. Suspendisse lobortis sapien et.</p>
 				</div>
 
@@ -185,9 +189,9 @@
 			<!-- Quinta seção -->
 			<div class="row justify-content-center secoes">
 
-				<div class="col-lg-6 mr-5">
+				<div class="col-lg-6 mr-lg-5">
 					<h1 class="titulos">Sete capítulos onde participar</h1>
-					<img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"/>
+					<img src="assets/images/ilustracoes/linha-azul.svg" class="mb-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
 					<p class="descricao-ieee mt-4"><b>O que são capítulos?</b></p>
 					<p class="descricao-ieee">Capítulos reunem membros com interesses em comum blablabla.<b> Escolha abaixo um capitulo!</b></p>
 					<div class="pl-5 pr-5 descricao-capitulos">
@@ -207,20 +211,20 @@
 				</div>
 
 				<div class="col-lg-4 mt-5 d-flex align-self-end justify-content-center">
-						<img src="assets/images/logos/logo-AESS.png" id="logo-muda" width='400px'/>
+						<img src="assets/images/logos/logo-AESS.png" id="logo-muda" width='400px' alt="Logo AESS"/>
 				</div>
 
 			</div>
 
 			<div class="row-lg mt-5 mb-5 d-flex align-content-center capitulos-logos">
 				<div class="col-lg d-flex justify-content-around flex-wrap logos">
-					<img src="assets/images/logos/Logo-AESS-home.png" id="AESS"/>
-					<img src="assets/images/logos/Logo-CS-home.png" id="CS"/>
-					<img src="assets/images/logos/Logo-EMBS-home.png" id="EMBS"/>
-					<img src="assets/images/logos/Logo-EPS-home.png" id="EPS"/>
-					<img src="assets/images/logos/Logo-PES-home.png" id="PES"/>
-					<img src="assets/images/logos/Logo-RAS-home.png" id="RAS"/>
-					<img src="assets/images/logos/Logo-TEMS-home.png" id="TEMS"/>
+					<img src="assets/images/logos/Logo-AESS-home.svg" id="AESS" alt="Logo AESS"/>
+					<img src="assets/images/logos/Logo-CS-home.svg" id="CS" alt="Logo CS"/>
+					<img src="assets/images/logos/Logo-EMBS-home.svg" id="EMBS" alt="Logo EMBS"/>
+					<img src="assets/images/logos/Logo-EPS-home.svg" id="EPS" alt="Logo EPS"/>
+					<img src="assets/images/logos/Logo-PES-home.svg" id="PES" alt="Logo PES"/>
+					<img src="assets/images/logos/Logo-RAS-home.svg" id="RAS" alt="Logo RAS"/>
+					<img src="assets/images/logos/Logo-TEMS-home.svg" id="TEMS" alt="Logo TEMS"/>
 				</div>
 			</div>
 
@@ -228,26 +232,34 @@
 			<div class="row justify-content-center secoes mb-5">
 			  <div class="col-lg-10">
 			    <h1 class="titulos">Nossos próximos Eventos</h1>
-			    <img src="assets/images/ilustracoes/linha-azul.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="0.5s"/>
+			    <img src="assets/images/ilustracoes/linha-azul.svg" class="mb-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
 			  </div>
 			</div>
 
 			<div class="row justify-content-center mb-5">
 
-			  <div class="col-lg-3 col-sm-5 col-10">
+		<!-- Os links da imagem, "Nome do Evento" e "saiba mais" levam para o mesmo lugar -->
+
+				<div class="col-lg-3 col-sm-5 col-10">
 			    <div class="card card-eventos mb-4">
 			      <div class="contagem-regressiva">
 			        <img src="assets/icons/clock-fill.svg">
 			        <p>Hoje!</p>
 			      </div>
-			      <img class="card-img-top" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
-			      <div class="card-body">
-			        <h5 class="card-title mb-4 nome-evento">Nome do Evento</h5>
-			        <h6 class="card-subtitle mb-2 text-muted descricao-evento">Lorem Ipsum</h6>
+			      <a href="#">
+							<img class="card-img-top" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
+						</a>
+						<div class="card-body">
+							<a href="#" class="titulos">
+								<h5 class="card-title mb-4 nome-evento">Nome do Evento</h5>
+							</a>
+							<h6 class="card-subtitle mb-2 text-muted descricao-evento">Lorem Ipsum</h6>
 			        <p class="card-text text-muted data-hora">00/00 às 00h</p>
-			        <a href="#" class="card-link float-right saiba-mais">
+			        <a href="#" class="card-link float-right saiba-mais mt-3">
 			          Saiba mais
-			          <img src="assets/icons/chevron-right.svg"/>
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
 			        </a>
 			      </div>
 			    </div>
@@ -259,14 +271,20 @@
 			        <img src="assets/icons/clock-fill.svg">
 			        <p>Hoje!</p>
 			      </div>
-			      <img class="card-img-top imagem-card" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
-			      <div class="card-body">
-			        <h5 class="card-title mb-4 nome-evento">Nome do Evento</h5>
+						<a href="#">
+							<img class="card-img-top" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
+						</a>
+						<div class="card-body">
+							<a href="#" class="titulos">
+								<h5 class="card-title mb-4 nome-evento">Nome do Evento</h5>
+							</a>
 			        <h6 class="card-subtitle mb-2 text-muted descricao-evento">Lorem Ipsum</h6>
 			        <p class="card-text text-muted data-hora">00/00 às 00h</p>
-			        <a href="#" class="card-link float-right saiba-mais">
+			        <a href="#" class="card-link float-right saiba-mais mt-3">
 			          Saiba mais
-			          <img src="assets/icons/chevron-right.svg"/>
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
 			        </a>
 			      </div>
 			    </div>
@@ -278,14 +296,20 @@
 			        <img src="assets/icons/clock-fill.svg">
 			        <p>Hoje!</p>
 			      </div>
-			      <img class="card-img-top imagem-card" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
-			      <div class="card-body">
-			        <h5 class="card-title mb-4 nome-evento">Nome do Evento</h5>
+						<a href="#">
+							<img class="card-img-top" src="assets/images/ilustracoes/imagem-card.jpeg" alt="Imagem de capa do card">
+						</a>
+						<div class="card-body">
+							<a href="#" class="titulos">
+								<h5 class="card-title mb-4 nome-evento">Nome do Evento</h5>
+							</a>
 			        <h6 class="card-subtitle mb-2 text-muted descricao-evento">Lorem Ipsum</h6>
 			        <p class="card-text text-muted data-hora">00/00 às 00h</p>
-			        <a href="#" class="card-link float-right saiba-mais">
+			        <a href="#" class="card-link float-right saiba-mais mt-3">
 			          Saiba mais
-			          <img src="assets/icons/chevron-right.svg"/>
+								<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+								</svg>
 			        </a>
 			      </div>
 			    </div>
@@ -384,15 +408,15 @@
 
 			<div class="col-lg-3 rodItem segment-one">
 				<img class="img-fluid logo-ieee" src="assets/images/logos/Logo IEEE UFABC.svg" id="logos-ieee" alt="Logo da IEEE UFABC">
-				<p class="textBold">© 2020 IEEE UFABC Student Branch</p>
+				<p class="textBold text-center">© 2020 IEEE UFABC Student Branch</p>
 			</div>
 
 			<div class="col-lg-4 rodItem segment-two">
-				<p class="textRegular" style="margin-top: 10px; width: 95%;font-size: 15px;">Lorem ipsum dolor sit amet, consectetur
+				<p class="textRegular mt-2" style="font-size: 15px;">Lorem ipsum dolor sit amet, consectetur
 					adipiscing elit. Ut sollicitudin elit ut sagittis venenatis. Lorem ipsum dolor sit amet, consectetur
 					adipiscing elit. Ut sollicitudin elit ut sagittis venenatis. Lorem ipsum dolor sit amet, consectetur
 					adipiscing elit. Ut sollicitudin elit ut sagittis venenatis.</p>
-				<p class="textBold">Localização: Sala 009 - UFABC Santo André</p>
+				<p class="textBold mt-2">Localização: Sala 009 - UFABC Santo André</p>
 			</div>
 
 			<div class="col-lg-2 rodItem segment-three">
@@ -423,7 +447,7 @@
 					<div class="modal-content">
 						<div class="modalHeader modalDivHeader">
 							<img class="headerItem" src="assets/images/ilustracoes/modal-logo-ieee.svg">
-							<img class="headerItem" src="assets/images/ilustracoes/modal-separador.svg">
+							<img class="headerItem separador" src="assets/images/ilustracoes/modal-separador.svg">
 							<h1 class="tituloOuvidoria">Ouvidoria IEEE UFABC</h1>
 						</div>
 						<div class="modalDiv modalDescricao">

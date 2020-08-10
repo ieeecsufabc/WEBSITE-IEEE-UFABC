@@ -26,7 +26,7 @@ function TrocadeLogo(event){
   //troca o endereço das imagens
   logo.src = endereco_img+id+'.png';
   logo.style.animation = 'opacidade 1s';
-  document.getElementById(id).src = endereco_img+id+'-selecionado.png';
+  document.getElementById(id).src = endereco_img+id+'-selecionado.svg';
   //pega a cor do capítulo e faz a troca do título e do link
   cor = cores[capitulos.indexOf(id)];
   titulo.style.color = cor;
@@ -48,5 +48,5 @@ function Deseleciona(){
   const id = elemento.getAttribute('id');
   logo.style.animation = 'none';
   //troca a imagem hexagono do capítulo
-  document.getElementById(id).src = 'assets/images/logos/Logo-'+id+'-home.png';
+  document.getElementById(id).src = 'assets/images/logos/Logo-'+id+'-home.svg';
 }

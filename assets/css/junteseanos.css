@@ -1,0 +1,372 @@
+@charset "UTF-8";
+/*Cores*/
+/*Peso da fonte*/
+/*Resolução máxima*/
+/*mixin do display flex*/
+/*mixin do gradiente*/
+/*mixin de transição*/
+/*mixin do arredodamento da borda*/
+/*função para converter px para rem no tamanho da fonte*/
+/*mixin do tamanho da fonte*/
+/*mixin da opacidade*/
+/*mixin da opacidade do background*/
+/*mixin das colunas*/
+/*Cores*/
+/*Peso da fonte*/
+/*Resolução máxima*/
+/*mixin do display flex*/
+/*mixin do gradiente*/
+/*mixin de transição*/
+/*mixin do arredodamento da borda*/
+/*função para converter px para rem no tamanho da fonte*/
+/*mixin do tamanho da fonte*/
+/*mixin da opacidade*/
+/*mixin da opacidade do background*/
+/*mixin das colunas*/
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400;
+  line-height: 1; }
+  body strong {
+    font-weight: 700; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+  a:hover, a:focus {
+    text-decoration: none !important;
+    color: #0072A6; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.header {
+  height: 600px;
+  background-image: url("../images/ilustracoes/junte-se-header-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 992px) {
+    .header {
+      background-image: url("../images/ilustracoes/junte-se-header-bg-dois.svg"); } }
+  @media (max-width: 576px) {
+    .header {
+      background-image: url("../images/ilustracoes/junte-se-header-bg-tres.svg");
+      background-position: center; } }
+
+#headerTitulo {
+  margin-left: 150px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #1E1C1C; }
+  @media (max-width: 992px) {
+    #headerTitulo {
+      margin-left: 50px;
+      width: 50%; } }
+  @media (max-width: 576px) {
+    #headerTitulo {
+      margin: auto;
+      text-align: center;
+      font-size: 48px;
+      color: white; } }
+
+#sectionTitulo {
+  margin-top: 65px;
+  margin-bottom: 40px;
+  margin-left: 150px;
+  font-size: 38px;
+  line-height: 54px;
+  color: #1E1C1C;
+  opacity: 0.85; }
+  @media (max-width: 992px) {
+    #sectionTitulo {
+      margin-left: 0px;
+      font-size: 32px;
+      margin-bottom: 60px;
+      text-align: center; } }
+  @media (max-width: 576px) {
+    #sectionTitulo {
+      margin-bottom: 80px; } }
+
+#contatoTitulo {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px; }
+
+#membresiaTitulo {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  margin-left: 150px;
+  color: #FCFDFF;
+  padding-top: 30px; }
+  @media (max-width: 992px) {
+    #membresiaTitulo {
+      margin-left: 20px; } }
+
+.secondSection {
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 992px) {
+    .secondSection {
+      margin-top: 0; } }
+  @media (max-width: 576px) {
+    .secondSection {
+      flex-direction: column; } }
+
+.fourthSection {
+  height: 480px;
+  background-image: url("../images/ilustracoes/junte-se-footer-bg.svg");
+  background-repeat: no-repeat; }
+
+.cardsDiv {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  width: 100vw;
+  background-color: rgba(0, 114, 166, 0.8);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 992px) {
+    .cardsDiv {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
+
+.cardJunte {
+  max-width: 270px !important;
+  height: 370px;
+  background-image: url("../images/ilustracoes/junte-se-card-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 40px;
+  padding: 40px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (max-width: 992px) {
+    .cardJunte {
+      margin-top: 80px; } }
+  .cardJunte h2 {
+    margin-top: 35px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #1E1C1C;
+    text-align: center; }
+  .cardJunte #separadorCard {
+    margin: 10px; }
+  .cardJunte #textoCard {
+    font-size: 18px;
+    line-height: 26px;
+    color: #1E1C1C;
+    opacity: 0.45;
+    text-align: center; }
+  .cardJunte #hexagonCard {
+    position: absolute;
+    top: -22%; }
+
+.contatoLeft {
+  margin-left: 150px; }
+  @media (max-width: 992px) {
+    .contatoLeft {
+      margin-left: 20px; } }
+  @media (max-width: 576px) {
+    .contatoLeft {
+      margin-left: 0; } }
+
+.contatoRight {
+  margin-top: 120px; }
+  @media (max-width: 992px) {
+    .contatoRight {
+      margin-top: 0px;
+      margin-right: 20px; } }
+  @media (max-width: 576px) {
+    .contatoRight {
+      margin: 0; } }
+
+.imagemContato {
+  margin-top: 50px; }
+
+.formTitulo {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 48px;
+  color: #1E1C1C; }
+
+.formTexto {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #1E1C1C;
+  opacity: 0.9; }
+
+form {
+  display: flex;
+  flex-direction: column; }
+  form .form-capitulo {
+    background: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 175px; }
+    form .form-capitulo:focus {
+      box-shadow: none;
+      border-color: black;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+  form .comumInput {
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    height: 40px;
+    padding: 12px; }
+    form .comumInput:focus {
+      outline-style: none;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); }
+  form #inputMsg {
+    height: 100px; }
+  form #submitInput {
+    margin-top: -35px;
+    margin-right: 10px;
+    align-self: flex-end;
+    border: none;
+    background-color: white; }
+    form #submitInput:focus {
+      outline-style: none; }
+    form #submitInput:hover {
+      text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); }
+
+.backgroundLeft {
+  height: 183px;
+  background-image: url("../images/ilustracoes/junte-se-body-bg-cima.svg");
+  background-repeat: no-repeat;
+  background-position: left; }
+  @media (max-width: 992px) {
+    .backgroundLeft {
+      background-image: none;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px; } }
+
+.backgroundRight {
+  height: 195px;
+  background-image: url("../images/ilustracoes/junte-se-body-bg-baixo.svg");
+  background-repeat: no-repeat;
+  background-position: right; }
+  @media (max-width: 992px) {
+    .backgroundRight {
+      background-image: none;
+      height: 50px; } }
+
+.membresiaMain {
+  background-color: rgba(0, 114, 166, 0.8); }
+
+.beneficios-membresia {
+  padding: 0;
+    padding-cursor: pointer; }
+  @media (max-width: 1200px) {
+    .beneficios-membresia {
+      width: 410px; } }
+  @media (max-width: 992px) {
+    .beneficios-membresia {
+      margin: 50px 0px;
+      width: 460px; } }
+  @media (max-width: 576px) {
+    .beneficios-membresia {
+      width: 360px; } }
+
+.img-membresia {
+  cursor: pointer; }
+
+.btn-hexagonos:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.91) !important; }
+
+#Layer_1-2 {
+  transform-origin: 47.8% 47.8%; }
+
+.hexagono-ampliado {
+  margin-top: -37px; }
+  @media (max-width: 1200px) {
+    .hexagono-ampliado {
+      width: 300px;
+      margin-top: -10px; } }
+  @media (max-width: 992px) {
+    .hexagono-ampliado {
+      width: 350px;
+      margin-top: 0px;
+      margin: 50px 0px 0px 0px; } }
+  @media (max-width: 576px) {
+    .hexagono-ampliado {
+      width: 300px; } }
+
+#titulo-beneficio {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #FCFDFF;
+  padding-top: 70px; }
+  @media (max-width: 1200px) {
+    #titulo-beneficio {
+      padding-top: 50px;
+      font-size: 32px; } }
+  @media (max-width: 992px) {
+    #titulo-beneficio {
+      padding-top: 0px; } }
+
+.descricao-beneficio {
+  font-size: 22px;
+  line-height: 26px;
+  color: rgba(252, 253, 255, 0.85); }
+
+.btn-membresia {
+  background-color: #182A54 !important;
+  color: white !important;
+  font-weight: 700 !important;
+  padding: 15px 10px !important; }
+
+.linha-branca {
+  position: absolute;
+  margin-top: 122px;
+  margin-left: 80px;
+  width: 95%;
+  height: 0;
+  border: 3px solid white; }
+  @media (max-width: 1200px) {
+    .linha-branca {
+      margin-top: 110px; } }
