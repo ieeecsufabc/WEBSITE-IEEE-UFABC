@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/*Cores*/
+/*Peso da fonte*/
+/*Resolução máxima*/
+/*mixin do display flex*/
+/*mixin do gradiente*/
+/*mixin de transição*/
+/*mixin do arredodamento da borda*/
+/*função para converter px para rem no tamanho da fonte*/
+/*mixin do tamanho da fonte*/
+/*mixin da opacidade*/
+/*mixin da opacidade do background*/
+/*mixin das colunas*/
+/*Cores*/
+/*Peso da fonte*/
+/*Resolução máxima*/
+/*mixin do display flex*/
+/*mixin do gradiente*/
+/*mixin de transição*/
+/*mixin do arredodamento da borda*/
+/*função para converter px para rem no tamanho da fonte*/
+/*mixin do tamanho da fonte*/
+/*mixin da opacidade*/
+/*mixin da opacidade do background*/
+/*mixin das colunas*/
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400;
+  line-height: 1; }
+  body strong {
+    font-weight: 700; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-font-smoothing: antialiased; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+a {
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear; }
+  a:hover, a:focus {
+    text-decoration: none !important;
+    color: #0072A6; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.tempHeader {
+  height: 275px;
+  background-color: red; }
+
+.tempSub {
+  height: 85px;
+  background-color: blue; }
+
+.tempText {
+  background-color: green; }
+
+.tempDepoimentos {
+  background-color: red; }
+
+.corpoProjeto {
+  margin: 80px 0px 30px 120px;
+  display: flex;
+  flex-direction: row; }
+  .corpoProjeto .asideProjeto {
+    margin: 0px 120px 0px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .corpoProjeto .asideProjeto button {
+      background: #EA9414;
+      border: none;
+      align-self: center;
+      width: 210px;
+      height: 50px;
+      border-radius: 5px;
+      font-size: 28px;
+      color: white;
+      font-weight: 600; }
+    .corpoProjeto .asideProjeto img {
+      color: #EA9414;
+      margin: 12px 0px 12px 0px; }
+    .corpoProjeto .asideProjeto .corpoAside {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 80px;
+      margin-left: 60px; }
+    .corpoProjeto .asideProjeto span {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1E1C1C; }
+    .corpoProjeto .asideProjeto .divFotos {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row; }
+    .corpoProjeto .asideProjeto .fotoAside {
+      position: relative;
+      width: 110px;
+      height: 110px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      background-color: black; }
