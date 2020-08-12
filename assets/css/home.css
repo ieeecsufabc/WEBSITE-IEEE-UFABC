@@ -216,7 +216,8 @@ body {
   .contagem-regressiva img {
     margin-right: 5px; }
   .contagem-regressiva p {
-    font-size: 14px; }
+    font-size: 14px;
+    font-weight: 600; }
 
 .nome-evento {
   font-size: 20px;
