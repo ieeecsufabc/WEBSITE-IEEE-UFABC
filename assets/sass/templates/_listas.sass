@@ -11,13 +11,13 @@
         flex-direction: column
         text-align: center
         background-image: none
-    h1 
+    h1
         font-weight: $bold
         font-size: 38px
         line-height: 52px
         color: $azul-ieee
         margin-bottom: 12px
-            
+
     p
         font-size: 22px
         line-height: 30px
@@ -25,9 +25,14 @@
         width: 80%
         @include breakpoint ($tablet)
             width: 100%
+    .imgHeader
+      @include breakpoint($computador)
+        width: 250px
+      @include breakpoint($tablet)
+        margin-top: 30px
 
 .filter
-    padding: 10px 35px 10px 35px
+    padding: 10px 35px
     margin: 30px
     background: transparentize(#00A6F2, 0.1)
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.35)
@@ -41,7 +46,7 @@
         align-items: center
         @include breakpoint($celular)
             flex-direction: column
-    span 
+    span
         font-size: 20px
         line-height: 27px
         color: $branco-ieee
@@ -103,9 +108,6 @@
             margin-left: 0px
         #divisorFiltro
             margin: 0px 50px 0px 50px
-            @include breakpoint($tablet)
-                position: absolute
-                opacity: 0
         input
             max-width: 220px
             height: 30px
@@ -113,6 +115,8 @@
             border: none
             padding-left: 10px
             border-radius: 5px 0px 0px 5px
+            &:focus
+              outline-style: none
             @include breakpoint ($tablet)
                 max-width: 150px
             @include breakpoint($celular)
@@ -124,9 +128,11 @@
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
             background-color: $branco-ieee
             width: 30px
+            &:focus
+              outline-style: none
             @include breakpoint($celular)
                 margin-top: 5px
-            #pesquisarButton 
+            #pesquisarButton
                 margin: 0
 
 .cardsDiv
@@ -157,7 +163,7 @@
         border-radius: 40px
         padding: 5px
         margin: 5px
-        p   
+        p
             font-size: 14px
             margin-left: 7px
             font-weight: $semi-bold
@@ -168,13 +174,13 @@
         padding-left: 20px
         padding-right: 5px
         padding-bottom: 10px
-        h1  
+        h1
             color: $texto-preto
             font-size: 20px
-            line-height: 34px   
+            line-height: 34px
             font-weight: $semi-bold
             margin-bottom: 10px
-        h2 
+        h2
             margin-bottom: 10px
             font-size: 16px
             line-height: 24px
@@ -182,13 +188,12 @@
         .projetoDescricao
             width: 90%
             margin-bottom: 10px
-        h3  
+        h3
             margin-bottom: 10px
             font-size: 14px
             line-height: 18px
             color: transparentize($texto-preto, 0.15)
-        a 
+        a
             align-self: flex-end
             font-weight: $semi-bold
             color: $azul-ieee
-    
