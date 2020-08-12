@@ -90,7 +90,8 @@ table {
     margin: 0px 120px 0px 120px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    justify-content: center;
+    background-color: blue; }
     .corpoProjeto .asideProjeto button {
       background: #EA9414;
       border: none;
@@ -107,22 +108,26 @@ table {
     .corpoProjeto .asideProjeto .corpoAside {
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      margin-top: 80px;
-      margin-left: 60px; }
-    .corpoProjeto .asideProjeto span {
-      font-size: 20px;
-      font-weight: 700;
-      color: #1E1C1C; }
-    .corpoProjeto .asideProjeto .divFotos {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row; }
-    .corpoProjeto .asideProjeto .fotoAside {
-      position: relative;
-      width: 110px;
-      height: 110px;
-      margin-right: 20px;
-      margin-bottom: 20px;
-      background-color: black; }
+      justify-content: center;
+      margin-top: 80px; }
+      .corpoProjeto .asideProjeto .corpoAside .blocoFotos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: auto; }
+      .corpoProjeto .asideProjeto .corpoAside span {
+        font-size: 20px;
+        font-weight: 700;
+        color: #1E1C1C; }
+      .corpoProjeto .asideProjeto .corpoAside .divFotos {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; }
+      .corpoProjeto .asideProjeto .corpoAside .fotoAside {
+        position: relative;
+        width: 110px;
+        height: 110px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        background-color: black; }

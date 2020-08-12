@@ -18,7 +18,8 @@
         margin: 0px 120px 0px 120px
         display: flex
         flex-direction: column
-        align-items: flex-start
+        justify-content: center
+        background-color: blue
         button
             background: $cs-escuro
             border: none
@@ -35,24 +36,28 @@
         .corpoAside
             display: flex
             flex-direction: column
-            align-items: flex-start
+            justify-content: center
             margin-top: 80px
-            margin-left: 60px
-        span 
-            font-size: 20px
-            font-weight: $bold
-            color: $texto-preto
-        .divFotos
-            position: relative
-            display: flex
-            flex-wrap: wrap
-            flex-direction: row
-        .fotoAside
-            position: relative
-            width: 110px
-            height: 110px
-            margin-right: 20px
-            margin-bottom: 20px
-            background-color: black
+            .blocoFotos
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                margin: auto
+            span 
+                font-size: 20px
+                font-weight: $bold
+                color: $texto-preto
+            .divFotos
+                position: relative
+                display: flex
+                flex-wrap: wrap
+                flex-direction: row
+            .fotoAside
+                position: relative
+                width: 110px
+                height: 110px
+                margin-right: 20px
+                margin-bottom: 20px
+                background-color: black
 
 
