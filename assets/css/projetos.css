@@ -79,19 +79,18 @@ table {
 .tempText {
   background-color: green; }
 
-.tempDepoimentos {
-  background-color: red; }
-
 .corpoProjeto {
-  margin: 80px 0px 30px 120px;
+  margin: 80px 90px 30px 90px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: column; }
+  .corpoProjeto .mainProjeto {
+    display: flex;
+    flex-direction: row; }
   .corpoProjeto .asideProjeto {
     margin: 0px 120px 0px 120px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    background-color: blue; }
+    justify-content: center; }
     .corpoProjeto .asideProjeto button {
       background: #EA9414;
       border: none;
@@ -115,19 +114,80 @@ table {
         flex-direction: column;
         align-items: flex-start;
         margin: auto; }
-      .corpoProjeto .asideProjeto .corpoAside span {
-        font-size: 20px;
-        font-weight: 700;
-        color: #1E1C1C; }
-      .corpoProjeto .asideProjeto .corpoAside .divFotos {
-        position: relative;
+        .corpoProjeto .asideProjeto .corpoAside .blocoFotos span {
+          font-size: 20px;
+          font-weight: 700;
+          color: #1E1C1C; }
+        .corpoProjeto .asideProjeto .corpoAside .blocoFotos .divFotos {
+          position: relative;
+          display: flex;
+          align-self: center;
+          flex-wrap: wrap;
+          flex-direction: row; }
+        .corpoProjeto .asideProjeto .corpoAside .blocoFotos .fotoAside {
+          position: relative;
+          width: 110px;
+          height: 110px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          background-color: black; }
+      .corpoProjeto .asideProjeto .corpoAside .textoAside {
+        margin-top: 80px; }
+        .corpoProjeto .asideProjeto .corpoAside .textoAside span {
+          margin-top: 15px;
+          font-weight: 700;
+          font-size: 16px;
+          color: #1E1C1C; }
+        .corpoProjeto .asideProjeto .corpoAside .textoAside p {
+          font-size: 15px;
+          margin-top: 18px;
+          margin-bottom: 18px;
+          width: 80%; }
+
+.corpoDepoimentos {
+  margin-top: 40px; }
+  .corpoDepoimentos #tituloDepoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .corpoDepoimentos #tituloDepoimentos span {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 15px; }
+  .corpoDepoimentos .cardsDiv {
+    justify-content: center;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row; }
+    .corpoDepoimentos .cardsDiv .individualCard {
+      display: flex;
+      flex-direction: column;
+      background-image: url("../images/ilustracoes/projetos-card-bg.svg");
+      background-repeat: no-repeat;
+      width: 340px;
+      height: 420px;
+      justify-content: center; }
+      .corpoDepoimentos .cardsDiv .individualCard .pessoaCard {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row; }
-      .corpoProjeto .asideProjeto .corpoAside .fotoAside {
-        position: relative;
-        width: 110px;
-        height: 110px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        background-color: black; }
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; }
+      .corpoDepoimentos .cardsDiv .individualCard .descricao {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px; }
+      .corpoDepoimentos .cardsDiv .individualCard p {
+        font-size: 15px;
+        line-height: 27px;
+        color: #1E1C1C;
+        text-align: center;
+        width: 90%;
+        margin: 40px 20px 20px 20px; }
+    .corpoDepoimentos .cardsDiv .cardEsquerda {
+      margin-right: 70px;
+      margin-top: 20px; }
+    .corpoDepoimentos .cardsDiv .cardMeio {
+      margin-right: 70px; }
+    .corpoDepoimentos .cardsDiv .cardDireita {
+      margin-top: 20px; }
