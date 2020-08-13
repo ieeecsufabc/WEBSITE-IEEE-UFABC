@@ -1,12 +1,14 @@
 .header
     display: flex
     margin-top: 20px
+    padding: 20px
     flex-direction: row
     justify-content: center
     align-items: center
-    background-image: url('../images/ilustracoes/listas-header-bg-left.svg'), url('../images/ilustracoes/listas-header-bg-right.svg')
-    background-position: left, right
-    background-repeat: no-repeat
+    background:
+      image: url('../images/ilustracoes/listas-header-bg-left.svg'), url('../images/ilustracoes/listas-header-bg-right.svg')
+      position: left, right
+      repeat: no-repeat
     @include breakpoint ($tablet)
         flex-direction: column
         text-align: center
@@ -17,7 +19,6 @@
         line-height: 52px
         color: $azul-ieee
         margin-bottom: 12px
-
     p
         font-size: 22px
         line-height: 30px
@@ -39,7 +40,6 @@
     border-radius: 5px
     display: flex
     flex-direction: row
-    justify-content: center
     form
         display: flex
         flex-direction: row
@@ -101,6 +101,7 @@
         display: flex
         flex-direction: row
         align-items: center
+        
         @include breakpoint($celular)
             margin-top: 15px
             margin-bottom: 15px
@@ -170,10 +171,6 @@
     .cardBody
         display: flex
         flex-direction: column
-        padding-top: 20px
-        padding-left: 20px
-        padding-right: 5px
-        padding-bottom: 10px
         h1
             color: $texto-preto
             font-size: 20px
