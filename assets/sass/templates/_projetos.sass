@@ -1,9 +1,36 @@
 .tempHeader
-    height: 275px
-    background-color: red
-.tempSub
-    height: 85px
-    background-color: blue
+    background-image: url('../images/ilustracoes/banner-aess.svg')
+    background-repeat: no-repeat
+    background-color: yellow
+    div img
+      opacity: 0.4
+
+.titulo-projeto
+    position: absolute
+    bottom: 30px
+    font-weight: $bold
+    font-size: 36px
+    line-height: 46px
+    color: $branco
+    text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5)
+
+.sucessos-projeto
+    padding: 10px 100px
+    border-bottom: 1px solid #E5E5E5
+    display: flex
+    align-items: center
+    .sucessos-item
+        padding: 15px 25px
+        border-left: 1px solid #E5E5E5
+        font-weight: $semi-bold
+        font-size: 14px
+        line-height: 22px
+        color: #444
+    .last-update
+        font-size: 14px
+        line-height: 21px
+        color: #444
+
 .tempText
     background-color: green
 
@@ -42,7 +69,7 @@
                 flex-direction: column
                 align-items: flex-start
                 margin: auto
-                span 
+                span
                     font-size: 20px
                     font-weight: $bold
                     color: $texto-preto
@@ -66,10 +93,10 @@
                     font-weight: $bold
                     font-size: 16px
                     color: $texto-preto
-                p 
+                p
                     font-size: 15px
                     margin-top: 18px
-                    margin-bottom: 18px  
+                    margin-bottom: 18px
                     width: 80%
 
 .corpoDepoimentos
@@ -78,7 +105,7 @@
         display: flex
         flex-direction: column
         align-items: flex-start
-        span 
+        span
             font-size: 25px
             font-weight: $bold
             margin-bottom: 15px
@@ -88,7 +115,7 @@
         display: flex
         flex-direction: row
         .individualCard
-            display: flex 
+            display: flex
             flex-direction: column
             background-image: url('../images/ilustracoes/projetos-card-bg.svg')
             background-repeat: no-repeat
@@ -102,10 +129,10 @@
                 align-items: center
                 margin-top: 20px
             .descricao
-                display: flex 
+                display: flex
                 flex-direction: column
                 margin-left: 5px
-            p 
+            p
                 font-size: 15px
                 line-height: 27px
                 color: $texto-preto
