@@ -71,9 +71,17 @@ table {
 .tempHeader {
   background-image: url("../images/ilustracoes/banner-aess.svg");
   background-repeat: no-repeat;
-  background-color: yellow; }
+  background-size: cover;
+  background-position: center; }
+  @media (max-width: 992px) {
+    .tempHeader {
+      background-position: right; } }
+  @media (max-width: 992px) {
+    .tempHeader div {
+      justify-content: flex-start; } }
   .tempHeader div img {
-    opacity: 0.4; }
+    opacity: 0.4;
+    margin-right: auto; }
 
 .titulo-projeto {
   position: absolute;
@@ -81,16 +89,20 @@ table {
   font-weight: 700;
   font-size: 36px;
   line-height: 46px;
+  text-align: center;
   color: white;
   text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5); }
+  @media (max-width: 576px) {
+    .titulo-projeto {
+      font-size: 30px; } }
 
 .sucessos-projeto {
-  padding: 10px 100px;
+  padding: 20px 100px;
   border-bottom: 1px solid #E5E5E5;
   display: flex;
   align-items: center; }
   .sucessos-projeto .sucessos-item {
-    padding: 15px 25px;
+    padding: 0px 25px;
     border-left: 1px solid #E5E5E5;
     font-weight: 600;
     font-size: 14px;
