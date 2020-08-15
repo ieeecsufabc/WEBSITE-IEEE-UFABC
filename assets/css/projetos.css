@@ -102,7 +102,29 @@ table {
     color: #444; }
 
 .tempText {
-  background-color: green; }
+  background-color: white; }
+
+.tituloTextTitulo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1E1C1C;
+  padding-bottom:24px; }
+
+.tituloTextoText {
+  font-size: 16px;
+  font-weight: bold;
+  color: #525C65;
+  padding-bottom:16px; }
+
+.textoText{
+  font-size: 15px;
+  color: #1E1C1C;
+  font-weight: normal;
+  font-style: normal;
+  line-height: normal;
+  padding-bottom:17px;
+}
+
 
 .corpoProjeto {
   margin: 80px 90px 30px 90px;
