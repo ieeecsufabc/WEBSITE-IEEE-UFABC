@@ -117,3 +117,9 @@ $computador: max-width 1200px
 =columns($count: 3, $gap: 10)
 	@include css3-prefix('column-count', $count)
 	@include css3-prefix('column-gap', $gap)
+
+/*mixin para banner das páginas de projetos*/
+=banner($repeat: no-repeat, $size: cover, $position: center)
+	background-repeat: $repeat
+	background-size: $size
+	background-position: $position

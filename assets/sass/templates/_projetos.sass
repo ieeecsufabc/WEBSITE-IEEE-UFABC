@@ -1,35 +1,39 @@
-.tempHeader
+.tempHeader-CS
+    @include banner
     background-image: url('../images/ilustracoes/banner-aess.svg')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center
-    @include breakpoint($tablet)
-      background-position: right
     div
+      align-items: flex-end
+      margin-bottom: 30px
       @include breakpoint($tablet)
-        justify-content: flex-start
+        align-items: center
+        margin-bottom: 0
       img
-        opacity: 0.4
-        margin-right: auto
+        opacity: 0
 
 .titulo-projeto
     position: absolute
-    bottom: 30px
     font-weight: $bold
     font-size: 36px
     line-height: 46px
     text-align: center
     color: $branco
     text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5)
-    @include breakpoint($celular)
-        font-size: 30px
+    @include breakpoint($computador)
+        font-size: 32px
 
 .sucessos-projeto
     padding: 20px 100px
     border-bottom: 1px solid #E5E5E5
     display: flex
     align-items: center
+    flex-direction: row
+    @include breakpoint($tablet)
+      padding: 20px 60px
+      flex-direction: column
+      justify-content: center
     .sucessos-item
+        display: flex
+        align-items: center
         padding: 0px 25px
         border-left: 1px solid #E5E5E5
         font-weight: $semi-bold
@@ -40,9 +44,31 @@
         font-size: 14px
         line-height: 21px
         color: #444
+        @include breakpoint($tablet)
+            margin-top: 20px
 
 .tempText
-    background-color: green
+    background-color: $branco
+
+.tituloTextTitulo
+    font-size: 20px
+    font-weight: $bold
+    color: $texto-preto
+    padding-bottom: 24px
+
+.tituloTextoText
+    font-size: 16px
+    font-weight: bold
+    color: #525C65
+    padding-bottom: 16px
+
+.textoText
+    font-size: 15px
+    color: $texto-preto
+    font-weight: normal
+    font-style: normal
+    line-height: normal
+    padding-bottom: 17px
 
 .corpoProjeto
     margin: 80px 90px 30px 90px
