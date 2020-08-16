@@ -48,6 +48,7 @@
             margin-top: 20px
 
 .tempText
+<<<<<<< HEAD
     background-color: $branco
 
 .tituloTextTitulo
@@ -69,16 +70,42 @@
     font-style: normal
     line-height: normal
     padding-bottom: 17px
+=======
+    background-color: white
+    .tituloTextTitulo 
+        font-size: 20px
+        font-weight: $bold
+        color: $texto-preto
+        padding-bottom: 24px
+    .tituloTextoText 
+        font-size: 16px
+        font-weight: $bold
+        color: #525C65
+        padding-bottom: 16px 
+    .textoText
+        font-size: 15px
+        color: $texto-preto
+        padding-bottom: 17px
+>>>>>>> 71ac35d42231e2ed039194b95fbd77369393e382
 
 .corpoProjeto
-    margin: 80px 90px 30px 90px
+    padding: 80px 90px 30px 120px
     display: flex
     flex-direction: column
+    +breakpoint($computador)
+        padding-right: 0px
+        padding-left: 30px
+    +breakpoint($celular)
+        padding-left: 10px
     .mainProjeto
         display: flex
         flex-direction: row
     .asideProjeto
-        margin: 0px 120px 0px 120px
+        padding-left: 120px
+        +breakpoint($computador)
+            padding-left: 60px
+        +breakpoint($tablet)
+            padding-left: 30px
         display: flex
         flex-direction: column
         justify-content: center
@@ -99,12 +126,16 @@
             display: flex
             flex-direction: column
             justify-content: center
+            align-items: center
+            margin: auto
             margin-top: 80px
+            margin-left: 20px
+            +breakpoint($celular)
+                margin-left: 0px
             .blocoFotos
                 display: flex
                 flex-direction: column
                 align-items: flex-start
-                margin: auto
                 span
                     font-size: 20px
                     font-weight: $bold
@@ -119,11 +150,14 @@
                     position: relative
                     width: 110px
                     height: 110px
-                    margin-right: 20px
+                    +breakpoint($tablet)
+                        width: 90px
+                        height: 90px
+                    margin-right: 10px
                     margin-bottom: 20px
                     background-color: black
             .textoAside
-                margin-top: 80px
+                margin-top: 40px
                 span
                     margin-top: 15px
                     font-weight: $bold
@@ -148,8 +182,12 @@
     .cardsDiv
         justify-content: center
         margin-top: 75px
+        padding-right: 30px
         display: flex
         flex-direction: row
+        flex-wrap: wrap
+        +breakpoint($celular)
+            padding-right: 10px
         .individualCard
             display: flex
             flex-direction: column
@@ -157,6 +195,9 @@
             background-repeat: no-repeat
             width: 340px
             height: 420px
+            margin: 35px
+            +breakpoint($celular)
+                margin: 0px
             justify-content: center
             .pessoaCard
                 display: flex
@@ -175,10 +216,5 @@
                 text-align: center
                 width: 90%
                 margin: 40px 20px 20px 20px
-        .cardEsquerda
-            margin-right: 70px
-            margin-top: 20px
-        .cardMeio
-            margin-right: 70px
-        .cardDireita
-            margin-top: 20px
+            
+
