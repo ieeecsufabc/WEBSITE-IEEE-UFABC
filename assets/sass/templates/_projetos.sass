@@ -48,7 +48,6 @@
             margin-top: 20px
 
 .tempText
-<<<<<<< HEAD
     background-color: $branco
 
 .tituloTextTitulo
@@ -70,23 +69,6 @@
     font-style: normal
     line-height: normal
     padding-bottom: 17px
-=======
-    background-color: white
-    .tituloTextTitulo 
-        font-size: 20px
-        font-weight: $bold
-        color: $texto-preto
-        padding-bottom: 24px
-    .tituloTextoText 
-        font-size: 16px
-        font-weight: $bold
-        color: #525C65
-        padding-bottom: 16px 
-    .textoText
-        font-size: 15px
-        color: $texto-preto
-        padding-bottom: 17px
->>>>>>> 71ac35d42231e2ed039194b95fbd77369393e382
 
 .corpoProjeto
     padding: 80px 90px 30px 120px
@@ -196,19 +178,35 @@
             width: 340px
             height: 420px
             margin: 35px
-            +breakpoint($celular)
-                margin: 0px
             justify-content: center
+            +breakpoint($celular)
+                margin: 15px
+                background-image: url('../images/ilustracoes/projetos-card-bg-celular.svg')
+                width: 280px
+                height: 360px
             .pessoaCard
                 display: flex
                 flex-direction: row
                 justify-content: center
                 align-items: center
                 margin-top: 20px
+                +breakpoint($celular)
+                    margin-top: 10px
+                img 
+                    +breakpoint($celular)
+                        height: 40px !important
             .descricao
                 display: flex
                 flex-direction: column
                 margin-left: 5px
+                h1 
+                    font-size: 18px
+                    +breakpoint($celular)
+                        font-size: 16px
+                h2 
+                    font-size: 14px
+                    +breakpoint($celular)
+                        font-size: 12px
             p
                 font-size: 15px
                 line-height: 27px
@@ -216,5 +214,72 @@
                 text-align: center
                 width: 90%
                 margin: 40px 20px 20px 20px
-            
-
+                +breakpoint($celular)
+                    font-size: 12px
+                    width: 85%
+                    margin: 45px 20px 10px 20px
+        #tituloDepoimentos
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            span
+                font-size: 25px
+                font-weight: $bold
+                margin-bottom: 15px
+        .cardsDiv
+            justify-content: center
+            margin-top: 75px
+            padding-right: 30px
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            +breakpoint($celular)
+                padding-right: 10px
+            .individualCard
+                display: flex
+                flex-direction: column
+                background-image: url('../images/ilustracoes/projetos-card-bg.svg')
+                background-repeat: no-repeat
+                width: 340px
+                height: 420px
+                margin: 35px
+                justify-content: center
+                +breakpoint($celular)
+                    margin: 15px
+                    background-image: url('../images/ilustracoes/projetos-card-bg-celular.svg')
+                    width: 280px
+                    height: 360px
+                .pessoaCard
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    align-items: center
+                    margin-top: 20px
+                    +breakpoint($celular)
+                        margin-top: 0px
+                    img 
+                        +breakpoint($celular)
+                            height: 40px !important
+                .descricao
+                    display: flex
+                    flex-direction: column
+                    margin-left: 5px
+                    h1 
+                        font-size: 18px
+                        +breakpoint($celular)
+                            font-size: 16px
+                    h2 
+                        font-size: 14px
+                        +breakpoint($celular)
+                            font-size: 12px
+                p
+                    font-size: 15px
+                    line-height: 27px
+                    color: $texto-preto
+                    text-align: center
+                    width: 90%
+                    margin: 40px 20px 20px 20px
+                    +breakpoint($celular)
+                        font-size: 12px
+                        width: 85%
+                        margin: 55px 20px 20px 20px
