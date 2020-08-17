@@ -11,7 +11,6 @@
 /*mixin da opacidade*/
 /*mixin da opacidade do background*/
 /*mixin das colunas*/
-/*mixin para banner das páginas de projetos*/
 /*Cores*/
 /*Peso da fonte*/
 /*Resolução máxima*/
@@ -24,7 +23,6 @@
 /*mixin da opacidade*/
 /*mixin da opacidade do background*/
 /*mixin das colunas*/
-/*mixin para banner das páginas de projetos*/
 body {
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 400;
@@ -70,19 +68,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.tempHeader-CS {
+.tempHeader {
+  background-image: url("../images/ilustracoes/banner-aess.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  background-image: url("../images/ilustracoes/banner-aess.svg"); }
-  .tempHeader-CS div {
+  background-position: center; }
+  .tempHeader div {
+    justify-content: center;
     align-items: flex-end;
     margin-bottom: 30px; }
     @media (max-width: 992px) {
-      .tempHeader-CS div {
+      .tempHeader div {
+        justify-content: flex-start;
+        margin-left: 30px; } }
+    @media (max-width: 576px) {
+      .tempHeader div {
+        justify-content: center;
         align-items: center;
-        margin-bottom: 0; } }
-    .tempHeader-CS div img {
+        margin-bottom: 0;
+        margin-left: 0; } }
+    .tempHeader div img {
       opacity: 0; }
 
 .titulo-projeto {
@@ -117,6 +122,12 @@ table {
     font-size: 14px;
     line-height: 22px;
     color: #444; }
+    @media (max-width: 992px) {
+      .sucessos-projeto .sucessos-item {
+        margin: 10px 0px; } }
+    @media (max-width: 610px) {
+      .sucessos-projeto .sucessos-item {
+        border-left: none; } }
   .sucessos-projeto .last-update {
     font-size: 14px;
     line-height: 21px;
@@ -138,7 +149,7 @@ table {
   font-size: 16px;
   font-weight: bold;
   color: #525C65;
-  padding-bottom: 16px; }
+  padding-bottom: 10px; }
 
 .textoText {
   font-size: 15px;
@@ -146,7 +157,7 @@ table {
   font-weight: normal;
   font-style: normal;
   line-height: normal;
-  padding-bottom: 17px; }
+  padding-bottom: 25px; }
 
 .corpoProjeto {
   padding: 80px 90px 30px 120px;
@@ -228,12 +239,14 @@ table {
           margin-top: 15px;
           font-weight: 700;
           font-size: 16px;
+          line-height: 22px;
           color: #1E1C1C; }
         .corpoProjeto .asideProjeto .corpoAside .textoAside p {
           font-size: 15px;
           margin-top: 18px;
           margin-bottom: 18px;
-          width: 80%; }
+          line-height: 23px;
+          width: 85%; }
 
 .corpoDepoimentos {
   margin-top: 40px; }

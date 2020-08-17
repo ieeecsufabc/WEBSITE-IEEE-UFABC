@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="assets/css/projetos.css">
 	<link rel="stylesheet" href="assets/css/plugins.css">
 	<link rel="stylesheet" href="assets/css/geral.css">
+  <link rel="stylesheet" href="assets/node_modules/wow.js/css/libs/animate.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
@@ -14,8 +15,8 @@
 
         <div class="headerProjeto">
 
-            <div class="row tempHeader-CS m-0">
-								<div class="col-lg-6 p-0 d-flex justify-content-center">
+            <div class="row tempHeader m-0">
+								<div class="col-lg-6 p-0 d-flex">
 										<img src="assets/images/ilustracoes/banner-aess-trian.svg" alt="Triângulo azul" class="pt-lg-5 img-fluid">
 										<h1 class="titulo-projeto">TAPHROS DRONES SYSTEMS</h1>
 								</div>
@@ -68,22 +69,22 @@
                     <button>Participe!</button>
                     <div class="corpoAside">
 
-                        <div class="blocoFotos">
-                            <span>GALERIA</span>
-                            <img src="assets/images/ilustracoes/projetos-aside-linha.svg">
-                            <div class="divFotos">
-                                <div class="fotoAside"></div>
-                                <div class="fotoAside"></div>
-                                <div class="fotoAside"></div>
-                                <div class="fotoAside"></div>
-                                <div class="fotoAside"></div>
-                                <div class="fotoAside"></div>
-                            </div>
-                        </div>
+                          <div class="blocoFotos pb-3">
+                              <span>GALERIA</span>
+                              <img src="assets/images/ilustracoes/projetos-aside-linha.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                              <div class="divFotos">
+                                  <div class="fotoAside"></div>
+                                  <div class="fotoAside"></div>
+                                  <div class="fotoAside"></div>
+                                  <div class="fotoAside"></div>
+                                  <div class="fotoAside"></div>
+                                  <div class="fotoAside"></div>
+                              </div>
+                          </div>
 
                         <div class="blocoFotos">
                             <span>NOSSO TIME</span>
-                            <img src="assets/images/ilustracoes/projetos-aside-linha.svg">
+                            <img src="assets/images/ilustracoes/projetos-aside-linha.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
                             <div class="divFotos">
                                 <div class="fotoAside"></div>
                                 <div class="fotoAside"></div>
@@ -107,7 +108,7 @@
             <section class="corpoDepoimentos">
                 <div id="tituloDepoimentos">
                     <span>Quem está participando diz...</span>
-                    <img src="assets/images/ilustracoes/projetos-aside-linha-dois.svg">
+                    <img src="assets/images/ilustracoes/projetos-aside-linha-dois.svg" class="wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 </div>
                 <div class="cardsDiv">
                     <div class="individualCard cardEsquerda">
@@ -154,5 +155,11 @@
             </section>
         </section>
     </div>
+
+    <script src="assets/node_modules/wow.js/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  	<noscript>Desculpe, seu navegador não suporta JavaScript!</noscript>
 
 </body>
