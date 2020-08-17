@@ -78,7 +78,35 @@
                                   <div class="fotoAside"></div>
                                   <div class="fotoAside"></div>
                                   <div class="fotoAside"></div>
-                                  <div class="fotoAside"></div>
+                                  <div class="fotoAside"><img id="galeriaButton" data-toggle="modal" data-target="#galeriaModal" src="assets/images/ilustracoes/projetos-galeria-abrir.svg"></div>
+                                    <!--Modal -->
+                                    <div class="modal fade" id="galeriaModal" tabindex="-1" role="dialog" aria-labelledby="galeriaModalTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                            <div class="modal-content modalGaleria">
+                                                <div class="modal-body modalBody">
+                                                    <div class="galeriaPrincipal">
+                                                        <div class="galeriaImagem">
+                                                            <img class="botaoFechar" data-dismiss="modal" src="assets/images/ilustracoes/modal-galeria-fechar.svg">
+                                                            <img class="img-fluid" src="assets/images/cachorro.jpg">
+                                                        </div> 
+                                                        <div class="galeriaDescricao">
+                                                            <span id="descricaoText">Descrição da foto</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="galeriaLista">
+                                                        <img class="img-fluid" src="assets/images/cachorro2.jpg">
+                                                        <img class="img-fluid" src="assets/images/cachorro2.jpg">
+                                                        <img class="img-fluid" src="assets/images/cachorro2.jpg">
+                                                        <img class="img-fluid" src="assets/images/cachorro2.jpg">
+                                                        <img class="img-fluid" src="assets/images/cachorro2.jpg">
+                                                        <img class="img-fluid" src="assets/images/cachorro2.jpg">
+                                                        <img class="img-fluid" src="assets/images/cachorro2.jpg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--Modal -->
                               </div>
                           </div>
 
@@ -91,7 +119,18 @@
                                 <div class="fotoAside"></div>
                                 <div class="fotoAside"></div>
                                 <div class="fotoAside"></div>
-                                <div class="fotoAside"></div>
+                                <div class="fotoAside"><img id="galeriaButton" data-toggle="modal" data-target="#equipeModal" src="assets/images/ilustracoes/projetos-galeria-abrir.svg"></div>
+                                <!--Modal-->
+                                <div class="modal fade" id="equipeModal" tabindex="-1" role="dialog" aria-labelledby="equipeModalTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                        <div class="modal-content modalGaleria">
+                                            <div class="modal-body modalBody">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Modal-->
                             </div>
                         </div>
 
@@ -161,5 +200,8 @@
       new WOW().init();
     </script>
   	<noscript>Desculpe, seu navegador não suporta JavaScript!</noscript>
-
+    <script src="assets/node_modules/popper.js/src/popper.min.js"></script>
+    <script src="assets/node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
 </body>

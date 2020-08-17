@@ -121,12 +121,12 @@ body {
     border: 15px solid;
     border-image: url("../images/ilustracoes/teste.svg") 30; } }
 
-.modal-content {
+.modal-ouvidoria {
   height: 1015px;
   background-image: url("../images/ilustracoes/modal-bg.png");
   background-repeat: no-repeat; }
   @media (max-width: 576px) {
-    .modal-content {
+    .modal-ouvidoria {
       background-image: none;
       height: 100%;
       border: none !important;
