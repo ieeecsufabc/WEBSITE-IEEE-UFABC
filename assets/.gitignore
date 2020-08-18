@@ -5,3 +5,4 @@ node_modules/*
 !node_modules/jquery
 !node_modules/popper.js
 !node_modules/wow.js
+!node_modules/owl.carousel

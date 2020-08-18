@@ -47,3 +47,33 @@
         padding-top: 50px; } }
     .headerCapitulo .headerImagens .ilustracaoHeader {
       padding-top: 40px; }
+
+.projetosAndamentoCapitulo {
+  background-color: rgba(51, 118, 171, 0.2);
+  padding: 20px 0px; }
+  .projetosAndamentoCapitulo div h1 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    color: #1E1C1C;
+    margin-bottom: 15px; }
+  .projetosAndamentoCapitulo .projeto-item {
+    background-image: url("../images/ilustracoes/imagem-card.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    margin: 20px; }
+    .projetosAndamentoCapitulo .projeto-item img {
+      width: 50%; }
+    .projetosAndamentoCapitulo .projeto-item h1 {
+      position: absolute;
+      margin-left: 10px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      color: white; }
+  .projetosAndamentoCapitulo .navegacao #botao_anterior:focus, .projetosAndamentoCapitulo .navegacao #botao_proximo:focus {
+    box-shadow: none; }

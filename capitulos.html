@@ -7,11 +7,14 @@
 	<link rel="stylesheet" href="assets/css/capitulos.css">
 	<link rel="stylesheet" href="assets/css/plugins.css">
 	<link rel="stylesheet" href="assets/css/geral.css">
-    <link rel="stylesheet" href="assets/node_modules/wow.js/css/libs/animate.css">
+  <link rel="stylesheet" href="assets/node_modules/wow.js/css/libs/animate.css">
+	<link rel="stylesheet" href="assets/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
     <div class="container-fluid p-0 m-0">
+
         <div class="headerCapitulo">
             <div class="headerTitulo col-lg-6">
                 <h1>IEEE Aerospace & Electronic Systems Society</h1>
@@ -25,9 +28,50 @@
             </div>
         </div>
 
-        <div class="projetosAndamentoCapitulo">
+        <div class="row justify-content-center projetosAndamentoCapitulo mr-0">
 
-        </div>
+						<div class="col-lg-10">
+								<h1>Projetos em andamento</h1>
+								<img src="assets/images/ilustracoes/linha-azul.svg" class="mb-3 wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s"/>
+						</div>
+
+						<div class="owl-carousel owl-theme p-3">
+
+							<div class="item projeto-item">
+									<img src="assets/images/ilustracoes/carousel-triang.svg" alt="">
+									<h1>Nome do projeto</h1>
+							</div>
+							<div class="item projeto-item">
+									<img src="assets/images/ilustracoes/carousel-triang.svg" alt="">
+									<h1>Nome do projeto</h1>
+							</div>
+							<div class="item projeto-item">
+									<img src="assets/images/ilustracoes/carousel-triang.svg" alt="">
+									<h1>Nome do projeto</h1>
+							</div>
+							<div class="item projeto-item">
+									<img src="assets/images/ilustracoes/carousel-triang.svg" alt="">
+									<h1>Nome do projeto</h1>
+							</div>
+							<div class="item projeto-item">
+									<img src="assets/images/ilustracoes/carousel-triang.svg" alt="">
+									<h1>Nome do projeto</h1>
+							</div>
+
+						</div>
+
+						<div class="navegacao">
+								<button type="button" name="button" class="btn p-0" id="botao_anterior">
+										<img src="assets/icons/arrow-left-short.svg" alt="" width="50px">
+								</button>
+								<button type="button" name="button" class="btn p-0" id="botao_proximo">
+										<img src="assets/icons/arrow-right-short.svg" alt="" width="50px">
+								</button>
+						</div>
+
+					</div>
+
+				</div>
 
         <div class="eventosCapitulo">
 
@@ -42,5 +86,12 @@
         </div>
 
     </div>
+
+		<script src="assets/node_modules/popper.js/dist/popper.min.js"></script>
+		<script src="assets/node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="assets/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+		<script src="assets/js/processos-andamento.js"></script>
 
 </body>

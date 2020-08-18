@@ -21,7 +21,7 @@
             font-size: 20px
             line-height: 30px
             color: transparentize($texto-preto,0.15)
-        img 
+        img
             padding-top: 15px
             padding-bottom: 15px
 
@@ -33,3 +33,36 @@
             padding-top: 50px
         .ilustracaoHeader
             padding-top: 40px
+
+.projetosAndamentoCapitulo
+    background-color: rgba(51, 118, 171, 0.2)
+    padding: 20px 0px
+    div
+      h1
+        font-weight: $bold
+        font-size: 34px
+        line-height: 46px
+        color: $texto-preto
+        margin-bottom: 15px
+    .projeto-item
+        background-image: url('../images/ilustracoes/imagem-card.jpeg')
+        background-repeat: no-repeat
+        background-size: cover
+        border-radius: 5px
+        height: 200px
+        display: flex
+        align-items: flex-end
+        margin: 20px
+        img
+            width: 50%
+        h1
+            position: absolute
+            margin-left: 10px
+            font-weight: $bold
+            font-size: 20px
+            line-height: 27px
+            color: $branco
+    .navegacao
+        #botao_anterior, #botao_proximo
+            &:focus
+                box-shadow: none
