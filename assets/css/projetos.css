@@ -398,7 +398,7 @@ table {
               width: 85%;
               margin: 55px 20px 20px 20px; } }
 
-.modal .modalBody {
+#galeriaModal .modalBody {
   height: 100%;
   box-shadow: 0px 0px 40px #242424;
   background: rgba(0, 0, 0, 0.5);
@@ -406,38 +406,111 @@ table {
   flex-direction: row;
   padding: 0 !important; }
 
-.modal .galeriaPrincipal {
+#galeriaModal .galeriaPrincipal {
   display: flex;
   flex-direction: column; }
 
-.modal .botaoFechar {
+#galeriaModal .botaoFechar {
   position: absolute;
   padding: 15px; }
-  .modal .botaoFechar:hover {
+  #galeriaModal .botaoFechar:hover {
     cursor: pointer; }
 
-.modal .galeriaImagem img {
+#galeriaModal .galeriaImagem img {
   margin: 0px !important; }
 
-.modal .galeriaDescricao {
+#galeriaModal .galeriaDescricao {
   background-color: #EA9414;
   display: flex;
   height: 35px;
   align-items: center;
   justify-content: center; }
-  .modal .galeriaDescricao #descricaoText {
+  #galeriaModal .galeriaDescricao #descricaoText {
     font-size: 16px;
     color: white;
     font-weight: 600; }
 
-.modal .galeriaLista {
+#galeriaModal .galeriaLista {
   background-color: white;
   padding: 5px;
   width: 100px;
   margin-left: 2px; }
-  .modal .galeriaLista img {
+  #galeriaModal .galeriaLista img {
     margin: 0 !important;
     padding-bottom: 2px; }
-    .modal .galeriaLista img:hover {
+    #galeriaModal .galeriaLista img:hover {
       cursor: pointer;
       box-shadow: 0px 0px 10px #EA9414; }
+
+#equipeModal .modalEquipe {
+  border-radius: 15px; }
+
+#equipeModal .modalBody {
+  display: flex;
+  background: rgba(0, 0, 0, 0);
+  flex-direction: row; }
+
+#equipeModal .pessoaEquipe {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 60px 20px 60px;
+  border-radius: 15px 0px 0px 15px;
+  background-color: white; }
+  #equipeModal .pessoaEquipe .imagemPessoa {
+    margin-top: -130px; }
+    @media (max-width: 576px) {
+      #equipeModal .pessoaEquipe .imagemPessoa {
+        margin-top: -80px; } }
+  #equipeModal .pessoaEquipe .textoPessoa {
+    text-align: center; }
+    #equipeModal .pessoaEquipe .textoPessoa h1 {
+      font-size: 24px;
+      line-height: 46px;
+      color: #1E1C1C; }
+    #equipeModal .pessoaEquipe .textoPessoa h2 {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 27px; }
+
+#equipeModal .separadorEquipe {
+  width: 10px;
+  background-color: #EA9414; }
+
+#equipeModal .listaEquipe {
+  width: 100%;
+  border-radius: 0px 15px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6CE93; }
+  #equipeModal .listaEquipe .equipeCarousel {
+    padding: 50px 0px 50px 0px; }
+  #equipeModal .listaEquipe .botaoFechar {
+    position: absolute;
+    top: 2%;
+    right: 2%; }
+    #equipeModal .listaEquipe .botaoFechar:hover {
+      cursor: pointer; }
+  #equipeModal .listaEquipe .listaIndividual {
+    display: flex;
+    padding: 0px 20px 0px 10px;
+    margin-top: 0px;
+    flex-direction: row;
+    align-items: center; }
+    #equipeModal .listaEquipe .listaIndividual span {
+      font-weight: 400;
+      padding-left: 12px;
+      font-size: 18px;
+      line-height: 27px;
+      color: rgba(30, 28, 28, 0.85); }
+  #equipeModal .listaEquipe #setaCima {
+    position: absolute;
+    top: 2%; }
+  #equipeModal .listaEquipe #setaBaixo {
+    position: absolute;
+    bottom: 2%;
+    transform: rotate(180deg); }
