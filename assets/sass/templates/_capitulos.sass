@@ -37,32 +37,60 @@
 .projetosAndamentoCapitulo
     background-color: rgba(51, 118, 171, 0.2)
     padding: 20px 0px
-    div
-      h1
-        font-weight: $bold
-        font-size: 34px
-        line-height: 46px
-        color: $texto-preto
-        margin-bottom: 15px
+    .titulo
+        padding-left: 160px
+        h1
+          font-weight: $bold
+          font-size: 34px
+          line-height: 46px
+          color: $texto-preto
+          margin-bottom: 15px
+        @include breakpoint($tablet)
+            padding-left: 35px
     .projeto-item
         background-image: url('../images/ilustracoes/imagem-card.jpeg')
         background-repeat: no-repeat
         background-size: cover
         border-radius: 5px
-        height: 200px
+        height: 250px
         display: flex
         align-items: flex-end
         margin: 20px
+        padding-right: 50px
         img
-            width: 50%
+            width: 100% !important
         h1
             position: absolute
-            margin-left: 10px
+            margin-left: 20px
             font-weight: $bold
             font-size: 20px
             line-height: 27px
             color: $branco
-    .navegacao
-        #botao_anterior, #botao_proximo
-            &:focus
-                box-shadow: none
+            margin-bottom: 30px
+            @include breakpoint($computador)
+                margin-bottom: 20px
+                margin-left: 10px
+        @include breakpoint($computador)
+            height: 200px
+        @include breakpoint($tablet)
+            height: 180px
+        @include breakpoint($celular)
+            height: 150px
+
+    #botao_anterior, #botao_proximo
+        position: absolute
+        color: $azul-ieee
+        &:focus
+            box-shadow: none
+        @include breakpoint($tablet)
+            position: relative
+    #botao_anterior
+        left: 60px
+        @include breakpoint($tablet)
+            left: 0
+            margin-right: 15px
+    #botao_proximo
+        right: 60px
+        @include breakpoint($tablet)
+            right: 0
+            margin-left: 15px

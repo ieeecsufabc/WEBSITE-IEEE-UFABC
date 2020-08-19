@@ -1,19 +1,24 @@
 $(document).ready(function(){
   var owl = $(".owl-carousel");
   owl.owlCarousel({
-    stagePadding: 100,
-    items: 4,
     dots: false,
     slideTransition: 'ease-in',
     responsive: {
       0: {
-        items: 1
+        items: 1,
+        stagePadding: 15
       },
-      425: {
-        items: 3
+      576: {
+        items: 2,
+        stagePadding: 15
+      },
+      993: {
+        items: 2,
+        stagePadding: 140
       },
       1000: {
-        items: 3
+        items: 2,
+        stagePadding: 140
       }
     }
   });
