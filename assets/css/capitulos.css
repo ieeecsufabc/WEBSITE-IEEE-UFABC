@@ -20,12 +20,10 @@
   background-position: top left;
   padding-bottom: 60px; }
   .headerCapitulo .headerTitulo {
-    padding-top: 135px;
-    padding-left: 145px; }
+    padding: 135px 0px 0px 145px; }
     @media (max-width: 992px) {
       .headerCapitulo .headerTitulo {
-        padding-top: 50px;
-        padding-left: 20px; } }
+        padding: 50px 0px 0px 20px; } }
     .headerCapitulo .headerTitulo h1 {
       font-weight: 700;
       font-size: 38px;
@@ -36,8 +34,7 @@
       line-height: 30px;
       color: rgba(30, 28, 28, 0.85); }
     .headerCapitulo .headerTitulo img {
-      padding-top: 15px;
-      padding-bottom: 15px; }
+      padding: 15px 0px 15px 0px; }
   .headerCapitulo .headerImagens {
     display: flex;
     flex-direction: column;
@@ -115,3 +112,209 @@
       .projetosAndamentoCapitulo #botao_proximo {
         right: 0;
         margin-left: 15px; } }
+
+.eventosCapitulo {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0px 100px 0px;
+  background-image: url("../images/ilustracoes/capitulos-eventos-bg.svg");
+  background-position: left center;
+  background-repeat: no-repeat; }
+  @media (max-width: 576px) {
+    .eventosCapitulo {
+      background-image: none;
+      margin: 40px 0px 40px 0px; } }
+  .eventosCapitulo .tituloEventos {
+    padding-left: 145px; }
+    @media (max-width: 992px) {
+      .eventosCapitulo .tituloEventos {
+        text-align: center;
+        padding: 10px; } }
+    .eventosCapitulo .tituloEventos h1 {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 52px;
+      color: #1E1C1C; }
+    .eventosCapitulo .tituloEventos img {
+      padding: 20px 0px 20px 0px; }
+  .eventosCapitulo .corpoEventos {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row; }
+    .eventosCapitulo .corpoEventos .cardsEventos {
+      padding-left: 145px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      @media (max-width: 992px) {
+        .eventosCapitulo .corpoEventos .cardsEventos {
+          padding-left: 0px; } }
+      .eventosCapitulo .corpoEventos .cardsEventos .cimaDiv {
+        display: flex;
+        flex-direction: row; }
+        @media (max-width: 992px) {
+          .eventosCapitulo .corpoEventos .cardsEventos .cimaDiv {
+            justify-content: center;
+            margin-left: 20px;
+            flex-wrap: wrap; } }
+        @media (max-width: 576px) {
+          .eventosCapitulo .corpoEventos .cardsEventos .cimaDiv {
+            margin-left: 10px; } }
+    .eventosCapitulo .corpoEventos .ilustracaoEventos {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      @media (max-width: 1450px) {
+        .eventosCapitulo .corpoEventos .ilustracaoEventos {
+          justify-content: center; } }
+      @media (max-width: 576px) {
+        .eventosCapitulo .corpoEventos .ilustracaoEventos {
+          margin-bottom: 15px; } }
+  .eventosCapitulo .botaoEventos {
+    display: flex;
+    justify-content: center; }
+    .eventosCapitulo .botaoEventos a {
+      color: #0072A6;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 10px 35px 10px 35px;
+      box-sizing: border-box;
+      border: 2px solid #0072A6;
+      border-radius: 10px; }
+
+/* praticamente o mesmo estilo da home */
+.diretoriaCapitulo .titulos {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  color: #1E1C1C;
+  margin-bottom: 20px; }
+
+.diretoriaCapitulo .diretoriaDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 70px; }
+
+.diretoriaCapitulo .diretoriaTitulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px; }
+
+.diretoriaCapitulo .hexagonoIndividual {
+  text-align: center;
+  margin: 10px; }
+  .diretoriaCapitulo .hexagonoIndividual:hover {
+    opacity: 100%; }
+
+.diretoriaCapitulo .ilustracao {
+  margin-top: -70px;
+  width: 205px;
+  display: block; }
+
+.diretoriaCapitulo .textoHexagono {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 20px; }
+  @media (max-width: 992px) {
+    .diretoriaCapitulo .textoHexagono {
+      margin-bottom: 20px; } }
+
+.diretoriaCapitulo .subTextoHexagono {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0; }
+  @media (max-width: 992px) {
+    .diretoriaCapitulo .subTextoHexagono {
+      margin-bottom: 20px; } }
+
+.diretoriaCapitulo .redes-sociais {
+  position: absolute; }
+
+.diretoriaCapitulo .icones {
+  display: none; }
+
+.diretoriaCapitulo #whatsapp {
+  margin-left: -90px;
+  margin-top: -87px; }
+
+.diretoriaCapitulo #linkedin {
+  margin-left: -55px;
+  margin-top: -64px; }
+
+.diretoriaCapitulo #email {
+  margin-top: -43px;
+  margin-left: -17px; }
+
+.diretoriaCapitulo #facebook {
+  margin-left: 30px;
+  margin-top: -64px; }
+
+.diretoriaCapitulo #github {
+  margin-left: 63px;
+  margin-top: -87px; }
+
+/* praticamente o mesmo estilo da pagina de listas */
+.cardIndividual {
+  max-width: 295px;
+  margin: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px; }
+  @media (max-width: 1200px) {
+    .cardIndividual {
+      margin-left: 0px; } }
+  @media (max-width: 576px) {
+    .cardIndividual {
+      margin: 25px; } }
+  .cardIndividual .cardHeaderImg {
+    width: 100%;
+    border-radius: 2px 2px 0px 0px; }
+  .cardIndividual .cardDisplay {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: #FDFDFD;
+    width: 75px;
+    height: 25px;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    padding: 5px;
+    margin: 5px; }
+    .cardIndividual .cardDisplay p {
+      font-size: 14px;
+      margin-left: 7px;
+      font-weight: 600; }
+  .cardIndividual .cardBody {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-bottom: 10px; }
+    .cardIndividual .cardBody h1 {
+      color: #1E1C1C;
+      font-size: 20px;
+      line-height: 34px;
+      font-weight: 600;
+      margin-bottom: 10px; }
+    .cardIndividual .cardBody h2 {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(30, 28, 28, 0.85); }
+    .cardIndividual .cardBody .projetoDescricao {
+      width: 90%;
+      margin-bottom: 10px; }
+    .cardIndividual .cardBody h3 {
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(30, 28, 28, 0.85); }
+    .cardIndividual .cardBody a {
+      align-self: flex-end;
+      font-weight: 600;
+      color: #0072A6; }
