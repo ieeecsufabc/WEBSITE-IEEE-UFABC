@@ -26,11 +26,18 @@
         width: 80%
         @include breakpoint ($tablet)
             width: 100%
-    .imgHeader
-      @include breakpoint($computador)
-        width: 250px
-      @include breakpoint($tablet)
-        margin-top: 30px
+    .imgHeader1
+        @include breakpoint($computador)
+          width: 250px
+        @include breakpoint($tablet)
+          margin-top: 30px
+    .imgHeader2
+        @include breakpoint($computador)
+          width: 340px
+        @include breakpoint($tablet)
+          margin-top: 30px
+        @include breakpoint($celular)
+          width: 250px
 
 .filter
     padding: 10px 35px
@@ -38,14 +45,11 @@
     background: transparentize(#00A6F2, 0.1)
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.35)
     border-radius: 5px
-    display: flex
-    flex-direction: row
-    justify-content: center
     form
         display: flex
         flex-direction: row
         align-items: center
-        @include breakpoint($celular)
+        @include breakpoint($tablet)
             flex-direction: column
     span
         font-size: 20px
@@ -58,6 +62,8 @@
         span
             font-size: 16px
             line-height: 22px
+        @include breakpoint($celular)
+            padding-left: 0
     .dropdown
         margin-left: 25px
         margin-bottom: 5px
@@ -69,7 +75,6 @@
             margin-left: 5px
             margin-right: 0px
             margin-top: 5px
-            margin-bottom: 0px
     .dropdownIntern
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
         border: none
@@ -86,9 +91,11 @@
     .formCentro
         display: flex
         flex-direction: row
+        margin-right: auto
         @include breakpoint($tablet)
+            margin-right: 0
             flex-wrap: wrap
-        @include breakpoint($celular)
+            margin: 10px
             justify-content: center
     .formLeft
         display: flex
@@ -102,14 +109,15 @@
         display: flex
         flex-direction: row
         align-items: center
-
         @include breakpoint($celular)
             margin-top: 15px
             margin-bottom: 15px
         @include breakpoint($tablet)
             margin-left: 0px
         #divisorFiltro
-            margin: 0px 50px 0px 50px
+            margin: 0px 50px
+            @include breakpoint($computador)
+                margin: 0px 30px
         input
             max-width: 220px
             height: 30px

@@ -98,26 +98,32 @@ table {
       .header p {
         width: 100%; } }
   @media (max-width: 1200px) {
-    .header .imgHeader {
+    .header .imgHeader1 {
       width: 250px; } }
   @media (max-width: 992px) {
-    .header .imgHeader {
+    .header .imgHeader1 {
       margin-top: 30px; } }
+  @media (max-width: 1200px) {
+    .header .imgHeader2 {
+      width: 340px; } }
+  @media (max-width: 992px) {
+    .header .imgHeader2 {
+      margin-top: 30px; } }
+  @media (max-width: 576px) {
+    .header .imgHeader2 {
+      width: 250px; } }
 
 .filter {
   padding: 10px 35px;
   margin: 30px;
   background: rgba(0, 166, 242, 0.9);
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; }
+  border-radius: 5px; }
   .filter form {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    @media (max-width: 576px) {
+    @media (max-width: 992px) {
       .filter form {
         flex-direction: column; } }
   .filter span {
@@ -132,6 +138,9 @@ table {
     .filter .eventosCheck span {
       font-size: 16px;
       line-height: 22px; }
+    @media (max-width: 576px) {
+      .filter .eventosCheck {
+        padding-left: 0; } }
   .filter .dropdown {
     margin-left: 25px;
     margin-bottom: 5px;
@@ -144,8 +153,7 @@ table {
       .filter .dropdown {
         margin-left: 5px;
         margin-right: 0px;
-        margin-top: 5px;
-        margin-bottom: 0px; } }
+        margin-top: 5px; } }
   .filter .dropdownIntern {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border: none;
@@ -161,12 +169,13 @@ table {
     line-height: 22px; }
   .filter .formCentro {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    margin-right: auto; }
     @media (max-width: 992px) {
       .filter .formCentro {
-        flex-wrap: wrap; } }
-    @media (max-width: 576px) {
-      .filter .formCentro {
+        margin-right: 0;
+        flex-wrap: wrap;
+        margin: 10px;
         justify-content: center; } }
   .filter .formLeft {
     display: flex;
@@ -189,7 +198,10 @@ table {
       .filter .formRight {
         margin-left: 0px; } }
     .filter .formRight #divisorFiltro {
-      margin: 0px 50px 0px 50px; }
+      margin: 0px 50px; }
+      @media (max-width: 1200px) {
+        .filter .formRight #divisorFiltro {
+          margin: 0px 30px; } }
     .filter .formRight input {
       max-width: 220px;
       height: 30px;
