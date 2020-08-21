@@ -157,6 +157,7 @@
           .eventosCapitulo .corpoEventos .cardsEventos .cimaDiv {
             justify-content: center;
             margin-left: 20px;
+            margin-top: 20px;
             flex-wrap: wrap; } }
         @media (max-width: 576px) {
           .eventosCapitulo .corpoEventos .cardsEventos .cimaDiv {
