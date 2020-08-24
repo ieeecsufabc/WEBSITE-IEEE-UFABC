@@ -83,23 +83,29 @@
     padding-bottom: 25px
 
 .corpoProjeto
-    padding: 80px 90px 30px 120px
+    padding: 80px 100px 30px 100px
     display: flex
     flex-direction: column
     +breakpoint($computador)
         padding-right: 0px
         padding-left: 30px
+    +breakpoint($tablet)
+        padding-right: 30px
     +breakpoint($celular)
         padding-left: 10px
+        padding-right: 10px
     .mainProjeto
         display: flex
         flex-direction: row
+        +breakpoint($tablet)
+            flex-direction: column
     .asideProjeto
         padding-left: 120px
         +breakpoint($computador)
             padding-left: 60px
         +breakpoint($tablet)
-            padding-left: 30px
+            padding-left: 0px
+            margin-top: 70px
         display: flex
         flex-direction: column
         justify-content: center
@@ -153,7 +159,7 @@
                     +breakpoint($tablet)
                         width: 90px
                         height: 90px
-                    margin-right: 10px
+                    margin-right: 20px
                     margin-bottom: 20px
                     background-color: black
             .textoAside
@@ -170,6 +176,8 @@
                     margin-bottom: 18px
                     line-height: 23px
                     width: 85%
+                    +breakpoint($tablet)
+                      width: 100%
 
 .corpoDepoimentos
     margin-top: 40px
@@ -312,7 +320,7 @@
         display: flex
         flex-direction: row
         padding: 0 !important
-        
+
     .galeriaPrincipal
         display: flex
         flex-direction: column
@@ -324,7 +332,7 @@
             cursor: pointer
 
     .galeriaImagem
-        img 
+        img
             margin: 0px !important
 
     .galeriaDescricao
@@ -339,7 +347,7 @@
             font-weight: $semi-bold
 
     .galeriaLista
-        img 
+        img
             margin: 0 !important
             padding-bottom: 2px
             &:hover
@@ -373,14 +381,14 @@
                 margin-top: -80px
         .textoPessoa
             text-align: center
-            h1 
+            h1
                 font-size: 24px
                 line-height: 46px
                 color: $texto-preto
             h2
                 font-weight: $light
                 font-size: 18px
-                line-height: 27px       
+                line-height: 27px
     .separadorEquipe
         width: 10px
         background-color: #EA9414
