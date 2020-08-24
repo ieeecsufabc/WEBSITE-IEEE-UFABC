@@ -11,3 +11,43 @@
 /*mixin da opacidade*/
 /*mixin da opacidade do background*/
 /*mixin das colunas*/
+.bannerEventos {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 98, 155, 0.2);
+  justify-content: center;
+  align-items: center; }
+  .bannerEventos img {
+    max-height: 312px; }
+  .bannerEventos .textoBanner {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px 30px 30px; }
+    .bannerEventos .textoBanner .textoEsquerda {
+      display: flex;
+      flex-direction: column; }
+      .bannerEventos .textoBanner .textoEsquerda span {
+        font-size: 30px;
+        line-height: 41px;
+        color: rgba(30, 28, 28, 0.65);
+        padding-bottom: 20px; }
+      .bannerEventos .textoBanner .textoEsquerda h1 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 54px;
+        color: #1E1C1C; }
+      .bannerEventos .textoBanner .textoEsquerda h2 {
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 34px;
+        color: rgba(30, 28, 28, 0.55); }
+      .bannerEventos .textoBanner .textoEsquerda h3 {
+        font-size: 25px;
+        line-height: 34px;
+        color: rgba(30, 28, 28, 0.55); }
+    .bannerEventos .textoBanner .textoDireita span {
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 41px;
+      color: rgba(30, 28, 28, 0.5);
+      margin-left: -50px; }
