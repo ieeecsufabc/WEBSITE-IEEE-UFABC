@@ -2,6 +2,7 @@
 $wrap-banner: max-width 1300px
     
 .bannerEventos
+    position: relative
     display: flex
     flex-direction: row
     background-color: transparentize($azul-ieee-escuro,0.8)
@@ -12,9 +13,21 @@ $wrap-banner: max-width 1300px
         flex-wrap: wrap
     +breakpoint(max-width 820px)
         background-color: white
-    
     .imagemBanner
         max-width: 100%
+    #botaoCompartilhar
+        position: absolute
+        bottom: -12%
+        left: 8%
+        +breakpoint($wrap-banner)
+            position: fixed
+            bottom: auto
+            left: auto
+            top: 1.5%
+            right: 1.5%
+        +breakpoint($celular)
+            top: 0.5%
+            width: 50px
     .textoBanner
         display: flex
         flex-direction: row
@@ -34,6 +47,7 @@ $wrap-banner: max-width 1300px
                 font-size: 30px
                 line-height: 41px
                 color: transparentize($texto-preto,0.35)
+                letter-spacing: 0.15em
                 padding-bottom: 20px
             h1
                 font-weight: $bold

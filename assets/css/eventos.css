@@ -12,6 +12,7 @@
 /*mixin da opacidade do background*/
 /*mixin das colunas*/
 .bannerEventos {
+  position: relative;
   display: flex;
   flex-direction: row;
   background-color: rgba(0, 98, 155, 0.2);
@@ -26,6 +27,21 @@
       background-color: white; } }
   .bannerEventos .imagemBanner {
     max-width: 100%; }
+  .bannerEventos #botaoCompartilhar {
+    position: absolute;
+    bottom: -12%;
+    left: 8%; }
+    @media (max-width: 1300px) {
+      .bannerEventos #botaoCompartilhar {
+        position: fixed;
+        bottom: auto;
+        left: auto;
+        top: 1.5%;
+        right: 1.5%; } }
+    @media (max-width: 576px) {
+      .bannerEventos #botaoCompartilhar {
+        top: 0.5%;
+        width: 50px; } }
   .bannerEventos .textoBanner {
     display: flex;
     flex-direction: row;
@@ -48,6 +64,7 @@
         font-size: 30px;
         line-height: 41px;
         color: rgba(30, 28, 28, 0.65);
+        letter-spacing: 0.15em;
         padding-bottom: 20px; }
       .bannerEventos .textoBanner .textoEsquerda h1 {
         font-weight: 700;
