@@ -191,10 +191,8 @@ table {
     @media (max-width: 992px) {
       .corpoProjeto .asideProjeto {
         padding-left: 0px;
+        padding-right: 0px;
         margin-top: 70px; } }
-    @media (max-width: 576px) {
-      .corpoProjeto .asideProjeto {
-        padding-right: 0px; } }
     .corpoProjeto .asideProjeto button {
       background: #EA9414;
       border: none;
@@ -255,6 +253,9 @@ table {
             .corpoProjeto .asideProjeto .corpoAside .blocoFotos .fotoAside {
               width: 90px;
               height: 90px; } }
+          @media (max-width: 576px) {
+            .corpoProjeto .asideProjeto .corpoAside .blocoFotos .fotoAside {
+              margin: 0px 10px 20px 10px; } }
       .corpoProjeto .asideProjeto .corpoAside .textoAside {
         margin-top: 40px; }
         .corpoProjeto .asideProjeto .corpoAside .textoAside span {
@@ -290,9 +291,9 @@ table {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    @media (max-width: 576px) {
+    @media (max-width: 992px) {
       .corpoDepoimentos .cardsDiv {
-        padding-right: 10px; } }
+        padding-right: 0px; } }
     .corpoDepoimentos .cardsDiv .individualCard {
       display: flex;
       flex-direction: column;
@@ -411,12 +412,13 @@ table {
           color: #1E1C1C;
           text-align: center;
           width: 90%;
-          margin: 40px 20px 20px 20px; }
+          margin: 40px 20px 20px 20px;
+          padding: 10px; }
           @media (max-width: 576px) {
             .corpoDepoimentos .cardsDiv .cardsDiv .individualCard p {
               font-size: 12px;
               width: 85%;
-              margin: 55px 20px 20px 20px; } }
+              margin: 55px 20px 20px 30px; } }
 
 #galeriaModal .modalBody {
   height: 100%;

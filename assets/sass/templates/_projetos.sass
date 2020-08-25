@@ -105,9 +105,8 @@
             padding-left: 60px
         +breakpoint($tablet)
             padding-left: 0px
-            margin-top: 70px
-        +breakpoint($celular)
             padding-right: 0px
+            margin-top: 70px
         display: flex
         flex-direction: column
         justify-content: center
@@ -168,6 +167,8 @@
                     margin-right: 20px
                     margin-bottom: 20px
                     background-color: black
+                    +breakpoint($celular)
+                        margin: 0px 10px 20px 10px
             .textoAside
                 margin-top: 40px
                 span
@@ -202,8 +203,8 @@
         display: flex
         flex-direction: row
         flex-wrap: wrap
-        +breakpoint($celular)
-            padding-right: 10px
+        +breakpoint($tablet)
+            padding-right: 0px
         .individualCard
             display: flex
             flex-direction: column
@@ -313,10 +314,11 @@
                     text-align: center
                     width: 90%
                     margin: 40px 20px 20px 20px
+                    padding: 10px
                     +breakpoint($celular)
                         font-size: 12px
                         width: 85%
-                        margin: 55px 20px 20px 20px
+                        margin: 55px 20px 20px 30px
 
 #galeriaModal
     .modalBody
