@@ -1,15 +1,32 @@
+// criei essa variável pra facilitar mexer na responsividade do banner
+$wrap-banner: max-width 1300px
+    
 .bannerEventos
     display: flex
     flex-direction: row
     background-color: transparentize($azul-ieee-escuro,0.8)
     justify-content: center
     align-items: center
-    img 
-        max-height: 312px
+    +breakpoint($wrap-banner)
+        background-color: transparentize($azul-ieee-escuro,0.8)
+        flex-wrap: wrap
+    +breakpoint(max-width 820px)
+        background-color: white
+    
+    .imagemBanner
+        max-width: 100%
     .textoBanner
         display: flex
         flex-direction: row
-        padding: 30px 0px 30px 30px
+        padding: 20px 0px 20px 20px
+        +breakpoint($wrap-banner)
+            justify-content: center
+            text-align: center
+            flex-wrap: wrap
+        +breakpoint($computador)
+            background-color: transparentize($azul-ieee-escuro,0.8)
+        +breakpoint($celular)
+            padding: 20px 10px 20px 10px
         .textoEsquerda
             display: flex
             flex-direction: column
@@ -38,4 +55,6 @@
                 font-size: 30px
                 line-height: 41px
                 color: transparentize($texto-preto,0.5)
-                margin-left: -50px
+                margin-left: -100px
+                +breakpoint($celular)
+                    margin-left: 0px
