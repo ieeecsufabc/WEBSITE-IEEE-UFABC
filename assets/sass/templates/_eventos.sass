@@ -76,7 +76,7 @@ $wrap-banner: max-width 1300px
 .corpoEvento
     padding: 80px 100px
     +breakpoint($computador)
-        padding: 60px 30px
+        padding: 60px 60px
     +breakpoint($celular)
         padding: 60px 10px
 
@@ -100,10 +100,14 @@ $wrap-banner: max-width 1300px
 .asideEvento
     display: flex
     flex-direction: column
-    align-items: center
+    align-items: flex-end
+    padding: 0
+    +breakpoint($tablet)
+        align-items: center
     +breakpoint($celular)
         padding-right: 0
-    button
+        padding-left: 15px
+    .btn-inscrever
         width: 210px
         background: $azul-ieee-escuro
         font-weight: $semi-bold
@@ -135,6 +139,21 @@ $wrap-banner: max-width 1300px
                 width: 380px
             +breakpoint($celular)
                 width: 250px
+            &:hover
+                cursor: pointer
+    .modal-content
+        height: inherit
+        background-image: none
+        .botao-fechar
+            position: absolute
+            right: 10px
+            color: $branco
+            text-shadow: none
+            opacity: 1
+            font-size: 3rem
+            &:focus
+              border: none
+
     .precos
         width: 440px
         background: rgba(255, 255, 255, 0.2)
@@ -168,22 +187,23 @@ $wrap-banner: max-width 1300px
             letter-spacing: 0.1em
         .precoComum
             text-align: center
-            border-right: 1px solid rgba(0, 0, 0, 0.5)
-            padding: 15px 60px 15px 15px
+            padding: 15px 30px 15px 35px
             +breakpoint($computador)
-                padding: 15px 45px 15px 15px
+                padding: 15px 30px 15px 30px
             +breakpoint($tablet)
-                padding: 15px 50px 15px 15px
+                padding: 15px 30px 15px 25px
             +breakpoint($celular)
                 border-right: none
                 border-bottom: 1px solid rgba(0, 0, 0, 0.5)
                 padding: 15px 60px
         .precoMembro
             text-align: center
-            padding: 15px 15px 15px 25px
+            padding: 15px 5px 15px 70px
             +breakpoint($computador)
-                padding: 15px 15px 15px 20px
+                padding: 15px 5px 15px 35px
             +breakpoint($tablet)
-                padding: 15px 15px 15px 15px
+                padding: 15px 5px 15px 30px
             +breakpoint($celular)
                 padding: 15px 30px
+        img
+            position: absolute

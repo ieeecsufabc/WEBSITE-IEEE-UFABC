@@ -54,32 +54,47 @@
 
 								<aside class="col-lg-6 asideEvento">
 
-										<button type="button" name="button" class="btn">Inscreva-se!</button>
+										<div class="column text-center">
 
-										<div class="imagem-evento">
-												<img src="assets/images/ilustracoes/img-evento.svg" alt="" class="ilustracao-expansiva">
-												<img src="assets/icons/arrows-fullscreen.svg" alt="" class="icone-fullscreen">
-										</div>
+												<button type="button" name="button" class="btn btn-inscrever">Inscreva-se!</button>
 
-										<div class="precos">
+												<div class="imagem-evento">
+														<img src="assets/images/ilustracoes/img-evento.svg" alt="" class="ilustracao-expansiva img-fluid" data-target=".bd-example-modal-lg" data-toggle="modal">
+														<img src="assets/icons/arrows-fullscreen.svg" alt="" class="icone-fullscreen" data-target=".bd-example-modal-lg" data-toggle="modal">
+												</div>
 
-												<h1>Preço para participar</h1>
+												<div class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+												  <div class="modal-dialog modal-dialog-centered modal-lg">
+												    <div class="modal-content">
+																<button type="button" class="close botao-fechar" data-dismiss="modal" aria-label="Fechar">
+																		<span aria-hidden="true">&times;</span>
+																</button>
+													      <img src="assets/images/ilustracoes/img-evento.svg" alt="" class="w-100">
+												    </div>
+												  </div>
+												</div>
 
-												<div class="row justify-content-center m-0 p-3 p-lg-4">
+												<div class="precos">
 
-														<div class="column precoComum">
-																<h2>Comum</h2>
-																<p class="m-0">0,00</p>
-														</div>
-														<div class="column precoMembro">
-																<h2>Membro IEEE</h2>
-																<p class="m-0">0,00</p>
+														<h1>Preço para participar</h1>
+
+														<div class="row justify-content-center m-0 p-3 p-lg-4">
+
+																<div class="column precoComum">
+																		<h2>Comum</h2>
+																		<p class="m-0">0,00</p>
+																</div>
+																<img src="assets/images/ilustracoes/linha-vertical.svg" alt="" class="d-none d-sm-block">
+																<div class="column precoMembro">
+																		<h2>Membro IEEE</h2>
+																		<p class="m-0">0,00</p>
+																</div>
+
 														</div>
 
 												</div>
 
 										</div>
-
 
 								</aside>
 
@@ -89,6 +104,10 @@
 
 		</div>
 
+		<script src="assets/node_modules/popper.js/dist/popper.min.js"></script>
+		<script src="assets/node_modules/jquery/dist/jquery.slim.min.js"></script>
+		<script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="assets/node_modules/wow.js/dist/wow.min.js"></script>
 		<script>
 		  new WOW().init();

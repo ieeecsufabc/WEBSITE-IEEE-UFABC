@@ -94,7 +94,7 @@
   padding: 80px 100px; }
   @media (max-width: 1200px) {
     .corpoEvento {
-      padding: 60px 30px; } }
+      padding: 60px 60px; } }
   @media (max-width: 576px) {
     .corpoEvento {
       padding: 60px 10px; } }
@@ -119,11 +119,16 @@
 .asideEvento {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: flex-end;
+  padding: 0; }
+  @media (max-width: 992px) {
+    .asideEvento {
+      align-items: center; } }
   @media (max-width: 576px) {
     .asideEvento {
-      padding-right: 0; } }
-  .asideEvento button {
+      padding-right: 0;
+      padding-left: 15px; } }
+  .asideEvento .btn-inscrever {
     width: 210px;
     background: #00629B;
     font-weight: 600;
@@ -131,10 +136,10 @@
     line-height: 38px;
     color: white;
     margin-bottom: 80px; }
-    .asideEvento button:hover {
+    .asideEvento .btn-inscrever:hover {
       color: white; }
     @media (max-width: 992px) {
-      .asideEvento button {
+      .asideEvento .btn-inscrever {
         margin-top: 60px; } }
   .asideEvento .imagem-evento {
     margin-bottom: 80px; }
@@ -159,6 +164,20 @@
       @media (max-width: 576px) {
         .asideEvento .imagem-evento .ilustracao-expansiva {
           width: 250px; } }
+      .asideEvento .imagem-evento .ilustracao-expansiva:hover {
+        cursor: pointer; }
+  .asideEvento .modal-content {
+    height: inherit;
+    background-image: none; }
+    .asideEvento .modal-content .botao-fechar {
+      position: absolute;
+      right: 10px;
+      color: white;
+      text-shadow: none;
+      opacity: 1;
+      font-size: 3rem; }
+      .asideEvento .modal-content .botao-fechar:focus {
+        border: none; }
   .asideEvento .precos {
     width: 440px;
     background: rgba(255, 255, 255, 0.2);
@@ -195,14 +214,13 @@
       letter-spacing: 0.1em; }
     .asideEvento .precos .precoComum {
       text-align: center;
-      border-right: 1px solid rgba(0, 0, 0, 0.5);
-      padding: 15px 60px 15px 15px; }
+      padding: 15px 30px 15px 35px; }
       @media (max-width: 1200px) {
         .asideEvento .precos .precoComum {
-          padding: 15px 45px 15px 15px; } }
+          padding: 15px 30px 15px 30px; } }
       @media (max-width: 992px) {
         .asideEvento .precos .precoComum {
-          padding: 15px 50px 15px 15px; } }
+          padding: 15px 30px 15px 25px; } }
       @media (max-width: 576px) {
         .asideEvento .precos .precoComum {
           border-right: none;
@@ -210,13 +228,15 @@
           padding: 15px 60px; } }
     .asideEvento .precos .precoMembro {
       text-align: center;
-      padding: 15px 15px 15px 25px; }
+      padding: 15px 5px 15px 70px; }
       @media (max-width: 1200px) {
         .asideEvento .precos .precoMembro {
-          padding: 15px 15px 15px 20px; } }
+          padding: 15px 5px 15px 35px; } }
       @media (max-width: 992px) {
         .asideEvento .precos .precoMembro {
-          padding: 15px 15px 15px 15px; } }
+          padding: 15px 5px 15px 30px; } }
       @media (max-width: 576px) {
         .asideEvento .precos .precoMembro {
           padding: 15px 30px; } }
+    .asideEvento .precos img {
+      position: absolute; }
