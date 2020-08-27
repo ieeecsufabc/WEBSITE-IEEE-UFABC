@@ -149,10 +149,10 @@
       margin-top: 5px;
       margin-left: -30px;
       width: 25px;
+      transition: all 0.3s;
       cursor: pointer; }
       .asideEvento .imagem-evento .icone-fullscreen:hover {
-        width: 27px;
-        transition: 0.5s; }
+        transform: scale(1.1); }
     .asideEvento .imagem-evento .ilustracao-expansiva {
       width: 440px; }
       @media (max-width: 1200px) {
@@ -164,8 +164,11 @@
       @media (max-width: 576px) {
         .asideEvento .imagem-evento .ilustracao-expansiva {
           width: 250px; } }
-      .asideEvento .imagem-evento .ilustracao-expansiva:hover {
-        cursor: pointer; }
+  .asideEvento .fade {
+    transition: opacity .15s linear; }
+  @media (min-width: 992px) {
+    .asideEvento .imagem-modal {
+      max-width: 680px; } }
   .asideEvento .modal-content {
     height: inherit;
     background-image: none; }
@@ -175,9 +178,11 @@
       color: white;
       text-shadow: none;
       opacity: 1;
-      font-size: 3rem; }
-      .asideEvento .modal-content .botao-fechar:focus {
-        border: none; }
+      font-size: 3rem;
+      transition: all 0.3s;
+      outline-style: none; }
+      .asideEvento .modal-content .botao-fechar:hover {
+        transform: scale(1.1); }
   .asideEvento .precos {
     width: 440px;
     background: rgba(255, 255, 255, 0.2);
@@ -220,7 +225,7 @@
           padding: 15px 30px 15px 30px; } }
       @media (max-width: 992px) {
         .asideEvento .precos .precoComum {
-          padding: 15px 30px 15px 25px; } }
+          padding: 15px 30px; } }
       @media (max-width: 576px) {
         .asideEvento .precos .precoComum {
           border-right: none;
@@ -234,7 +239,7 @@
           padding: 15px 5px 15px 35px; } }
       @media (max-width: 992px) {
         .asideEvento .precos .precoMembro {
-          padding: 15px 5px 15px 30px; } }
+          padding: 15px 0px 15px 30px; } }
       @media (max-width: 576px) {
         .asideEvento .precos .precoMembro {
           padding: 15px 30px; } }

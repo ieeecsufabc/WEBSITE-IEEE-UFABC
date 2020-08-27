@@ -127,10 +127,10 @@ $wrap-banner: max-width 1300px
             margin-top: 5px
             margin-left: -30px
             width: 25px
+            transition: all 0.3s
             cursor: pointer
             &:hover
-                width: 27px
-                transition: 0.5s
+                transform: scale(1.1)
         .ilustracao-expansiva
             width: 440px
             +breakpoint($computador)
@@ -139,8 +139,11 @@ $wrap-banner: max-width 1300px
                 width: 380px
             +breakpoint($celular)
                 width: 250px
-            &:hover
-                cursor: pointer
+    .fade
+        transition: opacity .15s linear
+    .imagem-modal
+        +breakpoint(min-width 992px)
+            max-width: 680px
     .modal-content
         height: inherit
         background-image: none
@@ -151,9 +154,11 @@ $wrap-banner: max-width 1300px
             text-shadow: none
             opacity: 1
             font-size: 3rem
+            transition: all 0.3s
             &:focus
-              border: none
-
+          		outline-style: none
+            &:hover
+              transform: scale(1.1)
     .precos
         width: 440px
         background: rgba(255, 255, 255, 0.2)
@@ -191,7 +196,7 @@ $wrap-banner: max-width 1300px
             +breakpoint($computador)
                 padding: 15px 30px 15px 30px
             +breakpoint($tablet)
-                padding: 15px 30px 15px 25px
+                padding: 15px 30px
             +breakpoint($celular)
                 border-right: none
                 border-bottom: 1px solid rgba(0, 0, 0, 0.5)
@@ -202,7 +207,7 @@ $wrap-banner: max-width 1300px
             +breakpoint($computador)
                 padding: 15px 5px 15px 35px
             +breakpoint($tablet)
-                padding: 15px 5px 15px 30px
+                padding: 15px 0px 15px 30px
             +breakpoint($celular)
                 padding: 15px 30px
         img
