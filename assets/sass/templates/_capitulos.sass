@@ -180,7 +180,7 @@
         margin: 10px
         &:hover
             .subTextoHexagono
-            opacity: 100%
+                opacity: 100%
     .ilustracao
         margin-top: -70px
         width: 205px
@@ -190,6 +190,7 @@
         font-size: 20px
         line-height: 20px
         margin-top: 20px
+        color: #182A54
         @include breakpoint($tablet)
             margin-bottom: 20px
     .subTextoHexagono
@@ -197,6 +198,7 @@
         font-size: 18px
         margin-top: 10px
         opacity: 0
+        color: #182A54
         @include breakpoint($tablet)
             margin-bottom: 20px
     .redes-sociais
@@ -277,3 +279,29 @@
             align-self: flex-end
             font-weight: $semi-bold
             color: $azul-ieee
+
+/* Estilização referente ao formulário */
+.contatoCapitulo
+    display: flex
+    flex-direction: row
+    justify-content: center
+    .formulario-capitulo
+        display: flex
+        flex-direction: row
+        align-items: center
+        padding: 25px
+        background-color: $azul-ieee
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25)
+        border-radius: 7px
+        h1
+            font-weight: $bold
+            font-size: 32px
+            line-height: 44px
+            color: $branco
+        .ilustracao-form
+            margin: 0px 40px
+        .social-form
+            display: flex
+            flex-direction: column
+            .icon-social-form
+                width: 35px

@@ -207,7 +207,7 @@
 .diretoriaCapitulo .hexagonoIndividual {
   text-align: center;
   margin: 10px; }
-  .diretoriaCapitulo .hexagonoIndividual:hover {
+  .diretoriaCapitulo .hexagonoIndividual:hover .subTextoHexagono {
     opacity: 100%; }
 
 .diretoriaCapitulo .ilustracao {
@@ -219,7 +219,8 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 20px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  color: #182A54; }
   @media (max-width: 992px) {
     .diretoriaCapitulo .textoHexagono {
       margin-bottom: 20px; } }
@@ -228,7 +229,8 @@
   font-weight: 600;
   font-size: 18px;
   margin-top: 10px;
-  opacity: 0; }
+  opacity: 0;
+  color: #182A54; }
   @media (max-width: 992px) {
     .diretoriaCapitulo .subTextoHexagono {
       margin-bottom: 20px; } }
@@ -319,3 +321,29 @@
       align-self: flex-end;
       font-weight: 600;
       color: #0072A6; }
+
+/* Estilização referente ao formulário */
+.contatoCapitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .contatoCapitulo .formulario-capitulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px;
+    background-color: #0072A6;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 7px; }
+    .contatoCapitulo .formulario-capitulo h1 {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;
+      color: white; }
+    .contatoCapitulo .formulario-capitulo .ilustracao-form {
+      margin: 0px 40px; }
+    .contatoCapitulo .formulario-capitulo .social-form {
+      display: flex;
+      flex-direction: column; }
+      .contatoCapitulo .formulario-capitulo .social-form .icon-social-form {
+        width: 35px; }
