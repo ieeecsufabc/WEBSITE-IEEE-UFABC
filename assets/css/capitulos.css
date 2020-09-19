@@ -347,3 +347,32 @@
       flex-direction: column; }
       .contatoCapitulo .formulario-capitulo .social-form .icon-social-form {
         width: 35px; }
+
+      form div + div {
+          margin-top: 15px;
+      }
+      input, textarea {
+          width: 300px;
+          height: 30px;
+          border: none;
+          border-radius: 5px 5px 5px 5px;
+      }
+      textarea {
+          height: 75px;
+          resize: vertical;
+      }
+
+      button {
+        background-color: #004666;
+        border: none;
+        width: 81px;
+        height: 31px;
+        border-radius:25px;
+      }
+
+      .palavraEnviar {
+        color: white;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: Semi Bol;
+      }
