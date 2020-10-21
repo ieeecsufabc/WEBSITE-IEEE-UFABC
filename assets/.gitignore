@@ -1,7 +1,0 @@
-node_modules/*
-!node_modules/bootstrap
-!node_modules/breakpoint-sass
-!node_modules/imagehover.css
-!node_modules/jquery
-!node_modules/popper.js
-!node_modules/wow.js
