@@ -8,13 +8,16 @@ function load_scripts(){
 add_action('wp_enqueue_scripts', 'load_scripts');
 
 
-function funcoes_config(){
+function curso_config(){
     register_nav_menus(
         array(
             'my_main_menu' => 'Menu'
         )
     );
+
     add_theme_support('custom-header');
+    //add_theme_support('post-thumbnails');
+    //add_theme_support('post-formats', array('lista','evento'));
 }
-add_action('after_setup_theme', 'funcoes_config', 0);
+add_action('after_setup_theme', 'curso_config', 0);
 ?>

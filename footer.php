@@ -93,6 +93,13 @@
             </div>
 </footer>
 
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/capitulos.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/home-o-que-fazemos.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/assets/js/diretoria.js"></script>
+<script>
+    new WOW().init();
+</script>
+
 <?php wp_footer(); ?>
 </body>
 </html>
